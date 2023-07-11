@@ -291,11 +291,20 @@ body{
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    /* border: 1px solid red;
+    height: fit-content; */
 }
 .iphone{
     width: 9rem;
     transition: ease-in-out .4s;
     opacity: 0.3;
+    /* position: absolute; */
+}
+#iphone2 {
+    display: none;
+}
+#iphone3 {
+    display: none;
 }
 .show-ft .iphone{
     opacity: 1;

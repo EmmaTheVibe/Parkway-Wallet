@@ -3,13 +3,17 @@ for(let button of buttons){
     const link1 = document.querySelector('#link1')
     const link2 = document.querySelector('#link2')
     const link3 = document.querySelector('#link3')
+    const img1 = document.querySelector("#iphone1")
+    const img2 = document.querySelector("#iphone2")
+    const img3 = document.querySelector("#iphone3")
     button.addEventListener("click", () => {
         document.querySelector('.clicked')?.classList.remove('clicked')
         button.classList.add("clicked")
 
         if(link2.classList.contains("clicked")){
-            const img2 = document.querySelector(".iphone")
-            img2.setAttribute("src", "./images/transfer.png")
+            img1.style.display = "none"
+            img2.style.display = "unset"
+            img3.style.display = "none"
     
             const transferText = document.querySelector(".heading")
             transferText.innerText = "Transfer Money"
@@ -17,8 +21,9 @@ for(let button of buttons){
             const transferPrg = document.querySelector(".prg")
             transferPrg.innerText = "No more worries about delayed or failed transactions. Parkway Wallet enables you to send money effortlessly to any bank of your choice. With just a few taps, you can transfer funds quickly and safely, allowing you to fulfil your financial obligations without any hassles. Enjoy peace of mind knowing that your transactions are completed smoothly and promptly."
         } else if(link3.classList.contains("clicked")){
-            const img3 = document.querySelector(".iphone")
-            img3.setAttribute("src", "./images/fund.png")
+            img1.style.display = "none"
+            img2.style.display = "none"
+            img3.style.display = "unset"
     
             const transferText = document.querySelector(".heading")
             transferText.innerText = "Fund Wallet"
@@ -26,8 +31,9 @@ for(let button of buttons){
             const transferPrg = document.querySelector(".prg")
             transferPrg.innerText = "Instantly top-up your wallet using your card, USSD codes, or a simple bank transfer. Parkway Wallet ensures that your funds are readily available whenever needed, enabling you to make seamless payments and enjoy uninterrupted services."
         } else if(link1.classList.contains("clicked")){
-            const img1 = document.querySelector(".iphone")
-            img1.setAttribute("src", "./images/receive.png") 
+            img1.style.display = "unset"
+            img2.style.display = "none"
+            img3.style.display = "none"
             
             const transferText = document.querySelector(".heading")
             transferText.innerText = "Receive Money"
