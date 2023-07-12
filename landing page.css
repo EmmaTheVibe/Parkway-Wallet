@@ -340,7 +340,8 @@ body{
     display: grid; 
     gap: 1rem;
     grid-template-columns: 1fr;
-    width: 17rem;
+    /* width: 17rem; */
+    width: 300px;
     /* border: 1px solid red; */
     /* flex-direction: column;
     justify-content: center; */
@@ -350,7 +351,8 @@ body{
     width: 100%;
     /* width: 13.125rem; */
     /* height: 18.75rem; */
-    height: 20rem;
+    /* height: 20rem; */
+    height: 400px;
     /* margin-bottom: 2rem; */
     background-color: #F9956B;
     border: 1px solid #E6E6E6;
@@ -359,11 +361,11 @@ body{
     flex-direction: column;
     justify-content: start;
     /* justify-self: center; */
-    /* align-items: center; */
+    align-items: center;
     /* background-image: url(./images/bvnbkg.svg); */
     background-size: cover;
     background-position: center;
-    /* overflow: hidden; */
+    overflow: hidden;
     position: relative;
     isolation: isolate;
     transition: 1.5s;
@@ -372,7 +374,8 @@ body{
     width: 100%;
     /* width: 13.125rem; */
     /* height: 18.75rem; */
-    height: 20rem;
+    /* height: 20rem; */
+    height: 400px;
     /* margin-bottom: 2rem; */
     background-color: #FBF7E4;
     border: 1px solid #E6E6E6;
@@ -382,20 +385,21 @@ body{
     justify-content: end;
     /* padding-left: 0.5rem; */
     /* justify-self: center; */
-    /* align-items: center; */
+    align-items: center;
     /* background-image: url(./images/otpbkg.svg); */
     background-size: cover;
     background-position: center;
     position: relative;
     isolation: isolate;
-    /* overflow: hidden; */
+    overflow: hidden;
     transition: 1.5s;
 }
 .pinbox{
     width: 100%;
     /* width: 13.125rem; */
     /* height: 18.75rem; */
-    height: 20rem;
+    /* height: 20rem; */
+    height: 400px;
     margin-bottom: 4rem;
     background-color: #F0F0F0;
     border: 1px solid #E6E6E6;
@@ -404,11 +408,11 @@ body{
     flex-direction: column;
     justify-content: end;
     /* justify-self: center; */
-    /* align-items: center; */
+    align-items: center;
     /* background-image: url(./images/bvnbkg.svg); */
     background-size: cover;
     background-position: center;
-    /* overflow: hidden; */
+    overflow: hidden;
     position: relative;
     isolation: isolate;
     transition: 1.5s;
@@ -451,7 +455,8 @@ body{
 } */
 .bvn, .otp, .pin{
     /* width: 90%; */
-    width: 13.1rem;
+    /* width: 14rem; */
+    width: 260px;
 
     transition: cubic-bezier(.03,1.11,.96,1) 1.5s;
 }
@@ -469,50 +474,52 @@ body{
     margin-bottom: -8.1rem;
 }
 .show-dt .bvn{
-    transform: translateY(-6rem);
+    transform: translateY(-10rem);
 }
 .show-dt .otp{
-    transform: translateY(6rem);
+    transform: translateY(8.7rem);
 }
 .show-dt .pin{
-    transform: translateY(6rem);
+    transform: translateY(8.7rem);
 }
 .bvn-txt {
-    width: 100%;
+    /* width: 14rem; */
+    width: 260px;
     height: 50%;
     margin-top: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
     transition: cubic-bezier(.03,1.11,.96,1.02) 1.5s;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .otp-txt, .pin-txt{
-    width: 100%;
+    /* width: 14rem; */
+    width: 260px;
     height: 50%;
     margin-bottom: 1.3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    padding-left: 0;
     transition: cubic-bezier(.03,1.11,.96,1.02) 1.5s;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .show-dt .bvn-txt{
-    transform: translateY(-7rem);
+    transform: translateY(-10.5rem);
 }
 .show-dt .otp-txt{
-    transform: translateY(5.8rem);
+    transform: translateY(9.5rem);
 }
 .show-dt .pin-txt{
-    transform: translateY(6.8rem);
+    transform: translateY(9.5rem);
 }
 .hd{
     margin-left: 1.2rem;
     font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 0.313rem;
     color: #121212;
 }
@@ -521,7 +528,7 @@ body{
     font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.6;
     color: #666666;
 }
@@ -866,10 +873,12 @@ input{
         overflow: visible;
         padding-left: 4rem;
         padding-right: 1rem;
+        align-items: start;
     }
     .otpbox, .pinbox {
         padding-left: 2rem;
         padding-right: 1rem;
+        align-items: start;
     }
     .bvn {
         transition: cubic-bezier(.03,1.11,.96,1) 2s;
