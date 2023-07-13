@@ -184,13 +184,22 @@ body{
     display: flex;
     flex-direction: column;
 }
+.ft-box h4 {
+    animation: fadeEffect 1s;
+}
 .content{
     width: 100%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    animation: fadeEffect 1s;
     /* height: 12rem; */
     /* border: 1px solid green; */
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 .receive {
     height: 9rem;
@@ -231,9 +240,6 @@ body{
     font-weight: 700;
     font-size: 0.625rem;
     line-height: 0.938rem;
-}
-.btn {
-    border: 1px solid red;
 }
 .btn:hover{
     background-color: #F9956B;
@@ -859,6 +865,9 @@ input{
 
 
 @media screen and (min-width:650px){
+    .nav-items {
+        width: 40rem;
+    }
     .hero{
         height: unset;
         justify-content: center;
@@ -905,46 +914,55 @@ input{
     .bvnbox {
         grid-column: span 2;
         flex-direction: row;
-        overflow: visible;
-        padding-left: 4rem;
+        padding-left: 3rem;
         padding-right: 1rem;
         align-items: start;
+        height: 280px;
     }
     .otpbox, .pinbox {
         padding-left: 2rem;
         padding-right: 1rem;
         align-items: start;
+        margin-bottom: 0;
     }
     .bvn {
         transition: cubic-bezier(.03,1.11,.96,1) 2s;
     }
     .show-dt .bvn-txt{
-        transform: translateY(11rem);
+        transform: translateY(13rem);
     }
     .bvn-txt {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         margin-top: -8rem;
         height: 60%;
+        width: 100%;
+    }
+    .otp-txt, .pin-txt {
+        width: 100%;
     }
     /* .hd{
-        font-size: 30px;
+        margin-left: 1.2rem;
+        font-family: 'Manrope', sans-serif;
+        font-style: normal;
         font-weight: 700;
-        line-height: 42px;
+        font-size: 16px;
+        line-height: 0.313rem;
+        color: #121212;
     }
     .txt{
-        font-size: 24px;
+        margin-left: 1.2rem;
+        font-family: 'Manrope', sans-serif;
+        font-style: normal;
         font-weight: 600;
-        line-height: 33.6px;
+        font-size: 13px;
+        line-height: 1.6;
+        color: #666666;
     }
     #hd1 {
-        font-size: 30px;
-        font-weight: 700;
-        line-height: 42px;
+        color: #FFFFFF;
     }
     #txt1 {
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 33.6px;
+        color: #FAFAFA;
     } */
     .friends{
         display: unset;
@@ -1045,21 +1063,37 @@ input{
         font-size: 1.375rem;
         line-height: 1.25rem;
     }
+    /* .top-display {
+        border: 1px solid red;
+    } */
+    .button {
+        width: 145px;
+        /* height: 47.5px;
+        position: relative;
+        z-index: 2; */
+        bottom: 90px;
+        left: 142px;
+        /* opacity: 0;
+        transition: 2s; */
+        /* transform: scale(0.8, 0.8); */
+    }
     .iphone-top {
-        width: 20rem;
-        height: 20rem;
-        margin-bottom: -13em;
+        width: 330px;
+        /* height: 20rem; */
+        margin-bottom: -40rem;
     }
     .show-hero .iphone-top{
-        transform: translateY(-12rem);
+        transform: translateY(-23rem);
     }
     .menu{
-        width: 19rem;
+        /* width: 19rem; */
+        width: 310px;
         margin-bottom: -7.5em;
-        margin-left: -6em;
+        right: 75px;
+        /* margin-left: -6em; */
     }
     .show-hero .menu{
-        transform: translateY(-8.3rem);
+        transform: translateY(-6rem);
     }
     
     .ft-cont {
@@ -1085,10 +1119,20 @@ input{
         transform: scale(1.2, 1.2);
     }
     
-    /* .bvnbox{
-        margin-right: unset;
+    .bvnbox{
+        height: 330px;
+        padding-left: 5rem;
     }
-    .otpbox{
+    .otpbox, .pinbox {
+        height: 450px;
+    }
+    .bvn {
+        margin-right: 1rem;
+    }
+    .show-dt .bvn-txt{
+        transform: translateY(14rem);
+    }
+    /* .otpbox{
         margin-left: 1.8rem;
         margin-right: 1.8rem;
     } */
@@ -1098,11 +1142,10 @@ input{
     }
     .guide {
         width: 50rem;
-        border: 1px solid red;
         overflow: hidden;
     }
     .hd{
-        font-size: 20px;
+        font-size: 26px;
         font-weight: 700;
         line-height: 20px;
     }
@@ -1112,7 +1155,7 @@ input{
         line-height: 25px;
     }
     #hd1 {
-        font-size: 20px;
+        font-size: 26px;
         font-weight: 700;
         line-height: 20px;
     }
@@ -1135,10 +1178,10 @@ input{
         transform: translateY(-7rem);
     } */
     .show-dt .otp-txt{
-        transform: translateY(7.5rem);
+        transform: translateY(10rem);
     }
     .show-dt .pin-txt{
-        transform: translateY(7rem);
+        transform: translateY(10rem);
     }
     .more-details{
         padding-top: 7rem;
@@ -1193,8 +1236,14 @@ input{
     }
     .guide {
         width: 60rem;
-        border: 1px solid red;
         overflow: hidden;
+    }
+    .bvnbox{
+        height: 330px;
+        padding-left: 7rem;
+    }
+    .bvn {
+        margin-right: 3rem;
     }
     .formbox, .download-box, .connect {
         width: 60rem;
@@ -1229,7 +1278,6 @@ input{
     }
     .guide {
         width: 80rem;
-        border: 1px solid red;
         overflow: hidden;
     }
     .formbox, .download-box, .connect {
@@ -1240,7 +1288,7 @@ input{
     }
 }
 
-@media screen and (min-width: 2200px){
+/* @media screen and (min-width: 2200px){
     .nav-items{
         width: 100.2rem;
         border: 1px solid red;
@@ -1260,10 +1308,6 @@ input{
     .iphone-top{
         width: 30rem;
         height: 30rem;
-        /* margin-bottom: -10rem;
-        z-index: 0;
-        position: relative;
-        transition: cubic-bezier(.03,1.11,.96,1.12) 1s; */
     }
     .menu{
         width: 30rem;
@@ -1278,7 +1322,6 @@ input{
     }
     .guide {
         width: 100rem;
-        border: 1px solid red;
         overflow: hidden;
     }
     .formbox, .download-box, .connect {
@@ -1287,4 +1330,4 @@ input{
     .docs {
         width: 60rem;
     }
-}
+} */
