@@ -1,3 +1,4 @@
+const hero = document.querySelectorAll(".hero")
 const buttons = document.querySelectorAll(".btn")
 const link1 = document.querySelector('#link1')
 const link2 = document.querySelector('#link2')
@@ -6,9 +7,13 @@ const img1 = document.querySelector("#iphone1")
 const img2 = document.querySelector("#iphone2")
 const img3 = document.querySelector("#iphone3")
 const heading = document.querySelector(".heading")
+const head1 = document.querySelector("#head1")
+const head2 = document.querySelector("#head2")
+const head3 = document.querySelector("#head3")
 const receive = document.querySelector(".receive")
 const transfer = document.querySelector(".transfer")
 const fund = document.querySelector(".fund")
+const topButton = document.querySelector(".button")
 
 buttons.forEach(active => {
     active.addEventListener("click", () => {
@@ -19,7 +24,9 @@ buttons.forEach(active => {
             img2.style.display = "unset"
             img3.style.display = "none"
         
-            heading.innerText = "Transfer Money"
+            head1.style.display = "none"
+            head2.style.display = "unset"
+            head3.style.display = "none"
             receive.style.display = "none"
             transfer.style.display = "unset"
             fund.style.display = "none"
@@ -28,8 +35,10 @@ buttons.forEach(active => {
             img1.style.display = "none"
             img2.style.display = "none"
             img3.style.display = "unset"
-        
-            heading.innerText = "Fund Wallet"
+
+            head1.style.display = "none"
+            head2.style.display = "none"
+            head3.style.display = "unset"
             receive.style.display = "none"
             transfer.style.display = "none"
             fund.style.display = "unset"
@@ -39,7 +48,9 @@ buttons.forEach(active => {
             img2.style.display = "none"
             img3.style.display = "none"
         
-            heading.innerText = "Receive Money"
+            head1.style.display = "unset"
+            head2.style.display = "none"
+            head3.style.display = "none"
             receive.style.display = "unset"
             transfer.style.display = "none"
             fund.style.display = "none"
@@ -91,8 +102,9 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show-hero');
-        } else{
-            entry.target.classList.remove('show-hero');
+            setTimeout(() => {
+                entry.target.classList.add('show-button');
+            }, 1600)
         }
     })
 })
@@ -114,11 +126,35 @@ hiddenElements2.forEach((el) => observer2.observe(el))
 const observer3 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('show-dt');
+            entry.target.classList.add('show-bvn');
         } else{
-            entry.target.classList.remove('show-dt');
+            entry.target.classList.remove('show-bvn');
         }
     })
 })
-const hiddenElements3 = document.querySelectorAll('.more-details');
+const hiddenElements3 = document.querySelectorAll('.bvnbox');
 hiddenElements3.forEach((el) => observer3.observe(el))
+
+const observer4 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show-otp');
+        } else{
+            entry.target.classList.remove('show-otp');
+        }
+    })
+})
+const hiddenElements4 = document.querySelectorAll('.otpbox');
+hiddenElements4.forEach((el) => observer4.observe(el))
+
+const observer5 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show-pin');
+        } else{
+            entry.target.classList.remove('show-pin');
+        }
+    })
+})
+const hiddenElements5 = document.querySelectorAll('.pinbox');
+hiddenElements5.forEach((el) => observer5.observe(el))

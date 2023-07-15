@@ -81,7 +81,7 @@ body{
     text-align: center;
     font-family: myFont;
     overflow: hidden;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .init-txt h3{
     margin-top: 25rem;
@@ -109,12 +109,11 @@ body{
 }
 .top-display{
     height: 15rem;
-    width: 17rem;
-    /* padding-left: 1.5rem; */
+    width: 19.8rem;
+    padding-left: 2rem;
     display: flex;
     align-items: end;
     justify-content: center;
-    /* border: 1px solid red; */
 }
 .button {
     width: 57px;
@@ -124,8 +123,7 @@ body{
     bottom: 72.5px;
     left: 93.5px;
     opacity: 0;
-    transition:.3s 2s;
-    /* transform: scale(0.8, 0.8); */
+    transition: cubic-bezier(.03,1.11,.96,1.12) .1s;
 }
 .iphone-top{
     /* width: 15rem; */
@@ -149,25 +147,24 @@ body{
     right: 100px;
     /* border: 1px solid red; */
 }
-.show-hero .button{
-    opacity: 1;
-    transform: scale(1.9, 1.9) translateX(-10px);
-}
 .show-hero .iphone-top{
     transform: translateY(-9.3rem);
 }
 .show-hero .menu{
     transform: translateY(-1rem);
 }
-
+.show-button .button{
+    opacity: 1;
+    transform: scale(1.9, 1.9) translateX(-10px);
+}
 
 .features{
     width: 100%;
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 10rem;
     display: flex;
     /* flex-direction: column; */
-    /* justify-content: space-evenly; */
+    justify-content: center;
     align-items: center;
     background: linear-gradient(120deg, rgba(18,18,18,0.14) 0%, rgba(249,149,107,0.14) 35%, rgba(241,219,141,0.22) 100%);
 }
@@ -176,26 +173,26 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    width: 19.8rem;
 }
 .ft-box{
-    width: 95%;
+    /* width: 95%; */
     padding-top: 3%;
     padding-right: 5px;
     display: flex;
     flex-direction: column;
-}
-.ft-box h4 {
-    animation: fadeEffect 1s;
+    /* border: 1px solid black; */
 }
 .content{
     width: 100%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    animation: fadeEffect 1s;
+    animation: fadeEffect .5s;
+    margin-bottom: 5rem;
     /* height: 12rem; */
-    /* border: 1px solid green; */
+    border: 1px solid green;
 }
 
 @keyframes fadeEffect {
@@ -203,14 +200,14 @@ body{
     to {opacity: 1;}
 }
 .receive {
-    height: 9rem;
+    height: 8rem;
 }
 .transfer {
-    height: 12rem;
+    height: 11.3rem;
     display: none;
 }
 .fund {
-    height: 9rem;
+    height: 8rem;
     display: none;
 }
 .ft-box h3{
@@ -223,31 +220,33 @@ body{
 }
 .link-cont{
     width: 100%;
-    margin-top: 7%;
-    margin-bottom: 4%;
+    height: 40px;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .link1, .link2, .link3{
     width: 30%;
-    height: 2.063rem;
+    height: 40px;
     color: #121212;
     background: none;
     border: none;
     border-radius: 0.5rem;
     font-family: "Manrope", sans-serif;
     font-style: normal;
-    font-weight: 700;
-    font-size: 0.625rem;
-    line-height: 0.938rem;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 19.12px;
+    background-color: inherit;
 }
 .btn:hover{
-    background-color: #F9956B;
+    background-color: rgba(249, 149, 107, .8);
     color: #FFFFFF;
-    opacity: .8;
 }
-.clicked{
+
+.btn.clicked{
     background-color: #F9956B;
     color: #FFFFFF;
 }
@@ -258,6 +257,13 @@ body{
     font-size: 1.125rem;
     line-height: 2.5rem;
     color: #222222;
+    animation: fadeEffect .5s;
+}
+#head2 {
+    display: none;
+}
+#head3 {
+    display: none;
 }
 .prg{
     font-family: "Manrope", sans-serif;
@@ -265,10 +271,10 @@ body{
     font-weight: 400;
     font-size: 14px;
     /* font-size: 14px; */
-    line-height: 1.125rem;
+    line-height: 1.2rem;
     color: #4D4D4D;
     margin-top: -8.3rem;
-    transition: 1s;
+    transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
     opacity: 0;
 }
 .show-ft .prg{
@@ -333,15 +339,15 @@ body{
     justify-content: center;
     align-items: center;
     /* margin-top: 2rem; */
-    margin-bottom: 2rem;
-    /* border: 1px solid red;
-    height: fit-content; */
+    /* margin-bottom: 2rem; */
+    /* border: 1px solid blue; */
+    /* height: 100%; */
 }
 .iphone{
     width: 9rem;
-    transition: ease-in-out .4s;
+    transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
     opacity: 0.3;
-    animation: fadeEffect .1s;
+    /* animation: fadeEffect .1s; */
     /* position: absolute; */
 }
 #iphone2 {
@@ -352,7 +358,7 @@ body{
 }
 .show-ft .iphone{
     opacity: 1;
-    transform: scale(1.1, 1.1);
+    transform: scale(1.5, 1.5);
 }
 
 
@@ -383,7 +389,7 @@ body{
     gap: 1rem;
     grid-template-columns: 1fr;
     /* width: 17rem; */
-    width: 300px;
+    width: 19.8rem;
     /* border: 1px solid red; */
     /* flex-direction: column;
     justify-content: center; */
@@ -515,13 +521,13 @@ body{
 .pin {
     margin-bottom: -8.1rem;
 }
-.show-dt .bvn{
+.show-bvn .bvn{
     transform: translateY(-10rem);
 }
-.show-dt .otp{
+.show-otp .otp{
     transform: translateY(8.7rem);
 }
-.show-dt .pin{
+.show-pin .pin{
     transform: translateY(8.7rem);
 }
 .bvn-txt {
@@ -547,13 +553,13 @@ body{
     transition: cubic-bezier(.03,1.11,.96,1.02) 1.5s;
     /* border: 1px solid red; */
 }
-.show-dt .bvn-txt{
+.show-bvn .bvn-txt{
     transform: translateY(-10.5rem);
 }
-.show-dt .otp-txt{
+.show-otp .otp-txt{
     transform: translateY(9.5rem);
 }
-.show-dt .pin-txt{
+.show-pin .pin-txt{
     transform: translateY(9.5rem);
 }
 .hd{
@@ -562,16 +568,16 @@ body{
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 0.313rem;
+    line-height: 10px;
     color: #121212;
 }
 .txt{
     margin-left: 1.2rem;
     font-family: 'Manrope', sans-serif;
     font-style: normal;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 1.6;
+    font-weight: 500;
+    font-size: 13.5px;
+    line-height: 19.6px;
     color: #666666;
 }
 #hd1 {
@@ -580,13 +586,7 @@ body{
 #txt1 {
     color: #FAFAFA;
 }
-.friends{
-    max-width: 37rem;
-    display: none;
-}
-.friends2{
-    max-width: 14rem;
-}
+
 
 
 
@@ -604,8 +604,8 @@ body{
     flex-direction: column;
     margin-top: 0;
     grid-column: span 2;
-    height: 33.5rem;
-    width: 300px;
+    height: 541px;
+    width: 19.8rem;
     margin-bottom: 2rem;
     border-radius: 1rem;
     border: 0.719528px solid #E6E6E6;;
@@ -630,22 +630,22 @@ video{
 }
 .vidbox p{
     align-self: end;
-    margin: 1rem;
+    margin: 1.1rem;
     color: #999999;
-    font-family: 'Manrope';
+    font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 0.9rem;
-    line-height: 1.5rem;
+    font-size: 14px;
+    /* line-height: 1.5rem; */
 }
 .vidbox span{
     color: #FFFFFF;
     font-family: myFont;
     font-weight: 400;
-    font-size: 1.1rem;
-    line-height: 0.938rem;
+    font-size: 14px;
+    /* line-height: 0.938rem; */
 }
-form{
+form {
     padding-top: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -653,25 +653,28 @@ form{
     width: 100%;
     height: 60%;
 }
+form h4 {
+    display: none;
+}
 label{
     width: 80%;
     margin-bottom: 10px;
-    font-family: 'Manrope';
+    font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 0.7rem;
-    line-height: 0.938rem;
+    font-size: 12px;
+    line-height: 12.22px;
     color: #121212;
 }
 input{
     margin-top: 5px;
     width: 100%;
     height: 2.5rem;
-    font-family: 'Manrope';
+    font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 0.7rem;
-    line-height: 0.938rem;
+    font-size: 12px;
+    line-height: 14.26px;
     padding-left: 0.6rem;
     padding-right: 0.6rem;
     border: 1px solid #E6E6E6;
@@ -681,11 +684,11 @@ input{
     width: 100%;
     height: 3.5rem;
     margin-top: 5px;
-    font-family: 'Manrope';
+    font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 0.7rem;
-    line-height: 0.938rem;
+    font-size: 12px;
+    line-height: 14.26px;
     text-align: start;
     padding-top: 0.5rem;
     padding-left: 0.6rem;
@@ -696,10 +699,10 @@ input{
 #submit{
     width: 80%;
     height: 2.5rem;
-    font-family: 'Manrope';
+    font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 0.7rem;
+    font-size: 12px;
     line-height: 0.938rem;
     color: #FFFFFF;
     background-color: #F9956B;
@@ -708,7 +711,7 @@ input{
 }
 .download-box{
     height: 290px;
-    width: 300px;
+    width: 19.8rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -722,6 +725,7 @@ input{
     isolation: isolate;
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-bottom: 4rem;
 }
 .download-box::after{
     content: '';
@@ -736,62 +740,81 @@ input{
     font-family: myFont;
     font-style: normal;
     font-weight: 500;
-    font-size: 1.1rem;
-    line-height: 1.5rem;
+    font-size: 20px;
+    line-height: 22.85px;
     color: #FFFFFF;
     text-align: center;
 }
 .apps2{
-    height: fit-content;
-    width: 12.25rem;
+    height: 94px;
+    width: 146px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: space-between;
     align-items: center;
 }
+.apps2 a {
+    text-decoration: none;
+}
 .appstore2, .playstore2{
-    width: 5.8rem;
-    height: 1.7rem;
+    width: 140px;
+    height: 42px;
+    padding-left: 10px;
     background-color: #121212;
-    border-radius: 0.25rem;
+    border-radius: 8px;
     border: 0.063rem solid #FFFFFF;;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     align-items: center;
 }
 .appstore2 a{
-    font-family: 'Manrope';
+    font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 0.5rem;
-    line-height: 0.563rem;
+    font-size: 14px;
+    line-height: 16.39px;
     text-decoration: none;
     color: #FFFFFF;
 }
 .appstore2 img{
-    width: 0.875rem;
+    width: 20px;
+    margin-right: 9px;
 }
 .playstore2 img{
-    width: 0.938rem;
+    width: 20px;
+    margin-right: 9px;
 }
 .playstore2 a{
-    font-family: 'Manrope';
+    font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 0.5rem;
-    line-height: 0.563rem;
+    font-size: 14px;
+    /* line-height: 16.39px; */
     text-decoration: none;
     color: #FFFFFF;
 }
 .apps2 span{
-    font-family: 'Manrope';
+    font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 0.4rem;
-    line-height: 0.563rem;
+    font-size: 12px;
+    /* line-height: 16.39px; */
 }
-
+#contact {
+    margin-bottom: 2rem;
+    font-family: myFont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: #222222;
+    align-self: center;
+    justify-self: center;
+}
+.friends{
+    max-width: 16rem;
+}
 
 
 .footer{
@@ -804,7 +827,7 @@ input{
     padding-bottom: 2rem;
 }
 .connect{
-    width: 17rem;
+    width: 19.8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -849,7 +872,7 @@ input{
     color: #FFFFFF;
 }
 .docs{
-    width: 17rem;
+    width: 19.8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -870,6 +893,7 @@ input{
 @media screen and (min-width:650px){
     .nav-items {
         width: 40rem;
+        /* border: 1px solid green; */
     }
     .hero{
         height: unset;
@@ -894,19 +918,37 @@ input{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        /* padding-left: 1rem; */
-        /* padding-right: 2rem; */
+        padding-top: 6rem;
+        padding-bottom: 7rem;
     }
     .ft-cont {
         width: 40rem;
+        /* height: 30rem; */
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding-right: 10px;
+        /* padding-right: 10px; */
     }
     .ft-box{
-        width: 30rem;
-        /* margin-right: 3rem; */
+        width: 60%;
+        /* margin-right: 1rem; */
+        height: 30rem;
+    }
+    .content{
+        border: 1px solid green;
+    }
+    .fund, .transfer, .receive {
+        height: 16rem;
+    }
+    .ft-display {
+        /* border: 1px solid blue; */
+        height: 30rem;
+        width: 40%;
+        /* justify-content: end; */
+        padding-left: 0.8rem;
+    }
+    .show-ft .iphone{
+        transform: scale(1.7, 1.7);
     }
 
     .guide{
@@ -917,22 +959,44 @@ input{
     .bvnbox {
         grid-column: span 2;
         flex-direction: row;
-        padding-left: 3rem;
+        padding-left: 2rem;
         padding-right: 1rem;
         align-items: start;
         height: 280px;
     }
     .otpbox, .pinbox {
-        padding-left: 2rem;
+        padding-left: 1.5rem;
         padding-right: 1rem;
         align-items: start;
         margin-bottom: 0;
     }
-    .bvn {
-        transition: cubic-bezier(.03,1.11,.96,1) 2s;
+    .bvn, .otp, .pin {
+        width: 230px;
     }
-    .show-dt .bvn-txt{
+    .bvn {
+        margin-top: -25rem;
+        margin-right: 0.5rem;
+    }
+    .show-bvn .bvn {
         transform: translateY(13rem);
+    }
+    .show-otp .otp {
+        transform: translateY(6.8rem);
+    }
+    .show-pin .pin {
+        transform: translateY(6.8rem);
+    }
+    .show-bvn .bvn-txt{
+        transform: translateY(12rem);
+    }
+    .otp-txt, .pin-txt {
+        margin-top: -5rem;
+    }
+    .show-otp .otp-txt{
+        transform: translateY(7.5rem);
+    }
+    .show-pin .pin-txt{
+        transform: translateY(7.5rem);
     }
     .bvn-txt {
         /* border: 1px solid red; */
@@ -943,25 +1007,15 @@ input{
     .otp-txt, .pin-txt {
         width: 100%;
     }
-    /* .hd{
-        margin-left: 1.2rem;
-        font-family: 'Manrope', sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 0.313rem;
-        color: #121212;
+    .hd{
+        font-size: 18px;
+        /* line-height: 22.4px; */
     }
     .txt{
-        margin-left: 1.2rem;
-        font-family: 'Manrope', sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 13px;
-        line-height: 1.6;
-        color: #666666;
+        font-size: 15px;
+        line-height: 20px;
     }
-    #hd1 {
+    /* #hd1 {
         color: #FFFFFF;
     }
     #txt1 {
@@ -978,7 +1032,7 @@ input{
     .formbox{
         flex-direction: row;
         width: 40rem;
-        height: 20.5rem;
+        height: 25rem;
         border-radius: 1rem;
     }
     .vidbox{
@@ -997,13 +1051,33 @@ input{
     form{
         width: 50%;
         height: 100%;
-        padding-top: 2rem;
+        padding-top: 1rem;
         border-radius: 0;
     }
-    .download-box{
-        height: 13.5rem;
+    form h4 {
+        display: unset;
+        align-self: baseline;
+        margin-left: 1.9rem;
+        font-family: myFont;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 60px;
+    }
+    .download-box {
         width: 40rem;
         margin-top: 2rem;
+    }
+    .download-box h3{
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .apps2 {
+        flex-direction: row;
+        width: 296px;
+        height: 42px;
+    }
+    .friends {
+        max-width: 20rem;
     }
 
     .connect{
@@ -1025,22 +1099,89 @@ input{
     }
 }
 
-@media screen and (min-width:750px){
+@media screen and (min-width:710px){
     
     .nav-items{
         width: 43.2rem;
+    }
+    .init-txt {
+        height: 16rem;
+    }
+    .init-txt h3{
+        font-size: 70px;
+        line-height: 77.7px;
+    }
+    .init-txt p {
+        font-size: 1.375rem;
+        line-height: 1.25rem;
+    }
+    .button {
+        width: 83px;
+        /* height: 47.5px;
+        position: relative;
+        z-index: 2; */
+        bottom: 112px;
+        left: 135px;
+        /* opacity: 0;
+        transition: 2s; */
+        /* transform: scale(0.8, 0.8); */
+    }
+    .show-button .button {
+        transform: scale(1.9, 1.9) translateX(-15px);
+    }
+    .iphone-top {
+        width: 330px;
+        /* height: 20rem; */
+        margin-bottom: -40rem;
+    }
+    .show-hero .iphone-top{
+        transform: translateY(-23rem);
+    }
+    .menu{
+        /* width: 19rem; */
+        width: 310px;
+        margin-bottom: -7.5em;
+        right: 75px;
+        /* margin-left: -6em; */
+    }
+    .show-hero .menu{
+        transform: translateY(-6rem);
     }
     
     .ft-cont {
         width: 43rem;
     }
+    .link1, .link2, .link3 {
+        font-size: 13px;
+    }
+    .ft-display {
+        padding-left: 2.3rem;
+    }
 
     .guide {
         width: 43rem;
     }
+    .bvnbox {
+        padding-left: 3rem;
+    }
+    .bvn {
+        margin-right: 1rem;
+    }
+    .otpbox, .pinbox {
+        padding-right: 1.5rem;
+    }
+    /* .hd{
+        font-size: 18px;
+    } */
+    .txt{
+        font-size: 16px;
+    }
 
     .formbox{
         width: 43rem;
+    }
+    form h4 {
+        margin-left: 2.1rem;
     }
     .download-box{
         width: 43rem;
@@ -1050,35 +1191,29 @@ input{
     }
 }
 
-@media screen and (min-width:950px){
+@media screen and (min-width:820px){
     .nav-items{
         width: 50rem;
-        border: 1px solid red;
     }
     .init-txt{
         width: 50rem;
-    }
-    .init-txt h3{
-        font-size: 3.8rem;
-        line-height: 3.875rem;
-    }
-    .init-txt p {
-        font-size: 1.375rem;
-        line-height: 1.25rem;
     }
     /* .top-display {
         border: 1px solid red;
     } */
     .button {
-        width: 145px;
+        width: 83px;
         /* height: 47.5px;
         position: relative;
         z-index: 2; */
-        bottom: 90px;
-        left: 142px;
+        bottom: 112px;
+        left: 135px;
         /* opacity: 0;
         transition: 2s; */
         /* transform: scale(0.8, 0.8); */
+    }
+    .show-button .button {
+        transform: scale(1.9, 1.9) translateX(-15px);
     }
     .iphone-top {
         width: 330px;
@@ -1105,35 +1240,57 @@ input{
     .ft-box h3 {
         font-weight: 500;
         font-size: 32px;
+        padding-bottom: 0;
     }
-    .ft-box h4 {
-        font-weight: 700;
-        font-size: 26px;
+    /* .ft-display {
+        border: 1px solid blue;
+        height: 100%;
+        width: 30rem;
+    } */
+    .link-cont {
+        margin-top: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .link1, .link2, .link3 {
+        font-size: 14px;
     }
     .content {
-        border: 1px solid black;
-    }
-    .prg {
-        font-size: 14px;
-        line-height: 22px;
-    }
-    .show-ft .iphone{
-        opacity: 1;
-        transform: scale(1.2, 1.2);
+        margin-bottom: 0;
     }
     
-    .bvnbox{
-        height: 330px;
+    .heading {
+        font-size: 26px;
+        font-weight: 700;
+    }
+    .prg {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .ft-display {
         padding-left: 5rem;
+    }
+    /* .show-ft .iphone{
+        opacity: 1;
+        transform: scale(1.7, 1.7);
+    } */
+    
+    .bvnbox{
+        height: 353px;
+        padding-left: 4.5rem;
     }
     .otpbox, .pinbox {
         height: 450px;
+        padding-left: 2rem;
+        padding-right: 3rem;
     }
     .bvn {
-        margin-right: 1rem;
+        margin-right: 2.5rem;
     }
-    .show-dt .bvn-txt{
-        transform: translateY(14rem);
+    .show-bvn .bvn {
+        transform: translateY(17rem);
+    }
+    .show-bvn .bvn-txt{
+        transform: translateY(13rem);
     }
     /* .otpbox{
         margin-left: 1.8rem;
@@ -1149,57 +1306,74 @@ input{
     }
     .hd{
         font-size: 26px;
-        font-weight: 700;
         line-height: 20px;
     }
     .txt{
         font-size: 18px;
-        font-weight: 600;
-        line-height: 25px;
+        line-height: 28px;
     }
-    #hd1 {
-        font-size: 26px;
-        font-weight: 700;
-        line-height: 20px;
+    .otp-txt, .pin-txt {
+        margin-top: -6.8rem;
     }
-    #txt1 {
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 25px;
+    .show-otp .otp-txt{
+        transform: translateY(11rem);
     }
-    /* .hd{
-        font-size: 0.8rem;
-        line-height: 0.313rem;
-        margin-left: 1.2rem;
-    }
-    .txt{
-        font-size: 0.563rem;
-        line-height: 1.6;
-        margin-left: 1.2rem;
-    } */
-    /* .show-dt .bvn-txt{
-        transform: translateY(-7rem);
-    } */
-    .show-dt .otp-txt{
-        transform: translateY(10rem);
-    }
-    .show-dt .pin-txt{
-        transform: translateY(10rem);
+    .show-pin .pin-txt{
+        transform: translateY(11rem);
     }
     .more-details{
         padding-top: 7rem;
         padding-bottom: 4rem;
     }
     
-    .formbox {
-        height: 25rem;
-    }
     .ad-box{
         padding-bottom: 7rem;
     }
+    .formbox {
+        height: 500px;
+    }
+    form {
+        padding-top: 2rem;
+    }
+    form h4 {
+        margin-left: 2.5rem;
+        font-size: 30px;
+    }
+    .vidbox p {
+        font-size: 20px;
+    }
+    .vidbox span {
+        font-size: 24px;
+    }
+    label {
+        margin-bottom: 2rem;
+    }
+    label:last-of-type {
+        margin-bottom: 2.5rem;
+    }
+    label, input, #message {
+        font-size: 14px;
+    }
+    input, #message {
+        height: 48px;
+    }
+    #submit {
+        height: 48px;
+        font-size: 14px;
+    }
+    .download-box {
+        height: 302px;
+    }
     .download-box h3{
-        font-size: 1.5rem;
-        line-height: 1.8rem;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    #contact {
+        font-weight: 500;
+        font-size: 32px;
+    }
+    .friends{
+        max-width: 25rem;
     }
    
     .formbox, .download-box, .connect {
@@ -1213,16 +1387,16 @@ input{
 @media screen and (min-width: 1200px){
     .init-txt{
         width: 60rem;
-        /* height: 30rem; */
+        height: 14rem;
     }
-    .init-txt h3{
+    /* .init-txt h3{
         font-size: 3.8rem;
         line-height: 3.875rem;
     }
     .init-txt p{
         font-size: 1.375rem;
         line-height: 1.25rem;
-    }
+    } */
     /* .iphone-top {
         width: 22rem;
         height: 22rem;
@@ -1237,16 +1411,80 @@ input{
     .ft-cont {
         width: 60rem;
     }
+    .link1, .link2, .link3 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .fund, .transfer, .receive {
+        height: 20rem;
+    }
+    .show-ft .iphone{
+        transform: scale(1.8, 1.8);
+    }
+
     .guide {
         width: 60rem;
         overflow: hidden;
     }
     .bvnbox{
-        height: 330px;
-        padding-left: 7rem;
+        height: 355px;
+        padding-left: 6rem;
     }
     .bvn {
         margin-right: 3rem;
+        width: 260px;
+    }
+    .otp, .pin {
+        width: 260px;
+    }
+    .show-bvn .bvn {
+        transform: translateY(14.8rem);
+    }
+    .show-otp .otp {
+        transform: translateY(9rem);
+    }
+    .show-pin .pin {
+        transform: translateY(9rem);
+    }
+    .show-otp .otp-txt{
+        transform: translateY(10rem);
+    }
+    .show-pin .pin-txt{
+        transform: translateY(10rem);
+    }
+    .hd{
+        font-size: 30px;
+        line-height: 20px;
+    }
+    .txt{
+        font-size: 24px;
+        line-height: 33.6px;
+    }
+    .heading {
+        font-size: 26px;
+        line-height: 20px;
+    }
+    .prg {
+        font-size: 20px;
+        line-height: 33.6px;
+    }
+    /* .show-bvn .bvn-txt{
+        transform: translateY(13.5rem);
+    }
+    .otp-txt, .pin-txt {
+        margin-top: -5rem;
+    }
+    .show-otp .otp-txt{
+        transform: translateY(7.5rem);
+    }
+    .show-pin .pin-txt{
+        transform: translateY(7.5rem);
+    } */
+    form h4 {
+        margin-left: 3rem;
+    }
+    .friends{
+        max-width: 30rem;
     }
     .formbox, .download-box, .connect {
         width: 60rem;
@@ -1268,10 +1506,6 @@ input{
         font-size: 1.375rem;
         line-height: 1.25rem;
     }
-    /* .iphone-top {
-        width: 23rem;
-        height: 23rem;
-    } */
     .nav-items{
         width: 80rem;
         border: 1px solid red;
