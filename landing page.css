@@ -642,7 +642,7 @@ video{
     color: #FFFFFF;
     font-family: myFont;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 17px;
     /* line-height: 0.938rem; */
 }
 form {
@@ -790,7 +790,7 @@ input{
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    /* line-height: 16.39px; */
+    line-height: 16.39px;
     text-decoration: none;
     color: #FFFFFF;
 }
@@ -993,10 +993,10 @@ input{
         margin-top: -5rem;
     }
     .show-otp .otp-txt{
-        transform: translateY(7.5rem);
+        transform: translateY(8rem);
     }
     .show-pin .pin-txt{
-        transform: translateY(7.5rem);
+        transform: translateY(8rem);
     }
     .bvn-txt {
         /* border: 1px solid red; */
@@ -1045,8 +1045,12 @@ input{
         border-top-left-radius: 1rem;
         border-bottom-left-radius: 1rem;
     }
-    .vidbox p{
+    .vidbox p {
         margin: 2.1rem;
+        font-size: 20px;
+    }
+    .vidbox span {
+        font-size: 24px;
     }
     form{
         width: 50%;
