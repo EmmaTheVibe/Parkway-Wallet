@@ -77,7 +77,7 @@ body{
 .init-txt{
     margin: auto;
     height: 14rem;
-    width: 95%;
+    width: 320px;
     text-align: center;
     font-family: myFont;
     overflow: hidden;
@@ -1724,9 +1724,7 @@ input{
     }
 }
 
-@media screen and (min-width: 1430px){}
-
-@media screen and (min-width: 1550px){
+@media screen and (min-width: 1500px){
     .init-txt{
         width: 80rem;
         height: 17.3rem;
