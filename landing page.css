@@ -357,12 +357,7 @@ body{
 .ft-display{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
-    /* margin-top: 2rem; */
-    /* margin-bottom: 2rem; */
-    /* border: 1px solid blue; */
-    /* height: 100%; */
 }
 .iphone{
     width: 9rem;
@@ -409,12 +404,7 @@ body{
     display: grid; 
     gap: 1rem;
     grid-template-columns: 1fr;
-    /* width: 17rem; */
     width: 320px;
-    /* border: 1px solid red; */
-    /* flex-direction: column;
-    justify-content: center; */
-    /* margin-bottom: 2rem; */
 }
 .bvnbox{
     width: 100%;
