@@ -81,7 +81,8 @@ body{
     text-align: center;
     font-family: myFont;
     overflow: hidden;
-    /* border: 1px solid red; */
+    padding-left: 2rem;
+    padding-right: 2rem;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -91,10 +92,10 @@ body{
     bottom: -14rem;
     font-style: normal;
     font-weight: 500;
-    font-size: 2.7rem;
-    line-height: 3rem;
-    /* font-size: 28px;
-    line-height: 31.99px; */
+    /* font-size: 2.7rem;
+    line-height: 3rem; */
+    font-size: 28px;
+    line-height: 31.99px;
     color: #FFFFFF;
     transition: cubic-bezier(.03,1.11,.96,1.13) 1.3s;
     position: relative;
@@ -114,10 +115,10 @@ body{
     bottom: -14rem;
 }
 .show-hero .init-txt h3{
-    transform: translateY(-13.6rem);
+    transform: translateY(-11.6rem);
 }
 .show-hero .init-txt p{
-    transform: translateY(-13.6rem);
+    transform: translateY(-10.6rem);
 }
 .top-display{
     height: 15rem;
