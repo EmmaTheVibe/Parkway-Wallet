@@ -120,7 +120,7 @@ const observer2 = new IntersectionObserver((entries) => {
         }
     })
 })
-const hiddenElements2 = document.querySelectorAll('.features');
+const hiddenElements2 = document.querySelectorAll('.ft-cont');
 hiddenElements2.forEach((el) => observer2.observe(el))
 
 const observer3 = new IntersectionObserver((entries) => {

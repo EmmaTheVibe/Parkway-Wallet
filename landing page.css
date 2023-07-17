@@ -82,34 +82,46 @@ body{
     font-family: myFont;
     overflow: hidden;
     /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* align-self: center; */
 }
 .init-txt h3{
-    margin-top: 25rem;
+    bottom: -14rem;
     font-style: normal;
     font-weight: 500;
     font-size: 2.7rem;
     line-height: 3rem;
+    /* font-size: 28px;
+    line-height: 31.99px; */
     color: #FFFFFF;
     transition: cubic-bezier(.03,1.11,.96,1.13) 1.3s;
+    position: relative;
 }
 .init-txt p{
+    /* margin-bottom: -10rem; */
     font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 0.8rem;
-    line-height: 0.8rem;
+    /* font-size: 0.8rem;
+    line-height: 0.8rem; */
+    font-size: 18px;
+    line-height: 22px;
     color: #B3B3B3;
     transition: cubic-bezier(.03,1.11,.96,1.12) 1s;
+    position: relative;
+    bottom: -14rem;
 }
 .show-hero .init-txt h3{
-    transform: translateY(-23rem);
+    transform: translateY(-13.6rem);
 }
 .show-hero .init-txt p{
-    transform: translateY(-23rem);
+    transform: translateY(-13.6rem);
 }
 .top-display{
     height: 15rem;
-    width: 19.8rem;
+    width: 320px;
     padding-left: 2rem;
     display: flex;
     align-items: end;
@@ -174,7 +186,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     /* border: 1px solid red; */
-    width: 19.8rem;
+    width: 320px;
 }
 .ft-box{
     /* width: 95%; */
@@ -192,7 +204,7 @@ body{
     animation: fadeEffect .5s;
     margin-bottom: 5rem;
     /* height: 12rem; */
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 @keyframes fadeEffect {
@@ -203,7 +215,7 @@ body{
     height: 8rem;
 }
 .transfer {
-    height: 11.3rem;
+    height: 11.5rem;
     display: none;
 }
 .fund {
@@ -227,7 +239,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
 }
-.link1, .link2, .link3{
+.btn{
     width: 30%;
     height: 40px;
     color: #121212;
@@ -258,6 +270,7 @@ body{
     line-height: 2.5rem;
     color: #222222;
     animation: fadeEffect .5s;
+    margin-bottom: 0.5rem;
 }
 #head2 {
     display: none;
@@ -269,7 +282,7 @@ body{
     font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     /* font-size: 14px; */
     line-height: 1.2rem;
     color: #4D4D4D;
@@ -277,15 +290,14 @@ body{
     transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
     opacity: 0;
 }
+.stores {
+    display: none;
+}
 .show-ft .prg{
     transform: translateY(8.3rem);
     opacity: 1;
 }
-.show-ft .apps{
-    transform: translateY(9rem);
-    opacity: 1;
-}
-.apps{
+/* .apps{
     height: fit-content;
     width: 11.25rem;
     display: flex;
@@ -333,10 +345,13 @@ body{
     font-weight: 700;
     font-size: 0.375rem;
     line-height: 0.563rem;
-}
+} */
+
+
 .ft-display{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
     align-items: center;
     /* margin-top: 2rem; */
     /* margin-bottom: 2rem; */
@@ -346,7 +361,7 @@ body{
 .iphone{
     width: 9rem;
     transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
-    opacity: 0.3;
+    opacity: 0;
     /* animation: fadeEffect .1s; */
     /* position: absolute; */
 }
@@ -389,7 +404,7 @@ body{
     gap: 1rem;
     grid-template-columns: 1fr;
     /* width: 17rem; */
-    width: 19.8rem;
+    width: 320px;
     /* border: 1px solid red; */
     /* flex-direction: column;
     justify-content: center; */
@@ -576,7 +591,7 @@ body{
     font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 13.5px;
+    font-size: 14.5px;
     line-height: 19.6px;
     color: #666666;
 }
@@ -605,7 +620,7 @@ body{
     margin-top: 0;
     grid-column: span 2;
     height: 541px;
-    width: 19.8rem;
+    width: 320px;
     margin-bottom: 2rem;
     border-radius: 1rem;
     border: 0.719528px solid #E6E6E6;;
@@ -711,13 +726,15 @@ input{
 }
 .download-box{
     height: 290px;
-    width: 19.8rem;
+    width: 320px;
+    /* padding-top: 20%; */
+    padding-top: 3.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    /* justify-content: center; */
     align-items: center;
     background-color: #121212;
-    background-image: url(./images/bottomvector.svg);
+    background-image: url(./images/bottomvector2.svg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 1.5rem;
@@ -733,7 +750,7 @@ input{
     inset: 0;
     z-index: -1;
     background: #121212;
-    opacity: .5;
+    opacity: 0;
     border-radius: 1.5rem;
 }
 .download-box h3{
@@ -744,6 +761,7 @@ input{
     line-height: 22.85px;
     color: #FFFFFF;
     text-align: center;
+    margin-bottom: 2rem;
 }
 .apps2{
     height: 94px;
@@ -759,8 +777,8 @@ input{
 .appstore2, .playstore2{
     width: 140px;
     height: 42px;
-    padding-left: 10px;
-    background-color: #121212;
+    padding-left: 8px;
+    /* background-color: #121212; */
     border-radius: 8px;
     border: 0.063rem solid #FFFFFF;;
     display: flex;
@@ -827,7 +845,7 @@ input{
     padding-bottom: 2rem;
 }
 .connect{
-    width: 19.8rem;
+    width: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -872,7 +890,7 @@ input{
     color: #FFFFFF;
 }
 .docs{
-    width: 19.8rem;
+    width: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -912,14 +930,23 @@ input{
         margin-bottom: -4em;
         margin-left: -8rem;
     } */
+    .init-txt {
+        height: 10rem;
+    }
+    .show-hero .init-txt h3{
+        transform: translateY(-12.6rem);
+    }
+    .show-hero .init-txt p{
+        transform: translateY(-12.6rem);
+    }
 
 
     .features{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding-top: 6rem;
-        padding-bottom: 7rem;
+        padding-top: 2rem;
+        padding-bottom: 0rem;
     }
     .ft-cont {
         width: 40rem;
@@ -932,24 +959,105 @@ input{
     .ft-box{
         width: 60%;
         /* margin-right: 1rem; */
-        height: 30rem;
+        height: 33rem;
     }
-    .content{
-        border: 1px solid green;
+    .apps{
+        width: fit-content;
+        height: 42px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .apps a {
+        text-decoration: none;
+    }
+    .appstore, .playstore{
+        width: 140px;
+        height: 42px;
+        padding-left: 8px;
+        margin-right: 10px;
+        border-radius: 8px;
+        border: 0.031rem solid #121212;
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-evenly; */
+        align-items: center;
+    }
+    .appstore a{
+        font-family: "Manrope", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16.39px;
+        text-decoration: none;
+        color: #121212;
+    }
+    .appstore img{
+        width: 20px;
+        margin-right: 9px;
+    }
+    .playstore img{
+        width: 20px;
+        margin-right: 9px;
+    }
+    .playstore a{
+        font-family: "Manrope", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16.39px;
+        text-decoration: none;
+        color: #121212;
+    }
+    .apps span{
+        font-family: "Manrope", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        /* line-height: 16.39px; */
     }
     .fund, .transfer, .receive {
         height: 16rem;
     }
+    .stores {
+        width: 15rem;
+        display: unset;
+        transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
+        opacity: 0;
+    }
+    #stores-t {
+        margin-top: -6.5rem;
+    }
+    #stores-f {
+        margin-top: -3.5rem;
+    }
+    .show-ft #stores-r{
+        transform: translateY(8.5rem);
+        opacity: 1;
+    }
+    .show-ft #stores-t{
+        transform: translateY(12rem);
+        opacity: 1;
+    }
+    .show-ft #stores-f{
+        transform: translateY(10.5rem);
+        opacity: 1;
+    }
     .ft-display {
         /* border: 1px solid blue; */
-        height: 30rem;
+        /* height: 30rem; */
         width: 40%;
+        /* margin-top: 6rem; */
         /* justify-content: end; */
         padding-left: 0.8rem;
     }
-    .show-ft .iphone{
-        transform: scale(1.7, 1.7);
+    .iphone {
+        margin-top: -4rem;
     }
+    /* .show-ft .iphone{
+        transform: scale(1.7, 1.7);
+    } */
 
     .guide{
         width: 40rem;
@@ -1007,11 +1115,19 @@ input{
     .otp-txt, .pin-txt {
         width: 100%;
     }
-    .hd{
+    .hd {
         font-size: 18px;
         /* line-height: 22.4px; */
     }
-    .txt{
+    .txt {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .heading {
+        font-size: 18px;
+        /* line-height: 22.4px; */
+    }
+    .prg {
         font-size: 15px;
         line-height: 20px;
     }
@@ -1070,6 +1186,7 @@ input{
     .download-box {
         width: 40rem;
         margin-top: 2rem;
+        padding-top: 5rem;
     }
     .download-box h3{
         font-size: 22px;
@@ -1114,10 +1231,18 @@ input{
     .init-txt h3{
         font-size: 70px;
         line-height: 77.7px;
+        bottom: -16rem;
     }
     .init-txt p {
         font-size: 1.375rem;
         line-height: 1.25rem;
+        bottom: -16rem;
+    }
+    .show-hero .init-txt h3{
+        transform: translateY(-14rem);
+    }
+    .show-hero .init-txt p{
+        transform: translateY(-14rem);
     }
     .button {
         width: 83px;
@@ -1152,16 +1277,22 @@ input{
         transform: translateY(-6rem);
     }
     
+    .features h3 {
+        font-size: 26px;
+    }
     .ft-cont {
         width: 43rem;
     }
-    .link1, .link2, .link3 {
+    .btn {
         font-size: 13px;
     }
     .ft-display {
         padding-left: 2.3rem;
     }
 
+    .more-details h3 {
+        font-size: 26px;
+    }
     .guide {
         width: 43rem;
     }
@@ -1174,10 +1305,16 @@ input{
     .otpbox, .pinbox {
         padding-right: 1.5rem;
     }
-    /* .hd{
-        font-size: 18px;
-    } */
-    .txt{
+    .hd {
+        font-size: 20px;
+    }
+    .txt {
+        font-size: 16px;
+    }
+    .heading {
+        font-size: 20px;
+    }
+    .prg {
         font-size: 16px;
     }
 
@@ -1186,9 +1323,20 @@ input{
     }
     form h4 {
         margin-left: 2.1rem;
+        font-size: 24px;
+    }
+    label {
+        margin-bottom: 1rem;
     }
     .download-box{
         width: 43rem;
+    }
+    .download-box h3{
+        font-size: 26px;
+        line-height: 33px;
+    }
+    #contact {
+        font-size: 26px;
     }
     .connect{
         width: 43rem;
@@ -1238,13 +1386,20 @@ input{
         transform: translateY(-6rem);
     }
     
+    .features {
+        padding-top: 4rem;
+        padding-bottom: 8rem;
+    }
     .ft-cont {
         width: 50rem;
     }
     .ft-box h3 {
         font-weight: 500;
-        font-size: 32px;
+        font-size: 36px;
         padding-bottom: 0;
+    }
+    .fund, .transfer, .receive {
+        height: 20rem;
     }
     /* .ft-display {
         border: 1px solid blue;
@@ -1255,28 +1410,48 @@ input{
         margin-top: 2.5rem;
         margin-bottom: 2rem;
     }
-    .link1, .link2, .link3 {
+    .btn {
         font-size: 14px;
+        height: 51px;
     }
     .content {
         margin-bottom: 0;
     }
-    
+    .stores {
+        width: 285px;
+    }
+    .show-ft #stores-r{
+        transform: translateY(9.5rem);
+        opacity: 1;
+    }
+    .show-ft #stores-t{
+        transform: translateY(13rem);
+        opacity: 1;
+    }
+    .show-ft #stores-f{
+        transform: translateY(11.5rem);
+        opacity: 1;
+    }
+
     .heading {
-        font-size: 26px;
+        font-size: 30px;
         font-weight: 700;
+        margin-bottom: 1.5rem;
     }
     .prg {
         font-size: 18px;
-        line-height: 25px;
+        line-height: 28px;
     }
     .ft-display {
+        /* padding-top: 4rem; */
         padding-left: 5rem;
     }
-    /* .show-ft .iphone{
-        opacity: 1;
+    .iphone {
+        margin-bottom: -2rem;
+    }
+    .show-ft .iphone{
         transform: scale(1.7, 1.7);
-    } */
+    }
     
     .bvnbox{
         height: 353px;
@@ -1302,7 +1477,7 @@ input{
     } */
     .more-details h3 {
         font-weight: 500;
-        font-size: 32px;
+        font-size: 36px;
     }
     .guide {
         width: 50rem;
@@ -1369,8 +1544,12 @@ input{
         height: 302px;
     }
     .download-box h3{
-        font-size: 30px;
+        font-size: 36px;
         line-height: 40px;
+        margin-bottom: 3rem;
+    }
+    .apps2 {
+        margin-top: -2rem;
     }
     #contact {
         font-weight: 500;
@@ -1392,6 +1571,7 @@ input{
     .init-txt{
         width: 60rem;
         height: 14rem;
+        /* border: 1px solid red; */
     }
     /* .init-txt h3{
         font-size: 3.8rem;
@@ -1410,20 +1590,31 @@ input{
     } */
     .nav-items{
         width: 60rem;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
+    }
+
+    .features {
+        padding-top: 5rem;
     }
     .ft-cont {
         width: 60rem;
     }
-    .link1, .link2, .link3 {
+    .ft-box {
+        height: 37.6rem;
+    }
+    .fund, .receive, .transfer {
+        height: 30rem;
+    }
+    .link-cont {
+        margin-top: 2.5rem;
+        margin-bottom: 3rem;
+    }
+    .btn {
         font-size: 18px;
         font-weight: 600;
     }
-    .fund, .transfer, .receive {
-        height: 20rem;
-    }
     .show-ft .iphone{
-        transform: scale(1.8, 1.8);
+        transform: scale(1.9, 1.9);
     }
 
     .guide {
@@ -1465,11 +1656,11 @@ input{
         line-height: 33.6px;
     }
     .heading {
-        font-size: 26px;
+        font-size: 30px;
         line-height: 20px;
     }
     .prg {
-        font-size: 20px;
+        font-size: 24px;
         line-height: 33.6px;
     }
     /* .show-bvn .bvn-txt{
@@ -1498,28 +1689,160 @@ input{
     }
 }
 
-@media screen and (min-width: 1920px){
+@media screen and (min-width: 1430px){}
+
+@media screen and (min-width: 1500px){
     .init-txt{
         width: 80rem;
+        height: 17.3rem;
+        /* border: 1px solid red; */
     }
     .init-txt h3{
-        font-size: 3.8rem;
-        line-height: 3.875rem;
+        font-size: 100px;
+        line-height: 100px;
     }
     .init-txt p{
-        font-size: 1.375rem;
-        line-height: 1.25rem;
+        font-size: 2rem;
+        line-height: 1.9rem;
     }
     .nav-items{
         width: 80rem;
-        border: 1px solid red;
+        /* border: 1px solid red; */
+    }
+
+    /* .features {
+        padding-bottom: 12rem;
+    } */
+    .features h3 {
+        font-size: 44px;
     }
     .ft-cont {
         width: 80rem;
     }
+    .ft-box {
+        height: 40rem;
+    }
+    .btn {
+        height: 62px;
+        font-size: 22px;
+    }
+    .heading {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .prg {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .ft-box {
+        /* border: 1px solid red; */
+    }
+    .ft-display {
+        /* border: 1px solid red; */
+    }
+    .stores {
+        width: 20rem;
+    }
+    /* .iphone {
+        margin-top: -14rem;
+    } */
+    .show-ft .iphone{
+        transform: scale(2.2, 2.2);
+    }
+
+
+    .more-details h3 {
+        font-size: 44px;
+        margin-bottom: 3rem;
+    }
     .guide {
         width: 80rem;
         overflow: hidden;
+    }
+    .bvnbox {
+        height: 395px;
+        padding-left: 9rem;
+    }
+    .otpbox, .pinbox {
+        height: 520px;
+    }
+    .bvn {
+        margin-top: -30rem;
+        margin-right: 7rem;
+        width: 300px;
+    }
+    .otp, .pin {
+        width: 300px;
+    }
+    .bvn-txt {
+        margin-top: -12rem;
+    }
+    .otp-txt, .pin-txt {
+        margin-top: -10rem;
+    }
+    .show-bvn .bvn {
+        transform: translateY(17rem);
+    }
+    .show-otp .otp {
+        transform: translateY(11.5rem);
+    }
+    .show-pin .pin {
+        transform: translateY(11.5rem);
+    }
+    .show-bvn .bvn-txt {
+        transform: translateY(16rem);
+    }
+    .show-otp .otp-txt{
+        transform: translateY(12.5rem);
+    }
+    .show-pin .pin-txt{
+        transform: translateY(12.5rem);
+    }
+    .hd {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .txt {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .formbox {
+        height: 620px;
+    }
+    form h4 {
+        margin-left: 4rem;
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .vidbox p {
+        font-size: 28px;
+    }
+    .vidbox span {
+        font-size: 33px;
+    }
+    label {
+        margin-bottom: 2rem;
+    }
+    label:last-of-type {
+        margin-bottom: 2rem;
+    }
+    label, input, #message {
+        font-size: 24px;
+    }
+    input, #message {
+        height: 68px;
+        margin-top: 1.1rem;
+    }
+    #submit {
+        height: 68px;
+        font-size: 24px;
+    }
+    .download-box {
+        height: 340px;
+    }
+    #contact {
+        font-size: 44px;
     }
     .formbox, .download-box, .connect {
         width: 80rem;
