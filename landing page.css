@@ -1039,15 +1039,15 @@ input{
         margin-top: -3.5rem;
     }
     .show-ft #stores-r{
-        transform: translateY(8.5rem);
+        transform: translateY(13.5rem);
         opacity: 1;
     }
     .show-ft #stores-t{
-        transform: translateY(12rem);
+        transform: translateY(16.8rem);
         opacity: 1;
     }
     .show-ft #stores-f{
-        transform: translateY(10.5rem);
+        transform: translateY(15.3rem);
         opacity: 1;
     }
     .ft-display {
@@ -1438,15 +1438,15 @@ input{
         width: 285px;
     }
     .show-ft #stores-r{
-        transform: translateY(9.5rem);
+        transform: translateY(14rem);
         opacity: 1;
     }
     .show-ft #stores-t{
-        transform: translateY(13rem);
+        transform: translateY(17.4rem);
         opacity: 1;
     }
     .show-ft #stores-f{
-        transform: translateY(11.5rem);
+        transform: translateY(16rem);
         opacity: 1;
     }
 
