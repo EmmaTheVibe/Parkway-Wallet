@@ -212,14 +212,14 @@ body{
     to {opacity: 1;}
 }
 .receive {
-    height: 8.5rem;
+    height: 10rem;
 }
 .transfer {
-    height: 12rem;
+    height: 13.8rem;
     display: none;
 }
 .fund {
-    height: 9.5rem;
+    height: 11rem;
     display: none;
 }
 .ft-box h3{
@@ -290,9 +290,9 @@ body{
     font-weight: 400;
     font-size: 16px;
     /* font-size: 14px; */
-    line-height: 20px;
+    line-height: 23px;
     color: #4D4D4D;
-    margin-top: -8.3rem;
+    margin-top: -13rem;
     transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
     opacity: 0;
 }
@@ -300,7 +300,7 @@ body{
     display: none;
 }
 .show-ft .prg{
-    transform: translateY(8.3rem);
+    transform: translateY(13rem);
     opacity: 1;
 }
 /* .apps{
@@ -597,7 +597,7 @@ body{
     font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 14.5px;
+    font-size: 14px;
     line-height: 19.6px;
     color: #666666;
 }
@@ -1289,9 +1289,9 @@ input{
     .ft-cont {
         width: 43rem;
     }
-    .btn {
+    /* .btn {
         font-size: 13px;
-    }
+    } */
     .ft-display {
         padding-left: 2.3rem;
     }
@@ -1399,6 +1399,9 @@ input{
     .ft-cont {
         width: 50rem;
     }
+    .ft-box{
+        height: 34rem;
+    }
     .ft-box h3 {
         font-weight: 500;
         font-size: 36px;
@@ -1417,9 +1420,17 @@ input{
         margin-bottom: 2rem;
     }
     .btn {
-        font-size: 14px;
+        font-size: 16px;
         height: 51px;
+        width: 140px;
     }
+    .link2 {
+        width: 144px;
+    }
+    .link3 {
+        width: 176px;
+    }
+    
     .content {
         margin-bottom: 0;
     }
@@ -1606,7 +1617,7 @@ input{
         width: 60rem;
     }
     .ft-box {
-        height: 37.6rem;
+        height: 38rem;
     }
     .fund, .receive, .transfer {
         height: 30rem;
