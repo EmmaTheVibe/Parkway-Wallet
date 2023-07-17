@@ -1069,7 +1069,7 @@ input{
         height: 280px;
     }
     .otpbox, .pinbox {
-        padding-left: 1.5rem;
+        padding-left: 0.8rem;
         padding-right: 1rem;
         align-items: start;
         margin-bottom: 0;
@@ -1116,8 +1116,8 @@ input{
         /* line-height: 22.4px; */
     }
     .txt {
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 16px;
+        line-height: 23px;
     }
     .heading {
         font-size: 18px;
@@ -1125,7 +1125,7 @@ input{
     }
     .prg {
         font-size: 15px;
-        line-height: 20px;
+        line-height: 22px;
     }
     /* #hd1 {
         color: #FFFFFF;
@@ -1295,23 +1295,25 @@ input{
     .bvnbox {
         padding-left: 3rem;
     }
+    .otpbox, .pinbox {
+        padding-left: 0.5rem;
+    }
     .bvn {
         margin-right: 1rem;
-    }
-    .otpbox, .pinbox {
-        padding-right: 1.5rem;
     }
     .hd {
         font-size: 20px;
     }
     .txt {
         font-size: 16px;
+        line-height: 23px;
     }
     .heading {
         font-size: 20px;
     }
     .prg {
         font-size: 16px;
+        line-height: 23px;
     }
 
     .formbox{
@@ -1576,7 +1578,8 @@ input{
 
 @media screen and (min-width: 1200px){
     .init-txt{
-        width: 60rem;
+        /* width: 60rem; */
+        width: 900px;
         height: 14rem;
         /* border: 1px solid red; */
     }
@@ -1596,7 +1599,8 @@ input{
         width: 21rem;
     } */
     .nav-items{
-        width: 60rem;
+        /* width: 60rem; */
+        width: 900px;
         /* border: 1px solid blue; */
     }
 
@@ -1604,13 +1608,14 @@ input{
         padding-top: 5rem;
     }
     .ft-cont {
-        width: 60rem;
+        /* width: 60rem; */
+        width: 900px;
     }
     .ft-box {
-        height: 38rem;
+        height: 40.8rem;
     }
     .fund, .receive, .transfer {
-        height: 30rem;
+        height: 39rem;
     }
     .link-cont {
         margin-top: 2.5rem;
@@ -1620,17 +1625,35 @@ input{
         font-size: 18px;
         font-weight: 600;
     }
+    .show-ft #stores-r{
+        transform: translateY(20.5rem);
+        opacity: 1;
+    }
+    .show-ft #stores-t{
+        transform: translateY(24rem);
+        opacity: 1;
+    }
+    .show-ft #stores-f{
+        transform: translateY(22.5rem);
+        opacity: 1;
+    }
     .show-ft .iphone{
         transform: scale(1.9, 1.9);
     }
 
     .guide {
-        width: 60rem;
+        /* width: 60rem; */
+        width: 900px;
         overflow: hidden;
     }
     .bvnbox{
         height: 355px;
         padding-left: 6rem;
+    }
+    .otpbox, .pinbox {
+        height: 450px;
+        padding-left: 2.2rem;
+        padding-right: 3rem;
     }
     .bvn {
         margin-right: 3rem;
@@ -1669,6 +1692,10 @@ input{
     .prg {
         font-size: 24px;
         line-height: 33.6px;
+        margin-top: -19rem;
+    }
+    .show-ft .prg {
+        transform: translateY(19.5rem);
     }
     /* .show-bvn .bvn-txt{
         transform: translateY(13.5rem);
@@ -1689,7 +1716,8 @@ input{
         max-width: 30rem;
     }
     .formbox, .download-box, .connect {
-        width: 60rem;
+        /* width: 60rem; */
+        width: 900px;
     }
     .docs {
         width: 50rem;
@@ -1698,7 +1726,7 @@ input{
 
 @media screen and (min-width: 1430px){}
 
-@media screen and (min-width: 1500px){
+@media screen and (min-width: 1550px){
     .init-txt{
         width: 80rem;
         height: 17.3rem;
@@ -1717,29 +1745,50 @@ input{
         /* border: 1px solid red; */
     }
 
-    /* .features {
-        padding-bottom: 12rem;
-    } */
+    .features {
+        padding-top: 6rem;
+    }
     .features h3 {
-        font-size: 44px;
+        font-size: 48px;
     }
     .ft-cont {
         width: 80rem;
     }
+    .content {
+        height: 49rem;
+    }
     .ft-box {
-        height: 40rem;
+        height: 51rem;
+    }
+    .link-cont {
+        margin-top: 2.5rem;
+        margin-bottom: 4rem;
     }
     .btn {
-        height: 62px;
-        font-size: 22px;
+        height: 68px;
+        font-size: 26px;
+        width: 200px;
     }
+    /* .link2 {
+        width: 144px;
+    }
+    .link3 {
+        width: 176px;
+    } */
     .heading {
-        font-size: 36px;
+        font-size: 40px;
         line-height: 40px;
     }
     .prg {
-        font-size: 30px;
-        line-height: 36px;
+        font-size: 34px;
+        line-height: 46px;
+        margin-top: -27rem;
+    }
+    /* .content {
+        overflow: visible;
+    } */
+    .show-ft .prg {
+        transform: translateY(27rem);
     }
     .ft-box {
         /* border: 1px solid red; */
@@ -1747,19 +1796,43 @@ input{
     .ft-display {
         /* border: 1px solid red; */
     }
+    /* .iphone {
+        margin-bottom: -6rem;
+    } */
     .stores {
         width: 20rem;
     }
-    /* .iphone {
-        margin-top: -14rem;
+    /* .stores {
+        width: 15rem;
+        display: unset;
+        transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
+        opacity: 0;
     } */
+    #stores-t {
+        margin-top: -6.5rem;
+    }
+    #stores-f {
+        margin-top: -3.5rem;
+    }
+    .show-ft #stores-r{
+        transform: translateY(28.5rem);
+        opacity: 1;
+    }
+    .show-ft #stores-t{
+        transform: translateY(31.8rem);
+        opacity: 1;
+    }
+    .show-ft #stores-f{
+        transform: translateY(30.5rem);
+        opacity: 1;
+    }
     .show-ft .iphone{
-        transform: scale(2.2, 2.2);
+        transform: scale(2.5, 2.5);
     }
 
 
     .more-details h3 {
-        font-size: 44px;
+        font-size: 48px;
         margin-bottom: 3rem;
     }
     .guide {
@@ -1767,15 +1840,17 @@ input{
         overflow: hidden;
     }
     .bvnbox {
-        height: 395px;
+        height: 450px;
         padding-left: 9rem;
     }
     .otpbox, .pinbox {
-        height: 520px;
+        height: 550px;
+        padding-left: 3.5rem;
+        padding-right: 5rem;
     }
     .bvn {
         margin-top: -30rem;
-        margin-right: 7rem;
+        margin-right: 6.5rem;
         width: 300px;
     }
     .otp, .pin {
@@ -1788,7 +1863,7 @@ input{
         margin-top: -10rem;
     }
     .show-bvn .bvn {
-        transform: translateY(17rem);
+        transform: translateY(19rem);
     }
     .show-otp .otp {
         transform: translateY(11.5rem);
@@ -1797,21 +1872,21 @@ input{
         transform: translateY(11.5rem);
     }
     .show-bvn .bvn-txt {
-        transform: translateY(16rem);
+        transform: translateY(17rem);
     }
     .show-otp .otp-txt{
-        transform: translateY(12.5rem);
+        transform: translateY(13rem);
     }
     .show-pin .pin-txt{
-        transform: translateY(12.5rem);
+        transform: translateY(13rem);
     }
     .hd {
-        font-size: 36px;
+        font-size: 40px;
         line-height: 40px;
     }
     .txt {
-        font-size: 30px;
-        line-height: 36px;
+        font-size: 34px;
+        line-height: 46px;
     }
 
     .formbox {
@@ -1849,7 +1924,7 @@ input{
         height: 340px;
     }
     #contact {
-        font-size: 44px;
+        font-size: 48px;
     }
     .formbox, .download-box, .connect {
         width: 80rem;
