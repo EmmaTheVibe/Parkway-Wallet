@@ -15,6 +15,13 @@ const transfer = document.querySelector(".transfer")
 const fund = document.querySelector(".fund")
 const topButton = document.querySelector(".button")
 
+$(function () {
+    $(document).scroll(function () {
+        const $nav = $(".navbar");
+        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+    });
+});
+
 buttons.forEach(active => {
     active.addEventListener("click", () => {
         document.querySelector('.clicked')?.classList.remove('clicked')

@@ -21,25 +21,31 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #121212;
+    /* background-color: #121212; */
     position: fixed;
     top: 0;
     z-index: 5;
+}
+.navbar.scrolled {
+    background: #121212;
+    transition: background 200ms;
 }
 .nav-items{
     width: 96.5%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .logo{
-    height: 1.8rem;
+    width: 100.73px;
+    height: 18px;
 }
 .download{
-    width: 6.563rem;
-    height: 1.875rem;
+    width: 115px;
+    height: 28px;
     background-color: #F9956B;
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 4px;
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 600;
@@ -51,7 +57,8 @@ body{
 
 .hero{
     width: 100%;
-    padding-top: 6rem;
+    padding-top: 20vh;
+    /* padding-top: ; */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -75,18 +82,24 @@ body{
     opacity: .9;
 }
 .init-txt{
-    margin: auto;
-    height: 14rem;
-    width: 320px;
+    /* margin: auto; */
+    justify-self: center;
+    /* margin-bottom: 9rem; */
+    /* margin-bottom: 0; */
+    height: 12.8rem;
+    /* width: 320px; */
+    width: 80%;
     text-align: center;
     font-family: myFont;
     overflow: hidden;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     display: flex;
     flex-direction: column;
-    position: relative;
-    /* align-self: center; */
+    /* position: relative;
+    bottom: 50%; */
+    /* top: 19vh; */
+    /* border: 1px solid red; */
 }
 .init-txt h3{
     bottom: -14rem;
@@ -118,31 +131,35 @@ body{
     transform: translateY(-11.6rem);
 }
 .show-hero .init-txt p{
-    transform: translateY(-10.6rem);
+    transform: translateY(-11rem);
 }
 .top-display{
-    height: 15rem;
+    margin-top: 8rem;
     width: 320px;
     padding-left: 2rem;
     display: flex;
     align-items: end;
     justify-content: center;
+    /* position: relative;
+    bottom: 0; */
+    /* border: 1px solid red; */
 }
 .button {
-    width: 57px;
+    width: 50px;
     /* height: 47.5px; */
     position: relative;
     z-index: 2;
-    bottom: 72.5px;
-    left: 93.5px;
+    bottom: 58px;
+    left: 80px;
     opacity: 0;
     transition: cubic-bezier(.03,1.11,.96,1.12) .1s;
 }
 .iphone-top{
     /* width: 15rem; */
-    width: 230px;
+    /* width: 230px; */
+    width: 196.2px;
     /* height: 15rem; */
-    /* height: 393px; */
+    height: 393px;
     margin-bottom: -21.5rem;
     z-index: 0;
     position: relative;
@@ -151,24 +168,26 @@ body{
     /* border: 1px solid red; */
 }
 .menu{
-    width: 11rem;
+    /* width: 11rem; */
+    width: 129px;
+    height: 66.8px;
     /* margin-left: -5rem; */
     margin-bottom: -3rem;
     z-index: 1;
     position: relative;
     transition: cubic-bezier(.03,1.11,.96,1.12) 1s;
-    right: 100px;
+    right: 83px;
     /* border: 1px solid red; */
 }
 .show-hero .iphone-top{
-    transform: translateY(-9.3rem);
+    transform: translateY(-9.6rem);
 }
 .show-hero .menu{
-    transform: translateY(-1rem);
+    transform: translateY(-1.8rem);
 }
 .show-button .button{
     opacity: 1;
-    transform: scale(1.9, 1.9) translateX(-10px);
+    transform: scale(1.9, 1.9) translateX(-8.5px);
 }
 
 .features{
@@ -187,7 +206,8 @@ body{
     justify-content: space-evenly;
     align-items: center;
     /* border: 1px solid red; */
-    width: 320px;
+    /* width: 320px; */
+    width: 80%;
 }
 .ft-box{
     /* width: 95%; */
@@ -383,7 +403,7 @@ body{
 .more-details{
     width: 100%;
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    /* padding-bottom: 4rem; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -391,7 +411,7 @@ body{
     background: #FFFFFF;
 }
 .more-details h3{
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     font-family: myFont;
     font-style: normal;
     font-weight: 500;
@@ -616,12 +636,11 @@ body{
     flex-direction: column;
     margin-top: 0;
     grid-column: span 2;
-    height: 541px;
+    height: 585px;
     width: 320px;
-    margin-bottom: 2rem;
+    margin-bottom: 3.9rem;
     border-radius: 1rem;
     border: 0.719528px solid #E6E6E6;;
-    box-shadow: 0rem 2.5rem 2.5rem 0.313rem rgba(0, 0, 0, 0.12);
 }
 .vidbox{
     height: 40%;
@@ -643,6 +662,7 @@ video{
 .vidbox p{
     align-self: end;
     margin: 1.1rem;
+    /* margin-left: 2rem; */
     color: #999999;
     font-family: "Manrope", sans-serif;
     font-style: normal;
@@ -669,7 +689,7 @@ form h4 {
     display: none;
 }
 label{
-    width: 80%;
+    width: 90%;
     margin-bottom: 10px;
     font-family: "Manrope", sans-serif;
     font-style: normal;
@@ -696,6 +716,7 @@ input{
     width: 100%;
     height: 3.5rem;
     margin-top: 5px;
+    margin-bottom: 10px;
     font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -709,7 +730,7 @@ input{
     border-radius: 4px;
 }
 #submit{
-    width: 80%;
+    width: 90%;
     height: 2.5rem;
     font-family: "Manrope", sans-serif;
     font-style: normal;
@@ -817,7 +838,7 @@ input{
     /* line-height: 16.39px; */
 }
 #contact {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-family: myFont;
     font-style: normal;
     font-weight: 500;
@@ -838,66 +859,74 @@ input{
     justify-content: center;
     align-items: center;
     background-color: #121212;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    /* padding-top: 2rem; */
+    /* padding-bottom: 2rem; */
 }
 .connect{
-    width: 320px;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-bottom: 0.063rem solid white;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    /* margin-bottom: 1rem; */
 }
 .logo2{
-    height: 1rem;
+    width: 100.73px;
+    height: 18px;
     margin-bottom: 13px;
 }
 .contact{
-    width: 12rem;
+    width: 197px;
     height: 1.875rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 13px;
 }
 .socials{
-    width: 8rem;
+    width: 145px;
     height: 1.875rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    /* border: 1px solid red; */
 }
 .socials img{
-    width: 0.8rem;
+    width: 24px;
+    height: 24px;
 }
-.fb{
+/* .fb{
     max-width: 0.5rem;
-}
+} */
 .contact a{
     text-decoration: none;
     font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 0.7rem;
+    font-size: 12px;
     line-height: 0.563rem;
     color: #FFFFFF;
 }
 .docs{
     width: 320px;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid red; */
 }
 .docs a{
     font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 0.6rem;
+    font-size: 12px;
     line-height: 1rem;
     color: #FFFFFF;
     text-decoration: underline;
@@ -912,12 +941,12 @@ input{
     }
     .hero{
         height: unset;
-        justify-content: center;
-        padding-top: 8rem;
+        /* justify-content: center; */
+        /* padding-top: 9rem; */
     }
-    .top-display{
+    /* .top-display{
         margin-top: 10rem;
-    }
+    } */
     /* .iphone-top{
         width: 18rem;
         height: 18rem;
@@ -928,14 +957,17 @@ input{
         margin-left: -8rem;
     } */
     .init-txt {
-        height: 10rem;
+        /* height: 10rem; */
+        /* top: 0; */
+        /* margin-bottom: 5rem; */
+        /* border: 1px solid red; */
     }
-    .show-hero .init-txt h3{
+    /* .show-hero .init-txt h3{
         transform: translateY(-12.6rem);
     }
     .show-hero .init-txt p{
         transform: translateY(-12.6rem);
-    }
+    } */
 
 
     .features{
@@ -1141,7 +1173,9 @@ input{
         display: none;
     }
 
-
+    .ad-box {
+        padding-top: 3.9rem;
+    }
     .formbox{
         flex-direction: row;
         width: 40rem;
@@ -1180,6 +1214,9 @@ input{
         font-size: 26px;
         line-height: 60px;
     }
+    label, #submit {
+        width: 80%;
+    }
     .download-box {
         width: 40rem;
         margin-top: 2rem;
@@ -1197,24 +1234,33 @@ input{
     .friends {
         max-width: 20rem;
     }
-
+ 
+    .footer {
+        padding-top: 2rem;
+    }
     .connect{
         width: 40rem;
-        margin-bottom: 2rem;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
     .logo2{
         margin-bottom: unset;
+    }
+    .contact {
+        margin-bottom: 0;
+    }
+    .contact a {
+        font-size: 14px;
     }
     .docs{
         width: 30rem;
         flex-direction: row;
         justify-content: space-between;
     }
-    .docs a{
-        margin-right: 1em;
-    }
+    /* .docs a{
+        font-size: 14px;
+    } */
 }
 
 @media screen and (min-width:710px){
@@ -1224,54 +1270,58 @@ input{
     }
     .init-txt {
         height: 16rem;
+        /* width: 100%; */
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .init-txt h3{
-        font-size: 70px;
-        line-height: 77.7px;
+        font-size: 60px;
+        line-height: 68px;
         bottom: -16rem;
     }
     .init-txt p {
-        font-size: 1.375rem;
-        line-height: 1.25rem;
+        font-size: 20px;
+        line-height: 25px;
         bottom: -16rem;
     }
     .show-hero .init-txt h3{
         transform: translateY(-14rem);
     }
     .show-hero .init-txt p{
-        transform: translateY(-14rem);
+        transform: translateY(-12.8rem);
     }
     .button {
-        width: 83px;
+        width: 78px;
         /* height: 47.5px;
         position: relative;
         z-index: 2; */
-        bottom: 112px;
-        left: 135px;
-        /* opacity: 0;
-        transition: 2s; */
+        bottom: 101px;
+        left: 127px;
+        opacity: 0;
+        /* transition: 2s; */
         /* transform: scale(0.8, 0.8); */
     }
     .show-button .button {
-        transform: scale(1.9, 1.9) translateX(-15px);
+        transform: scale(1.9, 1.9) translateX(-13.1px);
     }
     .iphone-top {
         width: 330px;
-        /* height: 20rem; */
-        margin-bottom: -40rem;
+        height: 561.48px;
+        bottom: -8rem;
     }
     .show-hero .iphone-top{
-        transform: translateY(-23rem);
+        transform: translateY(-13rem);
     }
     .menu{
         /* width: 19rem; */
         width: 310px;
+        height: 175px;
         margin-bottom: -7.5em;
         right: 75px;
         /* margin-left: -6em; */
     }
     .show-hero .menu{
-        transform: translateY(-6rem);
+        transform: translateY(-5rem);
     }
     
     .features h3 {
@@ -1337,8 +1387,11 @@ input{
     #contact {
         font-size: 26px;
     }
-    .connect{
+    .connect {
         width: 43rem;
+    }
+    .docs {
+        width: 31rem;
     }
 }
 
@@ -1347,43 +1400,37 @@ input{
         width: 50rem;
     }
     .init-txt{
-        width: 50rem;
+        /* width: 50rem; */
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
     /* .top-display {
         border: 1px solid red;
     } */
-    .button {
+    /* .button {
         width: 83px;
-        /* height: 47.5px;
-        position: relative;
-        z-index: 2; */
         bottom: 112px;
         left: 135px;
-        /* opacity: 0;
-        transition: 2s; */
-        /* transform: scale(0.8, 0.8); */
+        transition: 2s;
     }
     .show-button .button {
         transform: scale(1.9, 1.9) translateX(-15px);
     }
     .iphone-top {
         width: 330px;
-        /* height: 20rem; */
         margin-bottom: -40rem;
     }
     .show-hero .iphone-top{
         transform: translateY(-23rem);
     }
     .menu{
-        /* width: 19rem; */
         width: 310px;
         margin-bottom: -7.5em;
         right: 75px;
-        /* margin-left: -6em; */
     }
     .show-hero .menu{
         transform: translateY(-6rem);
-    }
+    } */
     
     .features {
         padding-top: 4rem;
@@ -1511,21 +1558,23 @@ input{
         transform: translateY(11rem);
     }
     .more-details{
-        padding-top: 7rem;
-        padding-bottom: 4rem;
+        padding-top: 6rem;
     }
     
     .ad-box{
+        padding-top: 6rem;
         padding-bottom: 7rem;
     }
     .formbox {
         height: 500px;
+        margin-bottom: 6rem;
     }
     form {
         padding-top: 2rem;
     }
     form h4 {
         margin-left: 2.5rem;
+        margin-bottom: 0.7rem;
         font-size: 30px;
     }
     .vidbox p {
@@ -1537,9 +1586,9 @@ input{
     label {
         margin-bottom: 2rem;
     }
-    label:last-of-type {
+    /* label:last-of-type {
         margin-bottom: 2.5rem;
-    }
+    } */
     label, input, #message {
         font-size: 14px;
     }
@@ -1552,11 +1601,12 @@ input{
     }
     .download-box {
         height: 302px;
+        margin-bottom: 6rem;
     }
     .download-box h3{
         font-size: 36px;
         line-height: 40px;
-        margin-bottom: 3rem;
+        margin-bottom: 3.5rem;
     }
     .apps2 {
         margin-top: -2rem;
@@ -1569,11 +1619,27 @@ input{
         max-width: 25rem;
     }
    
+    .footer {
+        padding-top: 4rem;
+        padding-bottom: 1rem;
+    }
+    .logo2 {
+        width: 154.07px;
+        height: 27.53px;
+    }
     .formbox, .download-box, .connect {
         width: 50rem;
     }
     .docs {
         width: 40rem;
+        padding-top: 2.5rem;
+    }
+    .contact {
+        width: 241px;
+    }
+    .contact a {
+        font-size: 16px;
+        font-weight: 600;
     }
 }
 
@@ -1581,17 +1647,25 @@ input{
     .init-txt{
         /* width: 60rem; */
         width: 900px;
-        height: 14rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        height: 16.3rem;
         /* border: 1px solid red; */
     }
-    /* .init-txt h3{
-        font-size: 3.8rem;
-        line-height: 3.875rem;
+    .init-txt h3{
+        font-size: 68px;
+        line-height: 77.7px;
     }
     .init-txt p{
-        font-size: 1.375rem;
-        line-height: 1.25rem;
-    } */
+        font-size: 28px;
+        line-height: 44px;
+    }
+    .show-hero .init-txt h3{
+        transform: translateY(-16rem);
+    }
+    .show-hero .init-txt p{
+        transform: translateY(-15.6rem);
+    }
     /* .iphone-top {
         width: 22rem;
         height: 22rem;
@@ -1711,7 +1785,7 @@ input{
         transform: translateY(7.5rem);
     } */
     form h4 {
-        margin-left: 3rem;
+        margin-left: 2.7rem;
     }
     .friends{
         max-width: 30rem;
@@ -1721,23 +1795,31 @@ input{
         width: 900px;
     }
     .docs {
-        width: 50rem;
+        width: 580px;
     }
 }
 
 @media screen and (min-width: 1500px){
     .init-txt{
         width: 80rem;
-        height: 17.3rem;
+        height: 22.5rem;
         /* border: 1px solid red; */
     }
     .init-txt h3{
         font-size: 100px;
-        line-height: 100px;
+        line-height: 120px;
+        bottom: -24rem;
     }
     .init-txt p{
-        font-size: 2rem;
-        line-height: 1.9rem;
+        font-size: 32px;
+        line-height: 46px;
+        bottom: -24rem;
+    }
+    .show-hero .init-txt h3{
+        transform: translateY(-23.9rem);
+    }
+    .show-hero .init-txt p{
+        transform: translateY(-23rem);
     }
     .nav-items{
         width: 80rem;
