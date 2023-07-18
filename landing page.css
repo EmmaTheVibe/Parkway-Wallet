@@ -1399,6 +1399,10 @@ input{
     .nav-items{
         width: 50rem;
     }
+    .logo {
+        width: 134.31px;
+        height: 24px;
+    }
     .init-txt{
         /* width: 50rem; */
         padding-left: 2rem;
