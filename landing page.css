@@ -1396,12 +1396,20 @@ input{
 }
 
 @media screen and (min-width:820px){
+    .navbar {
+        height: 90px;
+    }
     .nav-items{
         width: 50rem;
     }
     .logo {
         width: 134.31px;
         height: 24px;
+    }
+    .download {
+        width: 161px;
+        height: 43px;
+        font-size: 14px;
     }
     .init-txt{
         /* width: 50rem; */
