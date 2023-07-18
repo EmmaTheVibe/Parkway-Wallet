@@ -14,6 +14,12 @@ const receive = document.querySelector(".receive")
 const transfer = document.querySelector(".transfer")
 const fund = document.querySelector(".fund")
 const topButton = document.querySelector(".button")
+const download = document.querySelector(".download")
+const appstore2 = document.querySelector("#appstore2")
+const playstore2 = document.querySelector("#playstore2")
+const apps2 = document.querySelectorAll(".dld")
+const navBar = document.querySelectorAll(".navbar")
+
 
 $(function () {
     $(document).scroll(function () {
@@ -21,6 +27,15 @@ $(function () {
         $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
     });
 });
+
+download.addEventListener("click", () => {
+     for (let apps of apps2) {
+        apps.classList.add("animate")
+        setTimeout(() => {
+            apps.classList.remove("animate")
+        }, 2100)
+     }
+})
 
 buttons.forEach(active => {
     active.addEventListener("click", () => {
@@ -31,9 +46,9 @@ buttons.forEach(active => {
             img2.style.display = "unset"
             img3.style.display = "none"
         
-            head1.style.display = "none"
-            head2.style.display = "unset"
-            head3.style.display = "none"
+            // head1.style.display = "none"
+            // head2.style.display = "unset"
+            // head3.style.display = "none"
             receive.style.display = "none"
             transfer.style.display = "unset"
             fund.style.display = "none"
@@ -43,9 +58,9 @@ buttons.forEach(active => {
             img2.style.display = "none"
             img3.style.display = "unset"
 
-            head1.style.display = "none"
-            head2.style.display = "none"
-            head3.style.display = "unset"
+            // head1.style.display = "none"
+            // head2.style.display = "none"
+            // head3.style.display = "unset"
             receive.style.display = "none"
             transfer.style.display = "none"
             fund.style.display = "unset"
@@ -55,9 +70,9 @@ buttons.forEach(active => {
             img2.style.display = "none"
             img3.style.display = "none"
         
-            head1.style.display = "unset"
-            head2.style.display = "none"
-            head3.style.display = "none"
+            // head1.style.display = "unset"
+            // head2.style.display = "none"
+            // head3.style.display = "none"
             receive.style.display = "unset"
             transfer.style.display = "none"
             fund.style.display = "none"
