@@ -28,14 +28,14 @@ $(function () {
     });
 });
 
-download.addEventListener("click", () => {
-     for (let apps of apps2) {
-        apps.classList.add("animate")
-        setTimeout(() => {
-            apps.classList.remove("animate")
-        }, 2100)
-     }
-})
+// download.addEventListener("click", () => {
+//      for (let apps of apps2) {
+//         apps.classList.add("animate")
+//         setTimeout(() => {
+//             apps.classList.remove("animate")
+//         }, 2100)
+//      }
+// })
 
 buttons.forEach(active => {
     active.addEventListener("click", () => {
