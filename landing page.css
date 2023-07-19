@@ -1766,9 +1766,10 @@ input{
     }
 }
 
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1458px){
     .nav-items {
         width: 960px;
+        border: 1px solid blue;
     }
     .ft-cont {
         width: 960px;
