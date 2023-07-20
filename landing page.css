@@ -30,7 +30,8 @@ body{
     transition: background 200ms;
 }
 .nav-items{
-    width: 95%;
+    /* width: 80%; */
+    width: 320px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -85,35 +86,38 @@ body{
     justify-self: center;
     /* margin-bottom: 9rem; */
     /* margin-bottom: 0; */
-    height: 12.8rem;
+    /* height: 17rem; */
+    height: 20.5rem;
     /* width: 320px; */
-    width: 80%;
+    width: 320px;
     text-align: center;
     font-family: myFont;
     overflow: hidden;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     /* position: relative;
     bottom: 50%; */
     /* top: 19vh; */
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 .init-txt h3{
-    bottom: -14rem;
+    bottom: -20.2rem;
     font-style: normal;
     font-weight: 500;
     /* font-size: 2.7rem;
     line-height: 3rem; */
-    font-size: 28px;
-    line-height: 31.99px;
+    font-size: 36px;
+    line-height: 37.99px;
     color: #FFFFFF;
     transition: cubic-bezier(.03,1.11,.96,1.13) 1.13s;
     position: relative;
 }
 .init-txt p{
     /* margin-bottom: -10rem; */
+    width: 85%;
     font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -124,16 +128,85 @@ body{
     color: #B3B3B3;
     transition: cubic-bezier(.03,1.11,.96,1.12) 1s;
     position: relative;
-    bottom: -14rem;
+    bottom: -21rem;
+}
+.apps {
+    height: 110px;
+    width: 146px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: -22rem;
+    opacity: 1;
+    transition: cubic-bezier(.03,1.11,.96,1.12) .9s;
+    /* border: 1px solid red; */
+}
+.apps a {
+    text-decoration: none;
+}
+.appstore, .playstore{
+    width: 140px;
+    height: 42px;
+    padding-left: 8px;
+    padding-bottom: 2px;
+    /* background-color: #121212; */
+    border-radius: 8px;
+    border: 2px solid #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    text-align: left;
+}
+.appstore a{
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.39px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.appstore img{
+    width: 20px;
+    margin-right: 9px;
+    margin-top: 3px;
+}
+.playstore img{
+    width: 20px;
+    margin-right: 9px;
+    margin-top: 4px;
+}
+.playstore a{
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.39px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.apps span{
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
 }
 .show-hero .init-txt h3{
-    transform: translateY(-11.6rem);
+    transform: translateY(-19.5rem);
 }
 .show-hero .init-txt p{
-    transform: translateY(-11rem);
+    transform: translateY(-19rem);
+}
+.show-hero .apps {
+    transform: translateY(-19rem);
+    opacity: 1;
 }
 .top-display{
-    margin-top: 8rem;
+    /* margin-top: 8rem; */
+    margin-top: 10rem;
     width: 320px;
     padding-left: 2rem;
     display: flex;
@@ -144,30 +217,36 @@ body{
     /* border: 1px solid red; */
 }
 .button {
-    width: 50px;
-    /* height: 47.5px; */
+    /* width: 50px; */
+    
+    width: 64px;
+
     position: relative;
     z-index: 2;
-    bottom: 58px;
-    left: 80px;
+    /* bottom: 58px;
+    left: 80px; */
+
+    bottom: 79px;
+    left: 105px;
+
     opacity: 0;
     transition: cubic-bezier(.03,1.11,.96,1.2) .1s;
 }
 .iphone-top{
-    /* width: 15rem; */
-    /* width: 230px; */
-    width: 196.2px;
-    /* height: 15rem; */
-    height: 393px;
-    margin-bottom: -21.5rem;
+    /* width: 196.2px;
+    height: 393px; */
+
+    width: 285.2px;
+    height: 463px;
+
+    /* margin-bottom: -21.5rem; */
+    margin-bottom: -23.5rem;
     z-index: 0;
     position: relative;
     transition: cubic-bezier(.03,1.11,.96,1.12) 1s;
     left: 0px;
-    /* border: 1px solid red; */
 }
 .menu{
-    /* width: 11rem; */
     width: 129px;
     height: 66.8px;
     /* margin-left: -5rem; */
@@ -179,6 +258,7 @@ body{
     /* border: 1px solid red; */
 }
 .show-hero .iphone-top{
+    /* transform: translateY(-9.6rem); */
     transform: translateY(-9.6rem);
 }
 .show-hero .menu{
@@ -186,7 +266,7 @@ body{
 }
 .show-button .button{
     opacity: 1;
-    transform: scale(1.9, 1.9) translateX(-8.5px);
+    transform: scale(1.9, 1.9) translateX(-10.9px);
 }
 
 .features{
@@ -204,8 +284,6 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    /* border: 1px solid red; */
-    /* width: 320px; */
     width: 80%;
 }
 .ft-box{
@@ -694,7 +772,7 @@ input{
     text-align: center;
     margin-bottom: 1.5rem;
 }
-.apps2{
+.apps2 {
     height: 94px;
     width: 146px;
     display: flex;
@@ -738,7 +816,7 @@ input{
 .apps2 a {
     text-decoration: none;
 }
-.appstore2, .playstore2{
+.appstore2, .playstore2 {
     width: 140px;
     height: 42px;
     padding-left: 8px;
@@ -751,7 +829,7 @@ input{
     /* justify-content: space-evenly; */
     align-items: center;
 }
-.appstore2 a{
+.appstore2 a {
     font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -899,42 +977,30 @@ input{
     padding-bottom: 1rem;
 }
 
+@media screen and (min-width:403px){
+    .nav-items {
+        width: 80%;
+    }
+}
 
 @media screen and (min-width:650px){
     .nav-items {
         width: 40rem;
-        /* border: 1px solid green; */
     }
     .hero{
         height: unset;
-        /* justify-content: center; */
-        /* padding-top: 9rem; */
     }
-    /* .top-display{
-        margin-top: 10rem;
-    } */
-    /* .iphone-top{
-        width: 18rem;
-        height: 18rem;
+    .apps {
+        flex-direction: row;
+        width: 296px;
+        height: 42px;
     }
-    .menu{
-        width: 14rem;
-        margin-bottom: -4em;
-        margin-left: -8rem;
-    } */
     .init-txt {
-        /* height: 10rem; */
-        /* top: 0; */
-        /* margin-bottom: 5rem; */
-        /* border: 1px solid red; */
+        height: 16rem;
     }
-    /* .show-hero .init-txt h3{
-        transform: translateY(-12.6rem);
+    .init-txt p {
+        width: 100%;
     }
-    .show-hero .init-txt p{
-        transform: translateY(-12.6rem);
-    } */
-
 
     .features{
         flex-direction: row;
@@ -945,41 +1011,15 @@ input{
     }
     .ft-cont {
         width: 40rem;
-        /* height: 30rem; */
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        /* padding-right: 10px; */
     }
     .ft-box{
         width: 60%;
-        /* margin-right: 1rem; */
         height: 33rem;
     }
-    .apps{
-        width: fit-content;
-        height: 42px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .apps a {
-        text-decoration: none;
-    }
-    .appstore, .playstore{
-        width: 140px;
-        height: 42px;
-        padding-left: 8px;
-        margin-right: 10px;
-        border-radius: 8px;
-        border: 0.031rem solid #121212;
-        display: flex;
-        flex-direction: row;
-        /* justify-content: space-evenly; */
-        align-items: center;
-    }
-    .appstore a{
+    /* .appstore a{
         font-family: "Manrope", sans-serif;
         font-style: normal;
         font-weight: 700;
@@ -1010,8 +1050,7 @@ input{
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
-        /* line-height: 16.39px; */
-    }
+    } */
     .fund, .transfer, .receive {
         height: 16rem;
     }
@@ -1209,9 +1248,6 @@ input{
         flex-direction: row;
         justify-content: space-between;
     }
-    /* .docs a{
-        font-size: 14px;
-    } */
 }
 
 @media screen and (min-width:710px){
@@ -1220,35 +1256,37 @@ input{
         width: 43rem;
     }
     .init-txt {
-        height: 16.5rem;
-        /* width: 100%; */
+        height: 19.8rem;
+        width: 43rem;
         padding-left: 1rem;
         padding-right: 1rem;
+        /* overflow: visible; */
     }
     .init-txt h3{
         font-size: 60px;
         line-height: 68px;
-        bottom: -16rem;
+        bottom: -21rem;
     }
     .init-txt p {
         font-size: 24px;
         line-height: 32px;
-        bottom: -16rem;
+        bottom: -21rem;
+        width: 90%;
     }
     .show-hero .init-txt h3{
-        transform: translateY(-14rem);
+        transform: translateY(-20.5rem);
     }
     .show-hero .init-txt p{
-        transform: translateY(-12.8rem);
+        transform: translateY(-20rem);
     }
     .button {
         width: 78px;
         /* height: 47.5px;
         position: relative;
         z-index: 2; */
-        bottom: 101px;
+        bottom: 69px;
         left: 127px;
-        opacity: 0;
+        opacity: 1;
         /* transition: 2s; */
         /* transform: scale(0.8, 0.8); */
     }
@@ -1385,6 +1423,14 @@ input{
         width: 50rem;
         padding-left: 5rem;
         padding-right: 5rem;
+        height: 18.5rem;
+    }
+    .show-hero .apps {
+        transform: translateY(-20.3rem);
+        opacity: 1;
+    }
+    .top-display {
+        margin-top: 6rem;
     }
     
     .features {
@@ -1619,12 +1665,16 @@ input{
 }
 
 @media screen and (min-width: 1200px){
+    .hero {
+        padding-top: 15vh;
+    }
     .init-txt{
         /* width: 60rem; */
         width: 900px;
         padding-left: 10rem;
         padding-right: 10rem;
-        height: 16.3rem;
+        height: 20rem;
+        /* overflow: visible; */
         /* border: 1px solid red; */
     }
     .init-txt h3{
@@ -1635,11 +1685,21 @@ input{
         font-size: 28px;
         line-height: 44px;
     }
+    .apps {
+        bottom: -320px;
+    }
     .show-hero .init-txt h3{
-        transform: translateY(-16rem);
+        transform: translateY(-20.5rem);
     }
     .show-hero .init-txt p{
-        transform: translateY(-15.6rem);
+        transform: translateY(-21rem);
+    }
+    .show-hero .apps {
+        transform: translateY(-19.8rem);
+        opacity: 1;
+    }
+    .top-display {
+        margin-top: 5.8rem;
     }
     /* .iphone-top {
         width: 22rem;
