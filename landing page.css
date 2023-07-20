@@ -659,7 +659,7 @@ input{
     height: 290px;
     width: 320px;
     margin-top: 3.9rem;
-    padding-top: 3.5rem;
+    padding-top: 3.3rem;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -671,8 +671,8 @@ input{
     border-radius: 1.5rem;
     position: relative;
     isolation: isolate;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     margin-bottom: 4rem;
 }
 .download-box::after{
@@ -692,7 +692,7 @@ input{
     line-height: 22.85px;
     color: #FFFFFF;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 .apps2{
     height: 94px;
@@ -798,7 +798,24 @@ input{
     justify-self: center;
 }
 .friends{
-    max-width: 16rem;
+    width: 256.87px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.swipe {
+    width: 73.69px;
+    height: 18px;
+}
+.bank3d {
+    width: 61.56px;
+    height: 20px;
+}
+.readycash {
+    width: 89.62px;
+    height: 20px;
 }
 
 
@@ -1028,7 +1045,7 @@ input{
         width: 40%;
         /* margin-top: 6rem; */
         /* justify-content: end; */
-        padding-left: 0.8rem;
+        padding-left: 2.45rem;
     }
     .iphone {
         margin-top: -4rem;
@@ -1109,18 +1126,6 @@ input{
         font-size: 15px;
         line-height: 22px;
     }
-    /* #hd1 {
-        color: #FFFFFF;
-    }
-    #txt1 {
-        color: #FAFAFA;
-    } */
-    .friends{
-        display: unset;
-    }
-    .friends2{
-        display: none;
-    }
 
     .ad-box {
         padding-top: 3.9rem;
@@ -1168,7 +1173,7 @@ input{
     }
     .download-box {
         width: 40rem;
-        margin-top: 2rem;
+        margin-top: 6rem;
         padding-top: 5rem;
     }
     .download-box h3{
@@ -1179,9 +1184,6 @@ input{
         flex-direction: row;
         width: 296px;
         height: 42px;
-    }
-    .friends {
-        max-width: 20rem;
     }
  
     .footer {
@@ -1215,10 +1217,10 @@ input{
 @media screen and (min-width:710px){
     
     .nav-items{
-        width: 43.2rem;
+        width: 43rem;
     }
     .init-txt {
-        height: 16rem;
+        height: 16.5rem;
         /* width: 100%; */
         padding-left: 1rem;
         padding-right: 1rem;
@@ -1229,8 +1231,8 @@ input{
         bottom: -16rem;
     }
     .init-txt p {
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 24px;
+        line-height: 32px;
         bottom: -16rem;
     }
     .show-hero .init-txt h3{
@@ -1283,7 +1285,7 @@ input{
         font-size: 13px;
     } */
     .ft-display {
-        padding-left: 2.3rem;
+        padding-left: 3.65rem;
     }
 
     .more-details h3 {
@@ -1336,6 +1338,22 @@ input{
         font-size: 26px;
         line-height: 33px;
     }
+    .friends{
+        width: 380.87px;
+        height: 35px;
+    }
+    .swipe {
+        width: 93.69px;
+        height: 25px;
+    }
+    .bank3d {
+        width: 81.56px;
+        height: 28px;
+    }
+    .readycash {
+        width: 109.62px;
+        height: 28px;
+    }
     #contact {
         font-size: 26px;
     }
@@ -1364,37 +1382,10 @@ input{
         font-size: 14px;
     }
     .init-txt{
-        /* width: 50rem; */
-        padding-left: 2rem;
-        padding-right: 2rem;
+        width: 50rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
-    /* .top-display {
-        border: 1px solid red;
-    } */
-    /* .button {
-        width: 83px;
-        bottom: 112px;
-        left: 135px;
-        transition: 2s;
-    }
-    .show-button .button {
-        transform: scale(1.9, 1.9) translateX(-15px);
-    }
-    .iphone-top {
-        width: 330px;
-        margin-bottom: -40rem;
-    }
-    .show-hero .iphone-top{
-        transform: translateY(-23rem);
-    }
-    .menu{
-        width: 310px;
-        margin-bottom: -7.5em;
-        right: 75px;
-    }
-    .show-hero .menu{
-        transform: translateY(-6rem);
-    } */
     
     .features {
         padding-top: 4rem;
@@ -1465,7 +1456,7 @@ input{
     }
     .ft-display {
         /* padding-top: 4rem; */
-        padding-left: 5rem;
+        padding-left: 4.8rem;
     }
     .iphone {
         margin-bottom: -2rem;
@@ -1557,6 +1548,7 @@ input{
     }
     input, #message {
         height: 48px;
+        margin-top: 8px;
     }
     #message {
         padding-top: 15px;
@@ -1567,7 +1559,7 @@ input{
     }
     .download-box {
         height: 302px;
-        margin-top: 7rem;
+        margin-top: 8rem;
         margin-bottom: 6rem;
     }
     .download-box h3{
@@ -1583,7 +1575,20 @@ input{
         font-size: 36px;
     }
     .friends{
-        max-width: 25rem;
+        width: 480.87px;
+        height: 40px;
+    }
+    .swipe {
+        width: 122.81px;
+        height: 30px;
+    }
+    .bank3d {
+        width: 92.34px;
+        height: 30px;
+    }
+    .readycash {
+        width: 134.43px;
+        height: 30px;
     }
    
     .footer {
@@ -1607,6 +1612,9 @@ input{
     .contact a {
         font-size: 16px;
         font-weight: 600;
+    }
+    .docs a {
+        font-size: 14px;
     }
 }
 
@@ -1666,6 +1674,9 @@ input{
     .btn {
         font-size: 18px;
         font-weight: 600;
+    }
+    .ft-display {
+        padding-left: 5.5rem;
     }
     .show-ft #stores-r{
         transform: translateY(20.5rem);
@@ -1754,9 +1765,6 @@ input{
     form h4 {
         margin-left: 2.7rem;
     }
-    .friends{
-        max-width: 30rem;
-    }
     .formbox, .download-box, .connect {
         /* width: 60rem; */
         width: 900px;
@@ -1766,22 +1774,32 @@ input{
     }
 }
 
-@media screen and (min-width: 1458px){
+@media screen and (min-width: 1400px){
     .nav-items {
-        width: 960px;
-        border: 1px solid blue;
+        width: 1000px;
+        /* width: 960px; */
+        /* border: 1px solid blue; */
     }
     .ft-cont {
-        width: 960px;
+        width: 1000px;
+        /* width: 960px; */
     }
     .guide {
-        width: 960px;
+        width: 1000px;
+        /* width: 960px; */
+    }
+    .ft-display {
+        padding-left: 7.85rem;
     }
     .bvn {
-        margin-right: 4rem;
+        margin-right: 5rem;
     }
     .formbox, .download-box, .connect {
-        width: 960px;
+        width: 1000px;
+        /* width: 960px; */
+    }
+    .formbox h4 {
+        margin-left: 3rem;
     }
 }
 
@@ -1804,8 +1822,8 @@ input{
         /* border: 1px solid red; */
     }
     .init-txt h3{
-        font-size: 100px;
-        line-height: 110px;
+        font-size: 80px;
+        line-height: 90px;
         bottom: -24rem;
     }
     .init-txt p{
@@ -1848,12 +1866,6 @@ input{
         font-size: 26px;
         width: 200px;
     }
-    /* .link2 {
-        width: 144px;
-    }
-    .link3 {
-        width: 176px;
-    } */
     .heading {
         font-size: 40px;
         line-height: 40px;
@@ -1869,24 +1881,12 @@ input{
     .show-ft .prg {
         transform: translateY(27rem);
     }
-    .ft-box {
-        /* border: 1px solid red; */
-    }
     .ft-display {
-        /* border: 1px solid red; */
+        padding-left: 9.5rem;
     }
-    /* .iphone {
-        margin-bottom: -6rem;
-    } */
     .stores {
         width: 20rem;
     }
-    /* .stores {
-        width: 15rem;
-        display: unset;
-        transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
-        opacity: 0;
-    } */
     #stores-t {
         margin-top: -6.5rem;
     }
@@ -2015,12 +2015,40 @@ input{
     }
     #contact {
         font-size: 48px;
+        margin-bottom: 2rem;
+    }
+    .friends{
+        width: 580.87px;
+        height: 50px;
+    }
+    .swipe {
+        width: 152.81px;
+        height: 38px;
+    }
+    .bank3d {
+        width: 122.34px;
+        height: 38px;
+    }
+    .readycash {
+        width: 164.43px;
+        height: 38px;
     }
     .formbox, .download-box, .connect {
         width: 80rem;
     }
+    .logo2 {
+        width: 194.07px;
+        height: 33px;
+    }
     .docs {
         width: 60rem;
+    }
+    .contact a {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .docs a {
+        font-size: 18px;
     }
 }
 
