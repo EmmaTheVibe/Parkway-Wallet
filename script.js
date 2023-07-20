@@ -197,13 +197,13 @@ function isIOSorAndroid() {
         }
     })
   
-    // if (/android/.test(userAgent)) {
-    //   return 'Android';
-    // } else if (/iphone|ipad|ipod/.test(userAgent)) {
-    //   return 'iOS';
-    // } else {
-    //   return 'Unknown';
-    // }
+    if (/android/.test(userAgent)) {
+      return 'Android';
+    } else if (/iphone|ipad|ipod/.test(userAgent)) {
+      return 'iOS';
+    } else {
+      return 'Unknown';
+    }
   }
   
   // Example usage:
