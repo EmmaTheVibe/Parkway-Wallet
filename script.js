@@ -37,6 +37,39 @@ $(function () {
 //         }, 2100)
 //      }
 // })
+// for(let button of buttons){
+//     button.classList.add("clicked")
+//     setTimeout(() => {
+//         button.classList.remove('clicked');
+//     }, 1600)
+//     if(link2.classList.contains("clicked")){
+//         img1.style.display = "none"
+//         img2.style.display = "unset"
+//         img3.style.display = "none"
+    
+//         receive.style.display = "none"
+//         transfer.style.display = "unset"
+//         fund.style.display = "none"
+//     } 
+//     if(link3.classList.contains("clicked")){
+//         img1.style.display = "none"
+//         img2.style.display = "none"
+//         img3.style.display = "unset"
+
+//         receive.style.display = "none"
+//         transfer.style.display = "none"
+//         fund.style.display = "unset"
+//     } 
+//     if(link1.classList.contains("clicked")){
+//         img1.style.display = "unset"
+//         img2.style.display = "none"
+//         img3.style.display = "none"
+    
+//         receive.style.display = "unset"
+//         transfer.style.display = "none"
+//         fund.style.display = "none"
+//     }  
+// }
 
 buttons.forEach(active => {
     active.addEventListener("click", () => {
@@ -47,9 +80,6 @@ buttons.forEach(active => {
             img2.style.display = "unset"
             img3.style.display = "none"
         
-            // head1.style.display = "none"
-            // head2.style.display = "unset"
-            // head3.style.display = "none"
             receive.style.display = "none"
             transfer.style.display = "unset"
             fund.style.display = "none"
@@ -59,9 +89,6 @@ buttons.forEach(active => {
             img2.style.display = "none"
             img3.style.display = "unset"
 
-            // head1.style.display = "none"
-            // head2.style.display = "none"
-            // head3.style.display = "unset"
             receive.style.display = "none"
             transfer.style.display = "none"
             fund.style.display = "unset"
@@ -71,9 +98,6 @@ buttons.forEach(active => {
             img2.style.display = "none"
             img3.style.display = "none"
         
-            // head1.style.display = "unset"
-            // head2.style.display = "none"
-            // head3.style.display = "none"
             receive.style.display = "unset"
             transfer.style.display = "none"
             fund.style.display = "none"
@@ -81,6 +105,8 @@ buttons.forEach(active => {
     })
      
 })
+
+
 // link1.addEventListener("click", () => {
 //     img1.style.display = "unset"
 //     img2.style.display = "none"
@@ -184,7 +210,7 @@ hiddenElements5.forEach((el) => observer5.observe(el))
 
 function isIOSorAndroid() {
     const userAgent = navigator.userAgent.toLowerCase();
-    download.addEventListener ("click", () =>{
+    downloadLink.addEventListener ("click", () =>{
         if (/android/.test(userAgent)) {
             downloadLink.href = "https://play.google.com/store/apps/details?id=com.parkway.yurwallet"
             return 'Android';
@@ -192,7 +218,7 @@ function isIOSorAndroid() {
             downloadLink.href = "https://apps.apple.com/app/parkway-wallet/id6451072719/"
             return 'iOS';
         } else {
-            downloadLink.href = "http://127.0.0.1:5501/landing%20page.html#download-box"
+            downloadLink.href = ""
             return 'Unknown';
         }
     })
