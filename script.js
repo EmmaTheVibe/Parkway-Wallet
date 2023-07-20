@@ -15,6 +15,7 @@ const transfer = document.querySelector(".transfer")
 const fund = document.querySelector(".fund")
 const topButton = document.querySelector(".button")
 const download = document.querySelector(".download")
+const downloadLink = document.querySelector(".link")
 const appstore2 = document.querySelector("#appstore2")
 const playstore2 = document.querySelector("#playstore2")
 const apps2 = document.querySelectorAll(".dld")
@@ -180,3 +181,32 @@ const observer5 = new IntersectionObserver((entries) => {
 })
 const hiddenElements5 = document.querySelectorAll('.pinbox');
 hiddenElements5.forEach((el) => observer5.observe(el))
+
+function isIOSorAndroid() {
+    const userAgent = navigator.userAgent.toLowerCase();
+    download.addEventListener ("click", () =>{
+        if (/android/.test(userAgent)) {
+            downloadLink.href = "https://play.google.com/store/apps/details?id=com.parkway.yurwallet"
+            return 'Android';
+        } else if (/iphone|ipad|ipod/.test(userAgent)) {
+            downloadLink.href = "https://apps.apple.com/app/parkway-wallet/id6451072719/"
+            return 'iOS';
+        } else {
+            downloadLink.href = "http://127.0.0.1:5501/landing%20page.html#download-box"
+            return 'Unknown';
+        }
+    })
+  
+    // if (/android/.test(userAgent)) {
+    //   return 'Android';
+    // } else if (/iphone|ipad|ipod/.test(userAgent)) {
+    //   return 'iOS';
+    // } else {
+    //   return 'Unknown';
+    // }
+  }
+  
+  // Example usage:
+  const deviceType = isIOSorAndroid();
+  console.log(`This device is running ${deviceType}.`);
+  
