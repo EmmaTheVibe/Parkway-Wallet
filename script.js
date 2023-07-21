@@ -21,7 +21,7 @@ const playstore2 = document.querySelector("#playstore2")
 const apps2 = document.querySelectorAll(".dld")
 const navBar = document.querySelectorAll(".navbar")
 
-
+//Function for changing the navbar background to black when you scroll
 $(function () {
     $(document).scroll(function () {
         const $nav = $(".navbar");
@@ -29,48 +29,7 @@ $(function () {
     });
 });
 
-// download.addEventListener("click", () => {
-//      for (let apps of apps2) {
-//         apps.classList.add("animate")
-//         setTimeout(() => {
-//             apps.classList.remove("animate")
-//         }, 2100)
-//      }
-// })
-
-// for(let button of buttons){
-//     button.classList.add("clicked")
-//     setTimeout(() => {
-//         button.classList.remove('clicked');
-//     }, 1600)
-//     if(link2.classList.contains("clicked")){
-//         img1.style.display = "none"
-//         img2.style.display = "unset"
-//         img3.style.display = "none"
-    
-//         receive.style.display = "none"
-//         transfer.style.display = "unset"
-//         fund.style.display = "none"
-//     } 
-//     if(link3.classList.contains("clicked")){
-//         img1.style.display = "none"
-//         img2.style.display = "none"
-//         img3.style.display = "unset"
-
-//         receive.style.display = "none"
-//         transfer.style.display = "none"
-//         fund.style.display = "unset"
-//     } 
-//     if(link1.classList.contains("clicked")){
-//         img1.style.display = "unset"
-//         img2.style.display = "none"
-//         img3.style.display = "none"
-    
-//         receive.style.display = "unset"
-//         transfer.style.display = "none"
-//         fund.style.display = "none"
-//     }  
-// }
+// Funtion to show the recieve tab
 function showReceive() {
     img1.style.display = "unset"
     img2.style.display = "none"
@@ -80,6 +39,8 @@ function showReceive() {
     transfer.style.display = "none"
     fund.style.display = "none"
 }
+
+// Funtion to show the transfer tab
 function showTransfer() {
     img1.style.display = "none"
     img2.style.display = "unset"
@@ -89,6 +50,8 @@ function showTransfer() {
     transfer.style.display = "unset"
     fund.style.display = "none"
 }
+
+// Funtion to show the fund tab
 function showFund(){
     img1.style.display = "none"
     img2.style.display = "none"
@@ -98,6 +61,8 @@ function showFund(){
     transfer.style.display = "none"
     fund.style.display = "unset"
 }
+
+//function for the switching animation
 function switchState(){
     setTimeout(() => {
         link1.classList.remove('clicked');
@@ -108,7 +73,7 @@ function switchState(){
         if(link2.classList.contains("clicked")){
             showTransfer()
         } 
-    }, 2000)
+    }, 2000) //to switch from receive to transfer
     setTimeout(() => {
         link2.classList.remove('clicked');
         link3.classList.add('clicked');
@@ -118,8 +83,10 @@ function switchState(){
         if(link3.classList.contains("clicked")){
             showFund()
         }  
-    }, 4000)
+    }, 4000) //to switch from transfer to fund
 }
+
+//This is the click function on the three buttons. To display content according to what you click on
 buttons.forEach(active => {
     active.addEventListener("click", () => {
         document.querySelector('.clicked')?.classList.remove('clicked')
@@ -137,15 +104,7 @@ buttons.forEach(active => {
      
 })
 
-
-// for(let button of buttons){
-//     button.addEventListener("click", () => {
-//         document.querySelector('.clicked')?.classList.remove('clicked')
-//         active.classList.add('clicked') 
-//     })
-// }
-
-
+//This triggers the animations in the hero section [happens once]
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -159,6 +118,7 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hero');
 hiddenElements.forEach((el) => observer.observe(el))
 
+//This triggers the animations whenever you enter the features section
 const observer2 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -172,6 +132,7 @@ const observer2 = new IntersectionObserver((entries) => {
 const hiddenElements2 = document.querySelectorAll('.ft-cont');
 hiddenElements2.forEach((el) => observer2.observe(el))
 
+//This triggers the animations whenever you enter the bvnbox
 const observer3 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -184,6 +145,7 @@ const observer3 = new IntersectionObserver((entries) => {
 const hiddenElements3 = document.querySelectorAll('.bvnbox');
 hiddenElements3.forEach((el) => observer3.observe(el))
 
+//This triggers the animations whenever you enter the otpbox
 const observer4 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -196,6 +158,7 @@ const observer4 = new IntersectionObserver((entries) => {
 const hiddenElements4 = document.querySelectorAll('.otpbox');
 hiddenElements4.forEach((el) => observer4.observe(el))
 
+//This triggers the animations whenever you enter the pinbox
 const observer5 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -208,6 +171,7 @@ const observer5 = new IntersectionObserver((entries) => {
 const hiddenElements5 = document.querySelectorAll('.pinbox');
 hiddenElements5.forEach((el) => observer5.observe(el))
 
+//This function detects the OS of the user's device and sets the appropriate link in the download button
 function isIOSorAndroid() {
     const userAgent = navigator.userAgent.toLowerCase();
     downloadLink.addEventListener ("click", () =>{
@@ -218,7 +182,7 @@ function isIOSorAndroid() {
             downloadLink.href = "https://apps.apple.com/app/parkway-wallet/id6451072719/"
             return 'iOS';
         } else {
-            downloadLink.href = ""
+            downloadLink.href = "#download-box"
             return 'Unknown';
         }
     })
@@ -231,8 +195,6 @@ function isIOSorAndroid() {
       return 'Unknown';
     }
   }
-  
-  // Example usage:
   const deviceType = isIOSorAndroid();
   console.log(`This device is running ${deviceType}.`);
   
