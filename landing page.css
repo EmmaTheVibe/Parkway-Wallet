@@ -305,8 +305,14 @@ body{
 }
 
 @keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        transform: translateY(-5px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(3px);
+        opacity: 1;
+    }
 }
 .receive {
     height: 9.8rem;

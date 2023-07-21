@@ -37,6 +37,7 @@ $(function () {
 //         }, 2100)
 //      }
 // })
+
 // for(let button of buttons){
 //     button.classList.add("clicked")
 //     setTimeout(() => {
@@ -70,73 +71,71 @@ $(function () {
 //         fund.style.display = "none"
 //     }  
 // }
+function showReceive() {
+    img1.style.display = "unset"
+    img2.style.display = "none"
+    img3.style.display = "none"
 
+    receive.style.display = "unset"
+    transfer.style.display = "none"
+    fund.style.display = "none"
+}
+function showTransfer() {
+    img1.style.display = "none"
+    img2.style.display = "unset"
+    img3.style.display = "none"
+        
+    receive.style.display = "none"
+    transfer.style.display = "unset"
+    fund.style.display = "none"
+}
+function showFund(){
+    img1.style.display = "none"
+    img2.style.display = "none"
+    img3.style.display = "unset"
+
+    receive.style.display = "none"
+    transfer.style.display = "none"
+    fund.style.display = "unset"
+}
+function switchState(){
+    setTimeout(() => {
+        link1.classList.remove('clicked');
+        link2.classList.add('clicked');
+        if(link1.classList.contains("clicked")){
+            showReceive()
+        } 
+        if(link2.classList.contains("clicked")){
+            showTransfer()
+        } 
+    }, 2000)
+    setTimeout(() => {
+        link2.classList.remove('clicked');
+        link3.classList.add('clicked');
+        if(link2.classList.contains("clicked")){
+            showTransfer()
+        } 
+        if(link3.classList.contains("clicked")){
+            showFund()
+        }  
+    }, 4000)
+}
 buttons.forEach(active => {
     active.addEventListener("click", () => {
         document.querySelector('.clicked')?.classList.remove('clicked')
         active.classList.add('clicked') 
+        if(link1.classList.contains("clicked")){
+            showReceive()
+        } 
         if(link2.classList.contains("clicked")){
-            img1.style.display = "none"
-            img2.style.display = "unset"
-            img3.style.display = "none"
-        
-            receive.style.display = "none"
-            transfer.style.display = "unset"
-            fund.style.display = "none"
+            showTransfer()
         } 
         if(link3.classList.contains("clicked")){
-            img1.style.display = "none"
-            img2.style.display = "none"
-            img3.style.display = "unset"
-
-            receive.style.display = "none"
-            transfer.style.display = "none"
-            fund.style.display = "unset"
-        } 
-        if(link1.classList.contains("clicked")){
-            img1.style.display = "unset"
-            img2.style.display = "none"
-            img3.style.display = "none"
-        
-            receive.style.display = "unset"
-            transfer.style.display = "none"
-            fund.style.display = "none"
+            showFund()
         }  
     })
      
 })
-
-
-// link1.addEventListener("click", () => {
-//     img1.style.display = "unset"
-//     img2.style.display = "none"
-//     img3.style.display = "none"
-
-//     // heading.innerText = "Receive Money"
-//     receive.style.display = "unset"
-//     transfer.style.display = "none"
-//     fund.style.display = "none"
-// })
-// link2.addEventListener("click", () => {
-//     img1.style.display = "none"
-//     img2.style.display = "unset"
-//     img3.style.display = "none"
-        
-//     // heading.innerText = "Transfer Money"
-//     receive.style.display = "none"
-//     transfer.style.display = "unset"
-//     fund.style.display = "none"
-// })
-// link3.addEventListener("click", () => {
-//     img1.style.display = "none"
-//     img2.style.display = "none"
-//     img3.style.display = "unset"
-        
-//     heading.innerText = "Fund Wallet"
-//     receive.style.display = "none"
-//     transfer.style.display = "none"
-//     fund.style.display = "unset"
-// })
 
 
 // for(let button of buttons){
@@ -164,6 +163,7 @@ const observer2 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show-ft');
+            // switchState()
         } else{
             entry.target.classList.remove('show-ft');
         }
