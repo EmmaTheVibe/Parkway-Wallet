@@ -163,7 +163,7 @@ const observer2 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show-ft');
-            // switchState()
+            switchState()
         } else{
             entry.target.classList.remove('show-ft');
         }
