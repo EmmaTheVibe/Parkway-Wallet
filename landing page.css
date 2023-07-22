@@ -362,6 +362,9 @@ body{
 .stores {
     display: none;
 }
+.apps-f {
+    display: none;
+}
 .show-ft .prg{
     transform: translateY(13rem);
     opacity: 1;
@@ -451,7 +454,6 @@ body{
 .pinbox{
     width: 100%;
     height: 400px;
-    margin-bottom: 4rem;
     background-color: #F0F0F0;
     border: 1px solid #E6E6E6;
     border-radius: 1rem;
@@ -545,6 +547,9 @@ body{
     align-items: center;
     background-color: #FFFFFF;
     padding-bottom: 4rem;
+}
+#contact {
+    margin-bottom: 4rem;
 }
 .formbox{
     display: flex;
@@ -774,7 +779,7 @@ input{
     font-weight: 500;
     font-size: 12px;
 }
-#contact {
+#contact2 {
     margin-bottom: 1.5rem;
     font-family: myFont;
     font-style: normal;
@@ -870,7 +875,8 @@ input{
     align-items: center;
     /* border: 1px solid red; */
 }
-.docs a{
+.docs p{
+    margin-bottom: 1rem;
     font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -878,8 +884,18 @@ input{
     line-height: 1rem;
     color: #FFFFFF;
     text-decoration: underline;
+}
+.docs a{
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1rem;
+    color: #FFFFFF;
+    /* text-decoration: underline; */
     padding-bottom: 1rem;
 }
+
 
 @media screen and (min-width:403px){
     .nav-items {
@@ -926,28 +942,102 @@ input{
     .fund, .transfer, .receive {
         height: 16rem;
     }
+    .apps-f {
+        display: unset;
+        width: 296px;
+        height: 42px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        bottom: -22rem;
+        opacity: 1;
+        transition: cubic-bezier(.03,1.11,.96,1.12) .9s;
+    }
+    .apps-f a {
+        text-decoration: none;
+    }
+    .appstore-f, .playstore-f{
+        width: 140px;
+        height: 42px;
+        padding-left: 8px;
+        padding-bottom: 2px;
+        border-radius: 8px;
+        border: 2px solid #121212;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+    .appstore-f {
+        margin-right: 15px;
+    }
+    .appstore-f a{
+        font-family: "Manrope", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16.39px;
+        text-decoration: none;
+        color: #121212;
+    }
+    .appstore-f img{
+        width: 20px;
+        margin-right: 9px;
+        margin-top: 3px;
+    }
+    .playstore-f img{
+        width: 20px;
+        margin-right: 9px;
+        margin-top: 4px;
+    }
+    .playstore-f a{
+        font-family: "Manrope", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16.39px;
+        text-decoration: none;
+        color: #121212;
+    }
+    .apps-f span{
+        font-family: "Manrope", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+    }
     .stores {
         width: 15rem;
         display: unset;
         transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
         opacity: 0;
     }
+    #stores-r {
+        margin-top: -22rem;
+        transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
+        opacity: 0;
+    }
     #stores-t {
-        margin-top: -6.5rem;
+        margin-top: -22rem;
+        transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
+        opacity: 0;
     }
     #stores-f {
-        margin-top: -3.5rem;
+        margin-top: -22rem;
+        transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
+        opacity: 0;
     }
     .show-ft #stores-r{
-        transform: translateY(13.5rem);
+        transform: translateY(13rem);
         opacity: 1;
     }
     .show-ft #stores-t{
-        transform: translateY(16.8rem);
+        transform: translateY(13rem);
         opacity: 1;
     }
     .show-ft #stores-f{
-        transform: translateY(15.3rem);
+        transform: translateY(13rem);
         opacity: 1;
     }
     .ft-display {
@@ -961,7 +1051,6 @@ input{
     .guide{
         width: 40rem;
         grid-template-columns: repeat(2, 1fr);
-        margin-bottom: 2rem;
     }
     .bvnbox {
         grid-column: span 2;
@@ -1028,8 +1117,8 @@ input{
         line-height: 22px;
     }
 
-    .ad-box {
-        padding-top: 3.9rem;
+    #contact {
+        margin-bottom: 6rem;
     }
     .formbox{
         flex-direction: row;
@@ -1108,10 +1197,16 @@ input{
     .contact a {
         font-size: 14px;
     }
-    .docs{
+    .docs {
         width: 30rem;
         flex-direction: row;
         justify-content: space-between;
+    }
+    .docs p {
+        margin-bottom: 0;
+    }
+    .docs a {
+        padding-bottom: 0;
     }
 }
 
@@ -1249,7 +1344,7 @@ input{
         width: 109.62px;
         height: 28px;
     }
-    #contact {
+    #contact2 {
         font-size: 26px;
     }
     .connect {
@@ -1335,11 +1430,11 @@ input{
         opacity: 1;
     }
     .show-ft #stores-t{
-        transform: translateY(17.4rem);
+        transform: translateY(14rem);
         opacity: 1;
     }
     .show-ft #stores-f{
-        transform: translateY(16rem);
+        transform: translateY(14rem);
         opacity: 1;
     }
 
@@ -1409,9 +1504,11 @@ input{
         padding-top: 6rem;
     }
     
-    .ad-box{
-        padding-top: 6rem;
+    .ad-box {
         padding-bottom: 7rem;
+    }
+    #contact {
+        margin-bottom: 8rem;
     }
     .formbox {
         height: 490px;
@@ -1465,7 +1562,7 @@ input{
     .apps2 {
         margin-top: -2rem;
     }
-    #contact {
+    #contact2 {
         font-weight: 500;
         font-size: 36px;
     }
@@ -1506,6 +1603,9 @@ input{
     }
     .contact a {
         font-size: 16px;
+    }
+    .docs p {
+        font-size: 14px;
     }
     .docs a {
         font-size: 14px;
@@ -1574,16 +1674,13 @@ input{
         padding-left: 5.5rem;
     }
     .show-ft #stores-r{
-        transform: translateY(20.5rem);
-        opacity: 1;
+        transform: translateY(21rem);
     }
     .show-ft #stores-t{
-        transform: translateY(24rem);
-        opacity: 1;
+        transform: translateY(21rem);
     }
     .show-ft #stores-f{
-        transform: translateY(22.5rem);
-        opacity: 1;
+        transform: translateY(21rem);
     }
     .show-ft .iphone{
         transform: scale(1.9, 1.9);
@@ -1717,7 +1814,7 @@ input{
     }
 
     .features {
-        padding-top: 6rem;
+        padding-top: 7rem;
     }
     .features h3 {
         font-size: 48px;
@@ -1758,28 +1855,18 @@ input{
     .stores {
         width: 20rem;
     }
-    #stores-t {
-        margin-top: -6.5rem;
-    }
-    #stores-f {
-        margin-top: -3.5rem;
-    }
     .show-ft #stores-r{
-        transform: translateY(28.5rem);
-        opacity: 1;
+        transform: translateY(29rem);
     }
     .show-ft #stores-t{
-        transform: translateY(31.8rem);
-        opacity: 1;
+        transform: translateY(29rem);
     }
     .show-ft #stores-f{
-        transform: translateY(30.5rem);
-        opacity: 1;
+        transform: translateY(29rem);
     }
     .show-ft .iphone{
         transform: scale(2.5, 2.5);
     }
-
 
     .more-details {
         padding-top: 7rem;
@@ -1845,6 +1932,9 @@ input{
     .formbox {
         height: 730px;
     }
+    #contact {
+        margin-bottom: 10rem;
+    }
     form {
         padding-top: 5rem;
     }
@@ -1883,13 +1973,14 @@ input{
         font-size: 24px;
     }
     .download-box {
+        margin-top: 10rem;
         height: 340px;
     }
     .download-box h3 {
         font-size: 48px;
         line-height: 56px;
     }
-    #contact {
+    #contact2 {
         font-size: 48px;
         margin-bottom: 2rem;
     }
@@ -1924,6 +2015,9 @@ input{
     }
     .contact a {
         font-size: 20px;
+    }
+    .docs p {
+        font-size: 18px;
     }
     .docs a {
         font-size: 18px;
