@@ -707,28 +707,34 @@ input{
     justify-content: space-between;
     align-items: center;
 }
-.dld.animate {
-    animation: blink 1s linear forwards;
+.link2.animate {
+    animation: blink .5s linear forwards;
+    animation-delay: 1s;
+}
+.link3.animate {
+    animation: blink .5s linear forwards;
     animation-delay: 1s;
 }
 @keyframes blink{
     0% {
-        border: 2px solid #F9956B
+        opacity: 1;
+        /* border: 2px solid #F9956B */
     }
-    20% {
-        border: 2px solid rgba(255, 255, 255, 1)
+    25% {
+        opacity: 0;
+        /* border: 2px solid #F9956B */
     }
-    40% {
-        border: 2px solid #F9956B
+    50% {
+        opacity: 1;
+        /* border: 2px solid rgba(255, 255, 255, 1) */
     }
-    60% {
-        border: 2px solid rgba(255, 255, 255, 1)
-    }
-    80% {
-        border: 2px solid #F9956B
+    75% {
+        opacity: 0;
+        /* border: 2px solid #F9956B */
     }
     100% {
-        border: 2px solid rgba(255, 255, 255, 1)
+        opacity: 1;
+        /* border: 2px solid rgba(255, 255, 255, 1) */
     }
 }
 .apps2 a {

@@ -123,6 +123,12 @@ const observer2 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show-ft');
+            link2.classList.add("animate")
+            link3.classList.add("animate")
+            setTimeout(() => {
+                link2.classList.remove("animate")
+                link3.classList.remove("animate")
+            }, 2000)
             // switchState()
         } else{
             entry.target.classList.remove('show-ft');
