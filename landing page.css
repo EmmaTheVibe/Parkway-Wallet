@@ -707,11 +707,11 @@ input{
     justify-content: space-between;
     align-items: center;
 }
-.link2.animate {
+.animate .link2 {
     animation: blink .5s linear forwards;
     animation-delay: 1s;
 }
-.link3.animate {
+.animate .link3 {
     animation: blink .5s linear forwards;
     animation-delay: 1s;
 }
