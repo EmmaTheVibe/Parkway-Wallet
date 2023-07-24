@@ -718,7 +718,7 @@ input{
 /* .link2.paused {
     animation-play-state: ;
 } */
-@keyframes blink{
+@keyframes blink {
     0% {
         opacity: 1;
     }
