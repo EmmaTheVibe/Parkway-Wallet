@@ -62,49 +62,67 @@ function showFund(){
     fund.style.display = "unset"
 }
 
-//function for the switching animation
 function switchState(){
-    setTimeout(() => {
-        link1.classList.remove('clicked');
-        link2.classList.add('clicked');
-        if(link1.classList.contains("clicked")){
-            showReceive()
-        } 
-        if(link2.classList.contains("clicked")){
-            showTransfer()
-        } 
-    }, 2000) //to switch from receive to transfer
-    setTimeout(() => {
-        link2.classList.remove('clicked');
-        link3.classList.add('clicked');
-        if(link2.classList.contains("clicked")){
-            showTransfer()
-        } 
-        if(link3.classList.contains("clicked")){
-            showFund()
-        }  
-    }, 4000) //to switch from transfer to fund
+    function switcher (){
+        const tabButtons = document.querySelectorAll(".btn");
+        const tabs = document.querySelectorAll(".content")
+        const phone = document.querySelectorAll(".iphone")
+        const activeTab = document.querySelector(".content.active");
+        const activeTabIndex = Array.from(tabs).indexOf(activeTab);
+        const nextTabIndex = (activeTabIndex + 1) % tabs.length;
+    
+        activeTab.classList.remove("active");
+        tabButtons[activeTabIndex].classList.remove("clicked");
+        phone[activeTabIndex].classList.remove("active");
+    
+        tabs[nextTabIndex].classList.add("active");
+        tabButtons[nextTabIndex].classList.add("clicked");
+        phone[nextTabIndex].classList.add("active");
+    }
+    const switchAnim = setInterval(switcher, 3000);
+    buttons.forEach(active => {
+        active.addEventListener("click", () => {
+            document.querySelector('.clicked')?.classList.remove('clicked')
+            active.classList.add('clicked') 
+            if(link1.classList.contains("clicked")){
+                showReceive()
+                clearTimeout(switchAnim)
+            } 
+            if(link2.classList.contains("clicked")){
+                showTransfer()
+                clearTimeout(switchAnim)
+            } 
+            if(link3.classList.contains("clicked")){
+                showFund()
+                clearTimeout(switchAnim)
+            }  
+        })
+         
+    })
 }
+switchState()
 
 //This is the click function on the three buttons. To display content according to what you click on
-buttons.forEach(active => {
-    active.addEventListener("click", () => {
-        document.querySelector('.clicked')?.classList.remove('clicked')
-        active.classList.add('clicked') 
-        if(link1.classList.contains("clicked")){
-            showReceive()
-        } 
-        if(link2.classList.contains("clicked")){
-            showTransfer()
-        } 
-        if(link3.classList.contains("clicked")){
-            showFund()
-        }  
-    })
+// buttons.forEach(active => {
+//     active.addEventListener("click", () => {
+//         document.querySelector('.clicked')?.classList.remove('clicked')
+//         active.classList.add('clicked') 
+//         if(link1.classList.contains("clicked")){
+//             showReceive()
+//             clearTimeout(switch1)
+//         } 
+//         if(link2.classList.contains("clicked")){
+//             showTransfer()
+//             clearTimeout(switch1)
+//         } 
+//         if(link3.classList.contains("clicked")){
+//             showFund()
+//             clearTimeout(switch1)
+//         }  
+//     })
      
-})
+// })
 
-//This triggers the animations in the hero section [happens once]
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -118,12 +136,11 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hero');
 hiddenElements.forEach((el) => observer.observe(el))
 
-//This triggers the animations whenever you enter the features section
 const observer2 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show-ft');
-            entry.target.classList.add('animate');
+            // entry.target.classList.add('animate');
             // switchState()
         } else{
             entry.target.classList.remove('show-ft');

@@ -258,6 +258,9 @@ body{
     flex-direction: column;
     /* border: 1px solid black; */
 }
+.ft-box .content{
+    display: none;
+}
 .content{
     width: 100%;
     display: flex;
@@ -265,6 +268,9 @@ body{
     overflow: hidden;
     animation: fadeEffect .5s;
     margin-bottom: 5rem;
+}
+.content.active {
+    display: block;
 }
 @keyframes fadeEffect {
     from {
@@ -281,11 +287,11 @@ body{
 }
 .transfer {
     height: 13.8rem;
-    display: none;
+    /* display: none; */
 }
 .fund {
     height: 11rem;
-    display: none;
+    /* display: none; */
 }
 .ft-box h3{
     font-family: myFont;
@@ -378,12 +384,10 @@ body{
     width: 9rem;
     transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
     opacity: 0;
-}
-#iphone2 {
     display: none;
 }
-#iphone3 {
-    display: none;
+.iphone.active {
+    display: block;
 }
 .show-ft .iphone{
     opacity: 1;
