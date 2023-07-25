@@ -25,11 +25,12 @@ body{
     position: fixed;
     top: 0;
     z-index: 5;
+    background-color: #121212;
 }
-.navbar.scrolled {
+/* .navbar.scrolled {
     background: #121212;
     transition: background 200ms;
-}
+} */
 .nav-items{
     width: 320px;
     display: flex;

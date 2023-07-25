@@ -22,12 +22,12 @@ const apps2 = document.querySelectorAll(".dld")
 const navBar = document.querySelectorAll(".navbar")
 
 //Function for changing the navbar background to black when you scroll
-$(function () {
-    $(document).scroll(function () {
-        const $nav = $(".navbar");
-        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-    });
-});
+// $(function () {
+//     $(document).scroll(function () {
+//         const $nav = $(".navbar");
+//         $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+//     });
+// });
 
 // Funtion to show the recieve tab
 function showReceive() {
