@@ -31,76 +31,82 @@ const navBar = document.querySelectorAll(".navbar")
 
 // Funtion to show the recieve tab
 function showReceive() {
-    img1.style.display = "unset"
-    img2.style.display = "none"
-    img3.style.display = "none"
-
-    receive.style.display = "unset"
-    transfer.style.display = "none"
-    fund.style.display = "none"
+    transfer.classList.remove("active")
+    fund.classList.remove("active")
+    img2.classList.remove("active")
+    img3.classList.remove("active")
+    
+    receive.classList.add("active")
+    img1.classList.add("active")
 }
 
 // Funtion to show the transfer tab
 function showTransfer() {
-    img1.style.display = "none"
-    img2.style.display = "unset"
-    img3.style.display = "none"
-        
-    receive.style.display = "none"
-    transfer.style.display = "unset"
-    fund.style.display = "none"
+    receive.classList.remove("active")
+    fund.classList.remove("active")
+    img1.classList.remove("active")
+    img3.classList.remove("active")
+                    
+    transfer.classList.add("active")
+    img2.classList.add("active")
 }
 
 // Funtion to show the fund tab
 function showFund(){
-    img1.style.display = "none"
-    img2.style.display = "none"
-    img3.style.display = "unset"
-
-    receive.style.display = "none"
-    transfer.style.display = "none"
-    fund.style.display = "unset"
+    receive.classList.remove("active")
+    transfer.classList.remove("active")
+    img1.classList.remove("active")
+    img2.classList.remove("active")
+                    
+    fund.classList.add("active")
+    img3.classList.add("active")
 }
+
+function switcher(){
+    const tabButtons = document.querySelectorAll(".btn");
+    const tabs = document.querySelectorAll(".content")
+    const phone = document.querySelectorAll(".iphone")
+    const activeTab = document.querySelector(".content.active");
+    const activeTabIndex = Array.from(tabs).indexOf(activeTab);
+    const nextTabIndex = (activeTabIndex + 1) % tabs.length;
+
+    activeTab.classList.remove("active");
+    tabButtons[activeTabIndex].classList.remove("clicked");
+    phone[activeTabIndex].classList.remove("active");
+
+    tabs[nextTabIndex].classList.add("active");
+    tabButtons[nextTabIndex].classList.add("clicked");
+    phone[nextTabIndex].classList.add("active");
+}
+
+let stopFunction;  
 function switchState(){
-    function switcher(){
-        const tabButtons = document.querySelectorAll(".btn");
-        const tabs = document.querySelectorAll(".content")
-        const phone = document.querySelectorAll(".iphone")
-        const activeTab = document.querySelector(".content.active");
-        const activeTabIndex = Array.from(tabs).indexOf(activeTab);
-        const nextTabIndex = (activeTabIndex + 1) % tabs.length;
-    
-        activeTab.classList.remove("active");
-        tabButtons[activeTabIndex].classList.remove("clicked");
-        phone[activeTabIndex].classList.remove("active");
-    
-        tabs[nextTabIndex].classList.add("active");
-        tabButtons[nextTabIndex].classList.add("clicked");
-        phone[nextTabIndex].classList.add("active");
-    }
     const switchAnim = setInterval(switcher, 3000);
-      
-    buttons.forEach(active => {
-        active.addEventListener("click", () => {
-            document.querySelector('.clicked')?.classList.remove('clicked')
-            active.classList.add('clicked') 
-            if(link1.classList.contains("clicked")){
-                showReceive()
-                clearInterval(switchAnim)
-            } 
-            if(link2.classList.contains("clicked")){
-                showTransfer()
-                clearInterval(switchAnim)
-            } 
-            if(link3.classList.contains("clicked")){
-                showFund()
-                clearInterval(switchAnim)
-            }  
+        buttons.forEach(active => {
+            active.addEventListener("click", () => {
+                document.querySelector('.clicked')?.classList.remove('clicked')
+                active.classList.add('clicked') 
+                if(link1.classList.contains("clicked")){
+                    showReceive()
+                    clearInterval(switchAnim)
+                    // stopFunction = true
+                } 
+                if(link2.classList.contains("clicked")){
+                    showTransfer()
+                    clearInterval(switchAnim)
+                    // stopFunction = true
+                } 
+                if(link3.classList.contains("clicked")){
+                    showFund()
+                    clearInterval(switchAnim)
+                    // stopFunction = true
+                }  
+            })
+            
         })
-        
-    })
 }
 switchState()
+
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -119,8 +125,7 @@ const observer2 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show-ft');
-            // entry.target.classList.add('animate');
-        } else{
+        } else {
             entry.target.classList.remove('show-ft');
         }
     })
