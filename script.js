@@ -115,6 +115,7 @@ const observer = new IntersectionObserver((entries) => {
             setTimeout(() => {
                 entry.target.classList.add('show-button');
             }, 1600)
+            download.style.display = ""
         }
     })
 })
