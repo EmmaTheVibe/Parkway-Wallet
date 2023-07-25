@@ -24,7 +24,10 @@ const cookiesDiv = document.querySelector(".cookies")
 const closer = document.querySelector(".close")
 
 closer.addEventListener("click", () => {
-    cookiesDiv.style.display = "none"
+    cookiesDiv.classList.add("hide-cookies")
+    setTimeout(() => {
+        cookiesDiv.style.display = "none";
+    }, 1100)
 })
 
 //Function for changing the navbar background to black when you scroll
