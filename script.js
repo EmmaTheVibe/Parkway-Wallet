@@ -61,9 +61,8 @@ function showFund(){
     transfer.style.display = "none"
     fund.style.display = "unset"
 }
-
 function switchState(){
-    function switcher (){
+    function switcher(){
         const tabButtons = document.querySelectorAll(".btn");
         const tabs = document.querySelectorAll(".content")
         const phone = document.querySelectorAll(".iphone")
@@ -80,48 +79,28 @@ function switchState(){
         phone[nextTabIndex].classList.add("active");
     }
     const switchAnim = setInterval(switcher, 3000);
+      
     buttons.forEach(active => {
         active.addEventListener("click", () => {
             document.querySelector('.clicked')?.classList.remove('clicked')
             active.classList.add('clicked') 
             if(link1.classList.contains("clicked")){
                 showReceive()
-                clearTimeout(switchAnim)
+                clearInterval(switchAnim)
             } 
             if(link2.classList.contains("clicked")){
                 showTransfer()
-                clearTimeout(switchAnim)
+                clearInterval(switchAnim)
             } 
             if(link3.classList.contains("clicked")){
                 showFund()
-                clearTimeout(switchAnim)
+                clearInterval(switchAnim)
             }  
         })
-         
+        
     })
 }
 switchState()
-
-//This is the click function on the three buttons. To display content according to what you click on
-// buttons.forEach(active => {
-//     active.addEventListener("click", () => {
-//         document.querySelector('.clicked')?.classList.remove('clicked')
-//         active.classList.add('clicked') 
-//         if(link1.classList.contains("clicked")){
-//             showReceive()
-//             clearTimeout(switch1)
-//         } 
-//         if(link2.classList.contains("clicked")){
-//             showTransfer()
-//             clearTimeout(switch1)
-//         } 
-//         if(link3.classList.contains("clicked")){
-//             showFund()
-//             clearTimeout(switch1)
-//         }  
-//     })
-     
-// })
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -141,7 +120,6 @@ const observer2 = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show-ft');
             // entry.target.classList.add('animate');
-            // switchState()
         } else{
             entry.target.classList.remove('show-ft');
         }
@@ -149,6 +127,19 @@ const observer2 = new IntersectionObserver((entries) => {
 })
 const hiddenElements2 = document.querySelectorAll('.ft-cont');
 hiddenElements2.forEach((el) => observer2.observe(el))
+
+// const observer2 = new IntersectionObserver((entries) => {
+//     entries.forEach((entry) => {
+//         if (entry.isIntersecting) {
+//             entry.target.classList.add('show-ft');
+//             // entry.target.classList.add('animate');
+//         } else{
+//             entry.target.classList.remove('show-ft');
+//         }
+//     })
+// })
+// const hiddenElements2 = document.querySelectorAll('.ft-cont');
+// hiddenElements2.forEach((el) => observer2.observe(el))
 
 //This triggers the animations whenever you enter the bvnbox
 const observer3 = new IntersectionObserver((entries) => {
