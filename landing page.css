@@ -14,6 +14,50 @@ body{
    margin: 0;
    background-color: #FFFFFF;
 }
+.cookies {
+    width: 100%;
+    height: 86px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    background-color: #F9956B;
+    z-index: 8;
+    animation: displayCookies 1s forwards;
+    animation-delay: 5s;
+    opacity: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.cookie-txt {
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #121212;
+    margin-bottom: 0;
+    margin-right: 6px;
+}
+.close {
+    border: none;
+    background-color: #F9956B;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+@keyframes displayCookies {
+    0% {
+        opacity: 0;
+    } 
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 
 .navbar{
@@ -917,6 +961,31 @@ input{
 }
 
 @media screen and (min-width:650px){
+    .cookies {
+        width: 100%;
+        height: 46px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        background-color: #F9956B;
+        z-index: 8;
+        animation: displayCookies 1s forwards;
+        animation-delay: 5s;
+        opacity: 0;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .cookie-txt {
+        font-family: "Manrope", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 25.6px;
+        color: #121212;
+        margin-bottom: 0;
+    }
     .nav-items {
         width: 40rem;
     }
@@ -1633,6 +1702,9 @@ input{
         min-height: 100vh;
     }
     .prg {
+        font-weight: 300;
+    }
+    .txt {
         font-weight: 300;
     }
 }

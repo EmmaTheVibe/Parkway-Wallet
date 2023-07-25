@@ -20,6 +20,12 @@ const appstore2 = document.querySelector("#appstore2")
 const playstore2 = document.querySelector("#playstore2")
 const apps2 = document.querySelectorAll(".dld")
 const navBar = document.querySelectorAll(".navbar")
+const cookiesDiv = document.querySelector(".cookies")
+const closer = document.querySelector(".close")
+
+closer.addEventListener("click", () => {
+    cookiesDiv.style.display = "none"
+})
 
 //Function for changing the navbar background to black when you scroll
 // $(function () {
