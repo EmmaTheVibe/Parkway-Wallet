@@ -20,15 +20,42 @@ const appstore2 = document.querySelector("#appstore2")
 const playstore2 = document.querySelector("#playstore2")
 const apps2 = document.querySelectorAll(".dld")
 const navBar = document.querySelectorAll(".navbar")
+const cookiesBox = document.querySelector(".ck")
 const cookiesDiv = document.querySelector(".cookies")
 const closer = document.querySelector(".close")
 
+setCookie = (cName, cValue, expDays) => {
+    let date = new Date();
+    date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = cName + "=" + cValue + "; " + expires + "; path=/";
+}
+getCookie = (cName) =>{
+    const name = cName + "=";
+    const cDecoded = decodeURIComponent(document.cookie);
+    const cArr = cDecoded.split("; ");
+    let value;
+    cArr.forEach(val => {
+        if(val.indexOf(name) === 0) value = val.substring(name.length);
+    })
+    return value;
+}
 closer.addEventListener("click", () => {
-    cookiesDiv.classList.add("hide-cookies")
+    cookiesBox.classList.add("hide-cookies");
     setTimeout(() => {
-        cookiesDiv.style.display = "none";
-    }, 1100)
+        cookiesBox.style.display = "none";
+    }, 1100);
+    setCookie("cookie", true, 30);
 })
+cookieMessage = () => {
+    if(!getCookie("cookie")){
+        cookiesBox.classList.add("show-cookies")
+        setTimeout(() => {
+            cookiesBox.style.display = "block";
+        }, 5000);
+    }
+}
+window.addEventListener("load", cookieMessage)
 
 //Function for changing the navbar background to black when you scroll
 // $(function () {
