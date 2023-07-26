@@ -447,6 +447,7 @@ body{
     transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
     opacity: 0;
     display: none;
+    border-radius: 24px;
 }
 .iphone.active {
     display: block;
@@ -1857,7 +1858,7 @@ input{
         width: 1000px;
     }
     .ft-display {
-        padding-left: 7.85rem;
+        padding-left: 8rem;
     }
     .bvn {
         margin-right: 5rem;
