@@ -1,16 +1,16 @@
-@font-face{
+@font-face {
     font-family: myFont;
     src: url(./fonts/PPRightGothic-WideMedium.woff);
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+body {
    margin: 0;
    background-color: #FFFFFF;
 }
@@ -73,7 +73,7 @@ body{
 }
 
 
-.navbar{
+.navbar {
     height: 60px;
     width: 100%;
     display: flex;
@@ -88,17 +88,18 @@ body{
     background: #121212;
     transition: background 200ms;
 } */
-.nav-items{
+.nav-items {
     width: 320px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.logo{
+.logo {
     width: 100.73px;
     height: 18px;
+    pointer-events: none;
 }
-.download{
+.download {
     width: 115px;
     height: 28px;
     background-color: #F9956B;
@@ -116,7 +117,6 @@ body{
 .hero {
     width: 100%;
     padding-top: 15vh;
-    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -150,7 +150,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 1px solid red; */
 }
 .init-txt h3 {
     width: 90%;
@@ -186,12 +185,11 @@ body{
     bottom: -22rem;
     opacity: 1;
     transition: cubic-bezier(.03,1.11,.96,1.12) .9s;
-    /* border: 1px solid red; */
 }
 .apps a {
     text-decoration: none;
 }
-.appstore, .playstore{
+.appstore, .playstore {
     width: 140px;
     height: 42px;
     padding-left: 8px;
@@ -203,7 +201,7 @@ body{
     align-items: center;
     text-align: left;
 }
-.appstore a{
+.appstore a {
     font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -212,17 +210,17 @@ body{
     text-decoration: none;
     color: #FFFFFF;
 }
-.appstore img{
+.appstore img {
     width: 20px;
     margin-right: 9px;
     margin-top: 3px;
 }
-.playstore img{
+.playstore img {
     width: 20px;
     margin-right: 9px;
     margin-top: 4px;
 }
-.playstore a{
+.playstore a {
     font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -231,30 +229,29 @@ body{
     text-decoration: none;
     color: #FFFFFF;
 }
-.apps span{
+.apps span {
     font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
 }
-.show-hero .init-txt h3{
+.show-hero .init-txt h3 {
     transform: translateY(-19.5rem);
 }
-.show-hero .init-txt p{
+.show-hero .init-txt p {
     transform: translateY(-19rem);
 }
 .show-hero .apps {
     transform: translateY(-19rem);
     opacity: 1;
 }
-.top-display{
+.top-display {
     margin-top: 10rem;
     width: 320px;
     padding-left: 2rem;
     display: flex;
     align-items: end;
     justify-content: center;
-    /* border: 1px solid red; */
 }
 .button {
     width: 64px;
@@ -265,7 +262,7 @@ body{
     opacity: 0;
     transition: cubic-bezier(.03,1.11,.96,1.2) .1s;
 }
-.iphone-top{
+.iphone-top {
     width: 285.2px;
     height: 463px;
     margin-bottom: -23.5rem;
@@ -274,7 +271,7 @@ body{
     transition: cubic-bezier(.03,1.11,.96,1.12) 1s;
     left: 0px;
 }
-.menu{
+.menu {
     width: 160px;
     height: 90px;
     margin-bottom: -3.2rem;
@@ -282,20 +279,19 @@ body{
     position: relative;
     transition: cubic-bezier(.03,1.11,.96,1.12) 1s;
     right: 105px;
-    /* border: 1px solid red; */
 }
-.show-hero .iphone-top{
+.show-hero .iphone-top {
     transform: translateY(-9.6rem);
 }
-.show-hero .menu{
+.show-hero .menu {
     transform: translateY(-1.8rem);
 }
-.show-button .button{
+.show-button .button {
     opacity: 1;
     transform: scale(1.9, 1.9) translateX(-10.9px);
 }
 
-.features{
+.features {
     width: 100%;
     padding-top: 4rem;
     padding-bottom: 10rem;
@@ -313,17 +309,17 @@ body{
     align-items: center;
     width: 80%;
 }
-.ft-box{
+.ft-box {
     padding-top: 3%;
     padding-right: 5px;
     display: flex;
     flex-direction: column;
     /* border: 1px solid black; */
 }
-.ft-box .content{
+.ft-box .content {
     display: none;
 }
-.content{
+.content {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -355,7 +351,7 @@ body{
     height: 11rem;
     /* display: none; */
 }
-.ft-box h3{
+.ft-box h3 {
     font-family: myFont;
     font-style: normal;
     font-weight: 500;
@@ -392,15 +388,15 @@ body{
 .link3 {
     width: 119px;
 }
-.btn:hover{
+.btn:hover {
     color: #F9956B;
 }
 
-.btn.clicked{
+.btn.clicked {
     background-color: #F9956B;
     color: #FFFFFF;
 }
-.heading{
+.heading {
     font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -416,7 +412,7 @@ body{
 #head3 {
     display: none;
 }
-.prg{
+.prg {
     font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -433,26 +429,27 @@ body{
 .apps-f {
     display: none;
 }
-.show-ft .prg{
+.show-ft .prg {
     transform: translateY(13rem);
     opacity: 1;
 }
-.ft-display{
+.ft-display {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.iphone{
+.iphone {
     width: 9rem;
     transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
     opacity: 0;
     display: none;
     border-radius: 24px;
+    pointer-events: none;
 }
 .iphone.active {
     display: block;
 }
-.show-ft .iphone{
+.show-ft .iphone {
     opacity: 1;
     transform: scale(1.5, 1.5);
     filter: drop-shadow(0px 20px 8px rgba(18, 18, 18, 0.2));
@@ -460,7 +457,7 @@ body{
 
 
 
-.more-details{
+.more-details {
     width: 100%;
     padding-top: 4rem;
     display: flex;
@@ -469,7 +466,7 @@ body{
     align-items: center;
     background: #FFFFFF;
 }
-.more-details h3{
+.more-details h3 {
     margin-bottom: 3rem;
     font-family: myFont;
     font-style: normal;
@@ -480,13 +477,13 @@ body{
     align-self: center;
     justify-self: center;
 }
-.guide{
+.guide {
     display: grid; 
     gap: 1rem;
     grid-template-columns: 1fr;
     width: 320px;
 }
-.bvnbox{
+.bvnbox {
     width: 100%;
     height: 400px;
     background-color: #F9956B;
@@ -502,7 +499,7 @@ body{
     position: relative;
     isolation: isolate;
 }
-.otpbox{
+.otpbox {
     width: 100%;
     height: 400px;
     background-color: #FBF7E4;
@@ -518,7 +515,7 @@ body{
     isolation: isolate;
     overflow: hidden;
 }
-.pinbox{
+.pinbox {
     width: 100%;
     height: 400px;
     background-color: #F0F0F0;
@@ -534,26 +531,26 @@ body{
     position: relative;
     isolation: isolate;
 }
-.bvn, .otp, .pin{
+.bvn, .otp, .pin {
     width: 260px;
     transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
 }
 .bvn {
     margin-top: -7rem;
 }
-.otp{
+.otp {
     margin-bottom: -8rem;
 }
 .pin {
     margin-bottom: -8.1rem;
 }
-.show-bvn .bvn{
+.show-bvn .bvn {
     transform: translateY(-10rem);
 }
-.show-otp .otp{
+.show-otp .otp {
     transform: translateY(8.7rem);
 }
-.show-pin .pin{
+.show-pin .pin {
     transform: translateY(8.7rem);
 }
 .bvn-txt {
@@ -561,26 +558,24 @@ body{
     height: 50%;
     margin-top: 1.5rem;
     transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
-    /* border: 1px solid red; */
 }
-.otp-txt, .pin-txt{
+.otp-txt, .pin-txt {
     width: 260px;
     height: 50%;
     margin-bottom: 1.3rem;
     padding-left: 0;
     transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
-    /* border: 1px solid red; */
 }
-.show-bvn .bvn-txt{
+.show-bvn .bvn-txt {
     transform: translateY(-10.5rem);
 }
-.show-otp .otp-txt{
+.show-otp .otp-txt {
     transform: translateY(9.5rem);
 }
-.show-pin .pin-txt{
+.show-pin .pin-txt {
     transform: translateY(9.5rem);
 }
-.hd{
+.hd {
     margin-left: 1.2rem;
     font-family: 'Manrope', sans-serif;
     font-style: normal;
@@ -589,7 +584,7 @@ body{
     line-height: 10px;
     color: #121212;
 }
-.txt{
+.txt {
     margin-left: 1.2rem;
     font-family: 'Manrope', sans-serif;
     font-style: normal;
@@ -618,7 +613,7 @@ body{
 #contact {
     margin-bottom: 6rem;
 }
-.formbox{
+.formbox {
     display: flex;
     flex-direction: column;
     margin-top: 0;
@@ -628,14 +623,14 @@ body{
     border-radius: 1rem;
     border: 0.719528px solid #E6E6E6;;
 }
-.vidbox{
+.vidbox {
     height: 40%;
     width: 100%;
     isolation: isolate;
     position: relative;
     display: flex;
 }
-video{
+video {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -644,8 +639,9 @@ video{
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     margin-bottom: 10rem;
+    pointer-events: none;
 }
-.vidbox p{
+.vidbox p {
     align-self: end;
     margin: 1.1rem;
     color: #999999;
@@ -904,6 +900,7 @@ input{
     width: 100.73px;
     height: 18px;
     margin-bottom: 13px;
+    pointer-events: none;
 }
 .contact{
     width: 197px;
@@ -921,11 +918,11 @@ input{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid red; */
 }
 .socials img{
     width: 24px;
     height: 24px;
+    pointer-events: none;
 }
 .contact a{
     text-decoration: none;
@@ -944,7 +941,6 @@ input{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid red; */
 }
 .docs p{
     margin-bottom: 1rem;
@@ -1142,6 +1138,7 @@ input{
     }
     .bvn, .otp, .pin {
         width: 230px;
+        pointer-events: none;
     }
     .bvn {
         margin-top: -25rem;
