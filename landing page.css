@@ -2,6 +2,15 @@
     font-family: myFont;
     src: url(./fonts/PPRightGothic-WideMedium.woff);
 }
+video::-webkit-media-controls {
+    display: none;
+}
+video::-webkit-media-controls-enclosure {
+    overflow: hidden;
+}
+video::-webkit-media-controls-panel {
+    width: calc(100% + 30px);
+}
 ::-webkit-scrollbar {
     display: none;
 }
