@@ -23,9 +23,21 @@ body {
    margin: 0;
    background-color: #FFFFFF;
 }
-.cookie-box {
-    display: none;
+.cookieConsentOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 8;
+    display: none;
+}
+.cookie-box {
+    z-index: 9;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -68,7 +80,7 @@ body {
     line-height: 20px;
     color: #FFFFFF;
 }
-.show-cookies.cookie-box {
+.show-cookies.cookieConsentOverlay {
     animation: displayCookies 1s forwards;
 }
 @keyframes displayCookies {
@@ -79,7 +91,7 @@ body {
         opacity: 1;
     }
 }
-.hide-cookies.cookie-box {
+.hide-cookies.cookieConsentOverlay {
     animation: hideCookies 1s forwards;
 }
 @keyframes hideCookies {

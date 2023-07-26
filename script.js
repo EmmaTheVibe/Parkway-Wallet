@@ -20,7 +20,7 @@ const appstore2 = document.querySelector("#appstore2")
 const playstore2 = document.querySelector("#playstore2")
 const apps2 = document.querySelectorAll(".dld")
 const navBar = document.querySelectorAll(".navbar")
-const cookiesBox = document.querySelector(".cookie-box")
+const cookiesBox = document.querySelector(".cookieConsentOverlay")
 const cookiesDiv = document.querySelector(".cookies")
 const closer = document.querySelector(".close")
 
