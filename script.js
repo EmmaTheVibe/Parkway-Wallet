@@ -65,7 +65,7 @@ window.addEventListener("load", cookieMessage)
 //     });
 // });
 
-// Funtion to show the recieve tab
+
 function showReceive() {
     transfer.classList.remove("active")
     fund.classList.remove("active")
@@ -76,7 +76,6 @@ function showReceive() {
     img1.classList.add("active")
 }
 
-// Funtion to show the transfer tab
 function showTransfer() {
     receive.classList.remove("active")
     fund.classList.remove("active")
@@ -87,7 +86,6 @@ function showTransfer() {
     img2.classList.add("active")
 }
 
-// Funtion to show the fund tab
 function showFund(){
     receive.classList.remove("active")
     transfer.classList.remove("active")
@@ -114,8 +112,7 @@ function switcher(){
     tabButtons[nextTabIndex].classList.add("clicked");
     phone[nextTabIndex].classList.add("active");
 }
-
-let stopFunction;  
+ 
 function switchState(){
     const switchAnim = setInterval(switcher, 3000);
         buttons.forEach(active => {
@@ -125,24 +122,20 @@ function switchState(){
                 if(link1.classList.contains("clicked")){
                     showReceive()
                     clearInterval(switchAnim)
-                    // stopFunction = true
                 } 
                 if(link2.classList.contains("clicked")){
                     showTransfer()
                     clearInterval(switchAnim)
-                    // stopFunction = true
                 } 
                 if(link3.classList.contains("clicked")){
                     showFund()
                     clearInterval(switchAnim)
-                    // stopFunction = true
                 }  
             })
             
         })
 }
 switchState()
-
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -183,7 +176,6 @@ hiddenElements2.forEach((el) => observer2.observe(el))
 // const hiddenElements2 = document.querySelectorAll('.ft-cont');
 // hiddenElements2.forEach((el) => observer2.observe(el))
 
-//This triggers the animations whenever you enter the bvnbox
 const observer3 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -196,7 +188,6 @@ const observer3 = new IntersectionObserver((entries) => {
 const hiddenElements3 = document.querySelectorAll('.bvnbox');
 hiddenElements3.forEach((el) => observer3.observe(el))
 
-//This triggers the animations whenever you enter the otpbox
 const observer4 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -209,7 +200,6 @@ const observer4 = new IntersectionObserver((entries) => {
 const hiddenElements4 = document.querySelectorAll('.otpbox');
 hiddenElements4.forEach((el) => observer4.observe(el))
 
-//This triggers the animations whenever you enter the pinbox
 const observer5 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -222,7 +212,6 @@ const observer5 = new IntersectionObserver((entries) => {
 const hiddenElements5 = document.querySelectorAll('.pinbox');
 hiddenElements5.forEach((el) => observer5.observe(el))
 
-//This function detects the OS of the user's device and sets the appropriate link in the download button
 function isIOSorAndroid() {
     const userAgent = navigator.userAgent.toLowerCase();
     downloadLink.addEventListener ("click", () =>{
@@ -237,14 +226,6 @@ function isIOSorAndroid() {
             return 'Unknown';
         }
     })
-  
-    if (/android/.test(userAgent)) {
-      return 'Android';
-    } else if (/iphone|ipad|ipod/.test(userAgent)) {
-      return 'iOS';
-    } else {
-      return 'Unknown';
-    }
   }
   const deviceType = isIOSorAndroid();
   console.log(`This device is running ${deviceType}.`);

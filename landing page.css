@@ -113,7 +113,7 @@ body{
 }
 
 
-.hero{
+.hero {
     width: 100%;
     padding-top: 15vh;
     /* min-height: 100vh; */
@@ -130,7 +130,7 @@ body{
     isolation: isolate;
     overflow:hidden;
 }
-.hero::after{
+.hero::after {
     content: '';
     position: absolute;
     inset: 0;
@@ -138,7 +138,7 @@ body{
     background: #121212;
     opacity: .9;
 }
-.init-txt{
+.init-txt {
     justify-self: center;
     height: 20.5rem;
     width: 320px;
@@ -152,7 +152,7 @@ body{
     align-items: center;
     /* border: 1px solid red; */
 }
-.init-txt h3{
+.init-txt h3 {
     width: 90%;
     bottom: -20.2rem;
     font-style: normal;
@@ -163,7 +163,7 @@ body{
     transition: cubic-bezier(.03,1.11,.96,1.13) 1.13s;
     position: relative;
 }
-.init-txt p{
+.init-txt p {
     width: 85%;
     font-family: "Manrope", sans-serif;
     font-style: normal;
@@ -1936,8 +1936,8 @@ input{
         line-height: 40px;
     }
     .prg {
-        font-size: 28px;
-        line-height: 38px;
+        font-size: 30px;
+        line-height: 40px;
         margin-top: -27rem;
     }
     .show-ft .prg {
@@ -1980,11 +1980,11 @@ input{
     .otpbox, .pinbox {
         height: 550px;
         padding-left: 3.5rem;
-        padding-right: 5rem;
+        padding-right: 5.5rem;
     }
     .bvn {
         margin-top: -30rem;
-        margin-right: 6.5rem;
+        margin-right: 7rem;
         width: 300px;
     }
     .otp, .pin {
@@ -2006,7 +2006,7 @@ input{
         transform: translateY(11.5rem);
     }
     .show-bvn .bvn-txt {
-        transform: translateY(17rem);
+        transform: translateY(18rem);
     }
     .show-otp .otp-txt{
         transform: translateY(13.3rem);
@@ -2019,8 +2019,8 @@ input{
         line-height: 40px;
     }
     .txt {
-        font-size: 28px;
-        line-height: 38px;
+        font-size: 30px;
+        line-height: 40px;
     }
 
     .formbox {
