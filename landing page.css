@@ -648,7 +648,7 @@ video {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     margin-bottom: 10rem;
-    pointer-events: none;
+    /* pointer-events: none; */
 }
 .vidbox p {
     align-self: end;

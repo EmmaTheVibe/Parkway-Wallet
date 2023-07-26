@@ -230,3 +230,46 @@ function isIOSorAndroid() {
   const deviceType = isIOSorAndroid();
   console.log(`This device is running ${deviceType}.`);
   
+
+const video = document.querySelector(".vid");
+let canAutoplay = false;
+
+  // Function to check if the video can be autoplayed
+function checkAutoplaySupport() {
+      // Create a Promise that resolves when the video can be autoplayed without user interaction
+    const promise = video.play();
+    if (promise !== undefined) {
+        promise
+            .then(() => {
+                  // Autoplay is supported
+                canAutoplay = true;
+                video.play(); // Pause the video after checking autoplay
+            })
+            .catch(() => {
+                  // Autoplay is not supported or failed
+                canAutoplay = false;
+            });
+    }
+  }
+
+  // Function to start playing the video when the user interacts with it
+function startVideoOnInteraction() {
+    if (canAutoplay) {
+          // Autoplay is supported, no need for user interaction
+        video.play();
+    } else {
+
+        video.play();
+          // Autoplay is not supported, require user interaction to start the video
+        // video.addEventListener('click', function() {
+        //     video.play();
+        //     this.removeEventListener('click', arguments.callee);
+        // });
+    }
+}
+
+  // Check if autoplay is supported when the page loads
+checkAutoplaySupport();
+
+  // Start the video when the user interacts with it
+startVideoOnInteraction();
