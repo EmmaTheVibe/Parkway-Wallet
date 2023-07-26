@@ -76,6 +76,10 @@ body {
     color: #F9956B;
     cursor: pointer;
 }
+.close:hover {
+    color: rgba(249, 149, 107, .8);
+}
+
 .accept {
     border: none;
     border-radius: 12px;
@@ -1749,6 +1753,13 @@ input{
         top: 22px;
         font-size: 18px;
     }
+    .accept:hover {
+        background-color: rgba(249, 149, 107, .8);
+    }
+    .close:hover {
+        color: rgba(249, 149, 107, .8);
+    }
+    
     .hero {
         min-height: 100vh;
     }
