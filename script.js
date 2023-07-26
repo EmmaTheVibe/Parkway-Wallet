@@ -23,6 +23,7 @@ const navBar = document.querySelectorAll(".navbar")
 const cookiesBox = document.querySelector(".cookieConsentOverlay")
 const cookiesDiv = document.querySelector(".cookies")
 const closer = document.querySelector(".close")
+const accept = document.querySelector(".accept")
 
 setCookie = (cName, cValue, expDays) => {
     let date = new Date();
@@ -40,19 +41,25 @@ getCookie = (cName) =>{
     })
     return value;
 }
-closer.addEventListener("click", () => {
+accept.addEventListener("click", () => {
     cookiesBox.classList.add("hide-cookies");
     setTimeout(() => {
         cookiesBox.style.display = "none";
     }, 1100);
     setCookie("cookie", true, 30);
 })
+closer.addEventListener("click", () => {
+    cookiesBox.classList.add("hide-cookies");
+    setTimeout(() => {
+        cookiesBox.style.display = "none";
+    }, 1100);
+})
 cookieMessage = () => {
     if(!getCookie("cookie")){
         cookiesBox.classList.add("show-cookies")
         setTimeout(() => {
             cookiesBox.style.display = "block";
-        }, 3000);
+        }, 1500);
     }
 }
 window.addEventListener("load", cookieMessage)

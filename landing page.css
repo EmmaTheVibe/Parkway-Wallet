@@ -52,6 +52,7 @@ body {
     background-color: #FAFAFA;
     /* padding-left: 1rem;
     padding-right: 1rem; */
+    position: relative;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -68,6 +69,14 @@ body {
     color: #F9956B;
 }
 .close {
+    font-size: 18px;
+    position: absolute;
+    right: 14px;
+    top: 12px;
+    color: #F9956B;
+    cursor: pointer;
+}
+.accept {
     border: none;
     border-radius: 12px;
     background-color: #F9956B;
@@ -81,7 +90,7 @@ body {
     color: #FFFFFF;
 }
 .show-cookies.cookieConsentOverlay {
-    animation: displayCookies 1s forwards;
+    animation: displayCookies .5s forwards;
 }
 @keyframes displayCookies {
     0% {
@@ -92,7 +101,7 @@ body {
     }
 }
 .hide-cookies.cookieConsentOverlay {
-    animation: hideCookies 1s forwards;
+    animation: hideCookies .5s forwards;
 }
 @keyframes hideCookies {
     0% {
@@ -1462,7 +1471,7 @@ input{
         font-size: 16px;
         line-height: 26px;
     }
-    .close {
+    .accept {
         font-size: 16px;
     }
     .navbar {
@@ -1732,8 +1741,13 @@ input{
         margin-bottom: 0;
         margin-right: 2rem;
     }
-    .close {
+    .accept {
         width: 300px;
+    }
+    .close {
+        right: 15px;
+        top: 22px;
+        font-size: 18px;
     }
     .hero {
         min-height: 100vh;
@@ -1923,6 +1937,11 @@ input{
         line-height: 30px;
     }
     .close {
+        right: 15px;
+        top: 26px;
+        font-size: 20px;
+    }
+    .accept {
         height: 70px;
         font-size: 20px;
     }
