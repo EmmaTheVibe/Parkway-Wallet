@@ -264,11 +264,12 @@ function startVideoOnInteraction() {
           // Autoplay is supported, no need for user interaction
         video.play();
     } else {
-          // Autoplay is not supported, require user interaction to start the video
-        video.addEventListener('click', function() {
-            video.play();
-            this.removeEventListener('click', arguments.callee);
-        });
+
+        video.play();
+        // video.addEventListener('click', function() {
+        //     video.play();
+        //     this.removeEventListener('click', arguments.callee);
+        // });
     }
 }
 
