@@ -64,13 +64,12 @@ cookieMessage = () => {
 }
 window.addEventListener("load", cookieMessage)
 
-//Function for changing the navbar background to black when you scroll
-// $(function () {
-//     $(document).scroll(function () {
-//         const $nav = $(".navbar");
-//         $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-//     });
-// });
+$(function () {
+    $(document).scroll(function () {
+        const $nav = $(".navbar");
+        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+    });
+});
 
 
 function showReceive() {
