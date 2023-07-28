@@ -12,13 +12,13 @@
 }
 
 
-body{
+body {
    margin: 0;
    display: flex;
    flex-direction: column;
    align-items: center;
 }
-.navbar{
+.navbarT {
     height: 110px;
     width: 100%;
     display: flex;
@@ -29,17 +29,17 @@ body{
     z-index: 5;
     background-color: #FFFFFF;
 }
-.nav-items{
+.nav-itemsT {
     width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.logo{
+.logoT {
     width: 164.31px;
     height: 30px;
 }
-.download {
+.downloadT {
     border: none;
     font-family: "Manrope", sans-serif;
     font-style: normal;
@@ -62,7 +62,7 @@ td {
     text-align: left;
     font-size: 16px;
 }
-.hd {
+.hdT {
     font-weight: 700;
 }
 .small {
@@ -85,7 +85,7 @@ td {
     height: 20px;
 }
 
-.bgimg{
+.heroT {
     width: 100%;
     background-image: url(../images/par.svg);
     background-size: cover;
@@ -96,7 +96,7 @@ td {
     align-items: center;  
     margin-bottom: 2rem;
 }
-.overlay{
+.overlayT {
     width: 100%;
     height: 40rem;
     display: flex;
@@ -105,7 +105,7 @@ td {
     flex-direction: column;
     text-align: center;
 }
-h1{
+.overlayT h1 {
     font-family: myFont;
     font-style: normal;
     font-weight: 500;
@@ -113,7 +113,7 @@ h1{
     line-height: 84.5px;
     color: #121212;
 }
-.overlay p {
+.overlayT p {
     font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -122,7 +122,7 @@ h1{
     color: #121212;
     width: 90%;
 }
-.bod {
+.bodT {
     width: 90%;
     font-family:"Manrope", sans-serif;
     font-style: normal;
@@ -133,13 +133,13 @@ h1{
     display: flex;
     flex-direction: column;
 }
-a{
+.boddT a{
     font-weight: 800;
     color: #121212;
 }
 
 
-h5{
+.boddT h5{
     font-family: myFont;
     font-style: normal;
     font-weight: 500;
@@ -148,7 +148,7 @@ h5{
     color: #121212;
 }
 
-.bodd{
+.boddT {
     font-family: "Manrope", sans-serif;
     text-align: justify;
     font-size: 18px;
@@ -157,7 +157,7 @@ h5{
     color: #121212;
 }
 
-.footer {
+.footerT {
     width: 100%;
     padding-top: 4rem;
     padding-bottom: 1rem;
@@ -168,7 +168,7 @@ h5{
     justify-content: center;
     background-color: #121212;
 }
-.connect{
+.connectT {
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -178,11 +178,11 @@ h5{
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-.logo2{
+.logo2T {
     width: 194.07px;
     height: 33px;
 }
-.contact{
+.contactT {
     width: 285px;
     height: 1.875rem;
     display: flex;
@@ -190,7 +190,7 @@ h5{
     justify-content: space-between;
     align-items: center;
 }
-.socials{
+.socialsT {
     width: 145px;
     height: 1.875rem;
     display: flex;
@@ -198,11 +198,11 @@ h5{
     justify-content: space-between;
     align-items: center;
 }
-.socials img{
+.socialsT img{
     width: 24px;
     height: 24px;
 }
-.contact a{
+.contactT a{
     text-decoration: none;
     font-family: 'Manrope', sans-serif;
     font-style: normal;
@@ -211,7 +211,7 @@ h5{
     line-height: 0.563rem;
     color: #FFFFFF;
 }
-.docs{
+.docsT {
     width: 60%;
     padding-top: 2.5rem;
     padding-bottom: 4rem;
@@ -220,7 +220,7 @@ h5{
     justify-content: space-between;
     align-items: center;
 }
-.docs p {
+.docsT p {
     font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -230,7 +230,7 @@ h5{
     text-decoration: underline;
     margin-bottom: 0;
 }
-.docs a {
+.docsT a {
     font-family: 'Manrope', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -240,30 +240,30 @@ h5{
 }
 
 @media screen and (max-width: 1400px){
-    .navbar {
+    .navbarT {
         height: 90px;
     }
-    .logo {
+    .logoT {
         width: 134.31px;
         height: 24px;
     }
-    .logo2 {
+    .logo2T {
         width: 154.07px;
         height: 27.53px;
     }
     td {
         font-size: 14px;
     }
-    .contact {
+    .contactT {
         width: 241px;
     }
-    .contact a {
+    .contactT a {
         font-size: 16px;
     }
-    .docs p {
+    .docsT p {
         font-size: 14px;
     }
-    .docs a {
+    .docsT a {
         font-size: 14px;
     }
 }
@@ -295,17 +295,17 @@ h5{
 
 @media screen and (max-width: 800px){
     
-    .overlay{
+    .overlayT {
        width: 90%;
     }
-    .bod{
+    .bodT {
         width: 90%;
         margin-left: 0px;
     }
-    .nav-items{
+    .nav-itemsT {
         width: 90%;
     }
-    .logo, .logo2 {
+    .logoT, .logo2T {
         width: 100.73px;
         height: 18px;
     }
@@ -321,48 +321,48 @@ h5{
         width: 16%;
         height: 20px;
     }
-    .connect {
+    .connectT {
         width: 90%;
     }
-    .contact{
+    .contactT {
         width: 197px;
         height: 1.875rem;
     }
-    .contact a {
+    .contactT a {
         font-size: 14px;
     }
-    .docs {
+    .docsT {
         width: 70%;
     }
-    .docs p {
+    .docsT p {
         font-size: 12px;
     }
-    .docs a {
+    .docsT a {
         font-size: 12px;
     }
 } 
 
 
 @media screen and (max-width: 650px){
-    .navbar {
+    .navbarT {
         height: 60px;
     }
-    .download {
+    .downloadT {
         font-size: 12px;
     }
-    .overlay h1 {
+    .overlayT h1 {
         font-size: 38px;
         line-height: 49.4px;
     }
-    .overlay p {
+    .overlayT p {
         font-size: 18px;
         line-height: 28.8px;
     }
-    h5 {
+    .boddT h5 {
         font-size: 18px;
         line-height: 27.36px;
     }
-    .bodd {
+    .boddT {
         font-size: 16px;
         line-height: 28.8px;
     }
@@ -384,11 +384,11 @@ h5{
         width: 24%;
         height: 20px;
     }
-    .footer {
+    .footerT {
         padding-top: 0;
         padding-bottom: 0;
     }
-    .connect{
+    .connectT {
         width: 90%;
         flex-direction: column;
         justify-content: center;
@@ -396,29 +396,29 @@ h5{
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
-    .contact{
+    .contactT {
         margin-bottom: 13px;
     }
-    .contact a{
+    .contactT a {
         font-size: 12px;
         line-height: 0.563rem;
     }
-    .docs{
+    .docsT {
         padding-top: 2rem;
         padding-bottom: 4rem;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .docs p{
+    .docsT p {
         margin-bottom: 1rem;
         font-size: 12px;
     }
-    .docs a{
+    .docsT a {
         font-size: 12px;
         padding-bottom: 1rem;
     }
-    .logo2{
+    .logo2T {
         margin-bottom: 13px;
     }
 }

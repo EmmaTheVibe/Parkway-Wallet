@@ -16,10 +16,11 @@ const fund = document.querySelector(".fund")
 const topButton = document.querySelector(".button")
 const download = document.querySelector(".download")
 const downloadLink = document.querySelector(".link")
+const downloadBox = document.querySelector("#download-box")
 const appstore2 = document.querySelector("#appstore2")
 const playstore2 = document.querySelector("#playstore2")
 const apps2 = document.querySelectorAll(".dld")
-const navBar = document.querySelectorAll(".navbar")
+const navBar = document.querySelector(".navbar")
 const cookiesBox = document.querySelector(".cookieConsentOverlay")
 const cookiesDiv = document.querySelector(".cookies")
 const closer = document.querySelector(".close")
@@ -169,19 +170,6 @@ const observer2 = new IntersectionObserver((entries) => {
 const hiddenElements2 = document.querySelectorAll('.ft-cont');
 hiddenElements2.forEach((el) => observer2.observe(el))
 
-// const observer2 = new IntersectionObserver((entries) => {
-//     entries.forEach((entry) => {
-//         if (entry.isIntersecting) {
-//             entry.target.classList.add('show-ft');
-//             // entry.target.classList.add('animate');
-//         } else{
-//             entry.target.classList.remove('show-ft');
-//         }
-//     })
-// })
-// const hiddenElements2 = document.querySelectorAll('.ft-cont');
-// hiddenElements2.forEach((el) => observer2.observe(el))
-
 const observer3 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -197,13 +185,13 @@ hiddenElements3.forEach((el) => observer3.observe(el))
 const observer4 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('show-otp');
+            entry.target.classList.add('show-password');
         } else{
-            entry.target.classList.remove('show-otp');
+            entry.target.classList.remove('show-password');
         }
     })
 })
-const hiddenElements4 = document.querySelectorAll('.otpbox');
+const hiddenElements4 = document.querySelectorAll('.passwordbox');
 hiddenElements4.forEach((el) => observer4.observe(el))
 
 const observer5 = new IntersectionObserver((entries) => {
@@ -220,7 +208,7 @@ hiddenElements5.forEach((el) => observer5.observe(el))
 
 function isIOSorAndroid() {
     const userAgent = navigator.userAgent.toLowerCase();
-    downloadLink.addEventListener ("click", () =>{
+    downloadLink.addEventListener("click", () =>{
         if (/android/.test(userAgent)) {
             downloadLink.href = "https://play.google.com/store/apps/details?id=com.parkway.yurwallet"
             return 'Android';
@@ -232,49 +220,40 @@ function isIOSorAndroid() {
             return 'Unknown';
         }
     })
+    if (/android/.test(userAgent)) {
+        return 'Android';
+      } else if (/iphone|ipad|ipod/.test(userAgent)) {
+        return 'iOS';
+      } else {
+        return 'Unknown';
+      }
   }
-  const deviceType = isIOSorAndroid();
+  let deviceType = isIOSorAndroid();
   console.log(`This device is running ${deviceType}.`);
   
 
 const video = document.querySelector(".vid");
 let canAutoplay = false;
 
-  // Function to check if the video can be autoplayed
 function checkAutoplaySupport() {
-      // Create a Promise that resolves when the video can be autoplayed without user interaction
     const promise = video.play();
     if (promise !== undefined) {
         promise
             .then(() => {
-                  // Autoplay is supported
                 canAutoplay = true;
-                video.play(); // Pause the video after checking autoplay
+                video.play();
             })
             .catch(() => {
-                  // Autoplay is not supported or failed
                 canAutoplay = false;
             });
     }
   }
-
-  // Function to start playing the video when the user interacts with it
 function startVideoOnInteraction() {
     if (canAutoplay) {
-          // Autoplay is supported, no need for user interaction
         video.play();
     } else {
-
         video.play();
-        // video.addEventListener('click', function() {
-        //     video.play();
-        //     this.removeEventListener('click', arguments.callee);
-        // });
     }
 }
-
-  // Check if autoplay is supported when the page loads
 checkAutoplaySupport();
-
-  // Start the video when the user interacts with it
 startVideoOnInteraction();

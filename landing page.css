@@ -21,6 +21,9 @@ video::-webkit-media-controls-panel {
 }
 body {
    margin: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    background-color: #FFFFFF;
 }
 .cookieConsentOverlay {
@@ -128,9 +131,18 @@ body {
     z-index: 5;
     /* background-color: #121212; */
 }
+#download-box, #contact {
+    scroll-margin-top: 70px;
+}
+#features {
+    scroll-margin-top: 60px;
+}
 .navbar.scrolled {
     background: #121212;
     transition: background 200ms;
+}
+.bkg.navbar{
+    background-color: #121212;
 }
 .nav-items {
     width: 320px;
@@ -142,6 +154,10 @@ body {
     width: 100.73px;
     height: 18px;
     pointer-events: none;
+}
+.link {
+    text-decoration: none;
+    cursor: pointer;
 }
 .download {
     width: 115px;
@@ -155,6 +171,7 @@ body {
     font-size: 0.625rem;
     line-height: 0.938rem;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 
@@ -165,7 +182,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-image: url(./images/vector1.svg);
+    background-image: url(./images/herobkg.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -218,7 +235,7 @@ body {
     position: relative;
     bottom: -21rem;
 }
-.apps {
+/* .apps {
     height: 110px;
     width: 146px;
     display: flex;
@@ -278,7 +295,7 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-}
+} */
 .show-hero .init-txt h3 {
     transform: translateY(-19.5rem);
 }
@@ -335,11 +352,13 @@ body {
     transform: scale(1.9, 1.9) translateX(-10.9px);
 }
 
+
 .features {
     width: 100%;
     padding-top: 4rem;
-    padding-bottom: 10rem;
+    padding-bottom: 3.5rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     /* background-image: linear-gradient(120deg, rgba(18,18,18,0.14) 0%, rgba(249,149,107,0.14) 35%, rgba(241,219,141,0.22) 100%); */
@@ -352,6 +371,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     width: 80%;
+    margin-bottom: 8rem;
 }
 .ft-box {
     padding-top: 3%;
@@ -384,16 +404,11 @@ body {
         opacity: 1;
     }
 }
-.receive {
-    height: 9.8rem;
-}
-.transfer {
-    height: 13.8rem;
-    /* display: none; */
+.receive, .transfer {
+    height: 10rem;
 }
 .fund {
-    height: 11rem;
-    /* display: none; */
+    height: 10.5rem;
 }
 .ft-box h3 {
     font-family: myFont;
@@ -498,12 +513,48 @@ body {
     transform: scale(1.5, 1.5);
     filter: drop-shadow(0px 20px 8px rgba(18, 18, 18, 0.2));
 }
-
+.cardbox {
+    width: 320px;
+    height: 370px;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #121212;
+    border-radius: 24px;
+}
+.card-txt {
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 10px;
+    font-family: "Manrope", sans-serif;
+    margin-bottom: 1.5rem;
+}
+.hd1 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22.4px;
+    color: #FFFFFF;
+}
+.txt1 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19.6px;
+    color: #C2C2C2;
+    width: 82%;
+    margin-bottom: 0;
+}
+.pkw-card {
+    /* width: 210px;
+    height: 120px; */
+    /* border: 1px solid red; */
+}
 
 
 .more-details {
     width: 100%;
-    padding-top: 4rem;
+    padding-top: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -511,7 +562,7 @@ body {
     background: #FFFFFF;
 }
 .more-details h3 {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     font-family: myFont;
     font-style: normal;
     font-weight: 500;
@@ -543,7 +594,7 @@ body {
     position: relative;
     isolation: isolate;
 }
-.otpbox {
+.passwordbox {
     width: 100%;
     height: 400px;
     background-color: #FBF7E4;
@@ -575,14 +626,14 @@ body {
     position: relative;
     isolation: isolate;
 }
-.bvn, .otp, .pin {
+.bvn, .password, .pin {
     width: 260px;
     transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
 }
 .bvn {
     margin-top: -7rem;
 }
-.otp {
+.password {
     margin-bottom: -8rem;
 }
 .pin {
@@ -591,7 +642,7 @@ body {
 .show-bvn .bvn {
     transform: translateY(-10rem);
 }
-.show-otp .otp {
+.show-password .password {
     transform: translateY(8.7rem);
 }
 .show-pin .pin {
@@ -603,7 +654,7 @@ body {
     margin-top: 1.5rem;
     transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
 }
-.otp-txt, .pin-txt {
+.password-txt, .pin-txt {
     width: 260px;
     height: 50%;
     margin-bottom: 1.3rem;
@@ -613,7 +664,7 @@ body {
 .show-bvn .bvn-txt {
     transform: translateY(-10.5rem);
 }
-.show-otp .otp-txt {
+.show-password .password-txt {
     transform: translateY(9.5rem);
 }
 .show-pin .pin-txt {
@@ -645,7 +696,7 @@ body {
 }
 
 
-.ad-box{
+.ad-box {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -654,13 +705,10 @@ body {
     background-color: #FFFFFF;
     padding-bottom: 4rem;
 }
-#contact {
-    margin-bottom: 6rem;
-}
 .formbox {
     display: flex;
     flex-direction: column;
-    margin-top: 0;
+    margin-top: 3.9rem;
     grid-column: span 2;
     height: 585px;
     width: 320px;
@@ -682,7 +730,6 @@ video {
     z-index: -1;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    margin-bottom: 10rem;
     /* pointer-events: none; */
 }
 .vidbox p {
@@ -777,7 +824,7 @@ input{
     flex-direction: column;
     align-items: center;
     background-color: #121212;
-    background-image: url(./images/bottomvector2.svg);
+    background-image: url(./images/bottomvector.svg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 1.5rem;
@@ -929,6 +976,7 @@ input{
     justify-content: center;
     align-items: center;
     background-color: #121212;
+    width: 100%;
 }
 .connect{
     width: 90%;
@@ -1037,17 +1085,18 @@ input{
     }
 
     .features{
-        flex-direction: row;
+        /* flex-direction: row; */
         justify-content: center;
         align-items: center;
         padding-top: 2rem;
-        padding-bottom: 0rem;
+        padding-bottom: 4rem;
     }
     .ft-cont {
         width: 40rem;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 0;
     }
     .ft-box{
         width: 60%;
@@ -1161,6 +1210,21 @@ input{
     .iphone {
         margin-top: -4rem;
     }
+    .cardbox {
+        width: 40rem;
+        flex-direction: row;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 5rem;
+        height: 290px;
+    }
+    .card-txt {
+        margin-bottom: 0;
+        padding-left: 5rem;
+    }
+    .txt1 {
+        width: 70%;
+    }
 
     .guide{
         width: 40rem;
@@ -1174,13 +1238,13 @@ input{
         align-items: start;
         height: 280px;
     }
-    .otpbox, .pinbox {
+    .passwordbox, .pinbox {
         padding-left: 0.8rem;
         padding-right: 1rem;
         align-items: start;
         margin-bottom: 0;
     }
-    .bvn, .otp, .pin {
+    .bvn, .password, .pin {
         width: 230px;
         pointer-events: none;
     }
@@ -1191,7 +1255,7 @@ input{
     .show-bvn .bvn {
         transform: translateY(13rem);
     }
-    .show-otp .otp {
+    .show-password .password {
         transform: translateY(6.8rem);
     }
     .show-pin .pin {
@@ -1200,10 +1264,10 @@ input{
     .show-bvn .bvn-txt{
         transform: translateY(12rem);
     }
-    .otp-txt, .pin-txt {
+    .password-txt, .pin-txt {
         margin-top: -5rem;
     }
-    .show-otp .otp-txt{
+    .show-password .password-txt{
         transform: translateY(8rem);
     }
     .show-pin .pin-txt{
@@ -1214,7 +1278,7 @@ input{
         height: 60%;
         width: 100%;
     }
-    .otp-txt, .pin-txt {
+    .password-txt, .pin-txt {
         width: 100%;
     }
     .hd {
@@ -1232,10 +1296,8 @@ input{
         line-height: 22px;
     }
 
-    #contact {
-        margin-bottom: 6rem;
-    }
     .formbox{
+        /* margin-top: 6rem; */
         flex-direction: row;
         width: 40rem;
         height: 22rem;
@@ -1281,7 +1343,7 @@ input{
     }
     .download-box {
         width: 40rem;
-        margin-top: 6rem;
+        /* margin-top: 6rem; */
         padding-top: 5rem;
     }
     .download-box h3{
@@ -1294,14 +1356,15 @@ input{
         height: 42px;
     }
  
-    .footer {
+    /* .footer {
         padding-top: 2rem;
-    }
+    } */
     .connect{
         width: 40rem;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        padding-bottom: 1rem;
     }
     .logo2{
         margin-bottom: unset;
@@ -1316,6 +1379,8 @@ input{
         width: 30rem;
         flex-direction: row;
         justify-content: space-between;
+        padding-top: 1.5rem;
+        padding-bottom: 2.5rem;
     }
     .docs p {
         margin-bottom: 0;
@@ -1388,6 +1453,21 @@ input{
     .ft-display {
         padding-left: 3.65rem;
     }
+    .cardbox {
+        width: 43rem;
+        flex-direction: row;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 3rem;
+        height: 290px;
+    }
+    .card-txt {
+        margin-bottom: 0;
+    }
+    .txt1 {
+        width: 70%;
+    }
+
 
     .more-details h3 {
         font-size: 26px;
@@ -1398,7 +1478,7 @@ input{
     .bvnbox {
         padding-left: 3rem;
     }
-    .otpbox, .pinbox {
+    .passwordbox, .pinbox {
         padding-left: 0.5rem;
     }
     .bvn {
@@ -1481,6 +1561,12 @@ input{
     .navbar {
         height: 90px;
     }
+    #download-box, #contact {
+        scroll-margin-top: 100px;
+    }
+    #features {
+        scroll-margin-top: 80px;
+    }
     .nav-items{
         width: 50rem;
     }
@@ -1509,10 +1595,11 @@ input{
     
     .features {
         padding-top: 4rem;
-        padding-bottom: 8rem;
+        padding-bottom: 6rem;
     }
     .ft-cont {
         width: 50rem;
+        margin-bottom: 2rem;
     }
     .ft-box{
         height: 36rem;
@@ -1540,6 +1627,33 @@ input{
     .link3 {
         width: 176px;
     }
+    .cardbox {
+        width: 50rem;
+        height: 353px;
+        flex-direction: row;
+        align-items: start;
+        padding-top: 3rem;
+        padding-bottom: 0;
+        padding-right: 3rem;
+    }
+    .card-txt {
+        margin-bottom: 0;
+        padding-top: 1rem;
+    }
+    .hd1 {
+        font-size: 30px;
+        line-height: 42px;
+    }
+    .txt1 {
+        width: 90%;
+        font-size: 24px;
+        line-height: 33.6px;
+    }
+    .pkw-card {
+        width: 390px;
+        height: 244.29px;
+    }
+
     
     .content {
         margin-bottom: 0;
@@ -1583,7 +1697,7 @@ input{
         height: 353px;
         padding-left: 4.5rem;
     }
-    .otpbox, .pinbox {
+    .passwordbox, .pinbox {
         height: 450px;
         padding-left: 2rem;
         padding-right: 3rem;
@@ -1613,26 +1727,24 @@ input{
         font-size: 18px;
         line-height: 28px;
     }
-    .otp-txt, .pin-txt {
+    .password-txt, .pin-txt {
         margin-top: -6.8rem;
     }
-    .show-otp .otp-txt{
+    .show-password .password-txt{
         transform: translateY(11rem);
     }
     .show-pin .pin-txt{
         transform: translateY(11rem);
     }
     .more-details{
-        padding-top: 6rem;
+        padding-top: 5rem;
     }
     
     .ad-box {
         padding-bottom: 7rem;
     }
-    #contact {
-        margin-bottom: 8rem;
-    }
     .formbox {
+        /* margin-top: 8rem; */
         height: 490px;
     }
     form {
@@ -1673,7 +1785,7 @@ input{
     }
     .download-box {
         height: 302px;
-        margin-top: 8rem;
+        /* margin-top: 8rem; */
         margin-bottom: 6rem;
     }
     .download-box h3{
@@ -1706,7 +1818,7 @@ input{
     }
    
     .footer {
-        padding-top: 4rem;
+        padding-top: 1rem;
         padding-bottom: 1rem;
     }
     .logo2 {
@@ -1718,7 +1830,6 @@ input{
     }
     .docs {
         width: 40rem;
-        padding-top: 2.5rem;
     }
     .contact {
         width: 241px;
@@ -1757,6 +1868,15 @@ input{
         background-color: rgba(249, 149, 107, .8);
     }
     .close:hover {
+        color: rgba(249, 149, 107, .8);
+    }
+    .download:hover {
+        background-color: rgb(246, 162, 127);
+    }
+    .downloadT:hover {
+        color: rgba(249, 149, 107, .8);
+    }
+    .downloadP:hover {
         color: rgba(249, 149, 107, .8);
     }
     
@@ -1843,6 +1963,32 @@ input{
     .show-ft .iphone{
         transform: scale(1.9, 1.9);
     }
+    .cardbox {
+        width: 900px;
+        height: 353px;
+        flex-direction: row;
+        padding-top: 4rem;
+        padding-bottom: 0;
+        padding-right: 7rem;
+    }
+    .card-txt {
+        margin-bottom: 0;
+        padding-left: 7rem;
+    }
+    .hd1 {
+        font-size: 30px;
+        line-height: 42px;
+    }
+    .txt1 {
+        width: 90%;
+        font-size: 24px;
+        line-height: 33.6px;
+    }
+    .pkw-card {
+        width: 390px;
+        height: 244.29px;
+    }
+
 
     .guide {
         width: 900px;
@@ -1852,7 +1998,7 @@ input{
         height: 355px;
         padding-left: 6rem;
     }
-    .otpbox, .pinbox {
+    .passwordbox, .pinbox {
         height: 450px;
         padding-left: 2.2rem;
         padding-right: 3rem;
@@ -1861,19 +2007,19 @@ input{
         margin-right: 3rem;
         width: 260px;
     }
-    .otp, .pin {
+    .password, .pin {
         width: 260px;
     }
     .show-bvn .bvn {
         transform: translateY(14.8rem);
     }
-    .show-otp .otp {
+    .show-password .password {
         transform: translateY(9rem);
     }
     .show-pin .pin {
         transform: translateY(9rem);
     }
-    .show-otp .otp-txt{
+    .show-password .password-txt{
         transform: translateY(10rem);
     }
     .show-pin .pin-txt{
@@ -1917,6 +2063,31 @@ input{
     .ft-cont {
         width: 1000px;
     }
+    .cardbox {
+        width: 1000px;
+        height: 353px;
+        flex-direction: row;
+        padding-top: 4rem;
+        padding-bottom: 0;
+        padding-right: 9rem;
+    }
+    .card-txt {
+        margin-bottom: 0;
+        padding-left: 9rem;
+    }
+    .hd1 {
+        font-size: 30px;
+        line-height: 42px;
+    }
+    .txt1 {
+        width: 80%;
+        font-size: 24px;
+        line-height: 33.6px;
+    }
+    .pkw-card {
+        width: 390px;
+        height: 244.29px;
+    }
     .guide {
         width: 1000px;
     }
@@ -1959,6 +2130,12 @@ input{
     .navbar {
         height: 110px;
     }
+    #download-box, #contact {
+        scroll-margin-top: 120px;
+    }
+    #features {
+        scroll-margin-top: 100px;
+    }
     .logo {
         width: 164.31px;
         height: 30px;
@@ -1994,6 +2171,7 @@ input{
 
     .features {
         padding-top: 7rem;
+        padding-bottom: 8rem;
     }
     .features h3 {
         font-size: 48px;
@@ -2046,6 +2224,33 @@ input{
     .show-ft .iphone{
         transform: scale(2.5, 2.5);
     }
+    .cardbox {
+        width: 80rem;
+        height: 433px;
+        flex-direction: row;
+        align-items: start;
+        padding-top: 5rem;
+        padding-bottom: 0;
+        padding-right: 10rem;
+    }
+    .card-txt {
+        margin-bottom: 0;
+        padding-top: 1rem;
+        padding-left: 10rem;
+    }
+    .hd1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .txt1 {
+        width: 70%;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .pkw-card {
+        width: 440px;
+        height: 294.29px;
+    }
 
     .more-details {
         padding-top: 7rem;
@@ -2062,7 +2267,7 @@ input{
         height: 450px;
         padding-left: 9rem;
     }
-    .otpbox, .pinbox {
+    .passwordbox, .pinbox {
         height: 550px;
         padding-left: 3.5rem;
         padding-right: 5.5rem;
@@ -2072,19 +2277,19 @@ input{
         margin-right: 7rem;
         width: 300px;
     }
-    .otp, .pin {
+    .password, .pin {
         width: 300px;
     }
     .bvn-txt {
         margin-top: -12rem;
     }
-    .otp-txt, .pin-txt {
+    .password-txt, .pin-txt {
         margin-top: -10rem;
     }
     .show-bvn .bvn {
         transform: translateY(19rem);
     }
-    .show-otp .otp {
+    .show-password .password {
         transform: translateY(11.5rem);
     }
     .show-pin .pin {
@@ -2093,7 +2298,7 @@ input{
     .show-bvn .bvn-txt {
         transform: translateY(18rem);
     }
-    .show-otp .otp-txt{
+    .show-password .password-txt{
         transform: translateY(13.3rem);
     }
     .show-pin .pin-txt{
@@ -2110,9 +2315,7 @@ input{
 
     .formbox {
         height: 730px;
-    }
-    #contact {
-        margin-bottom: 10rem;
+        /* margin-top: 10rem; */
     }
     form {
         padding-top: 5rem;
@@ -2152,7 +2355,7 @@ input{
         font-size: 24px;
     }
     .download-box {
-        margin-top: 10rem;
+        /* margin-top: 10rem; */
         height: 340px;
     }
     .download-box h3 {
@@ -2200,5 +2403,723 @@ input{
     }
     .docs a {
         font-size: 18px;
+    }
+}
+
+
+.navbarP {
+    height: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    background-color: #FFFFFF;
+}
+.nav-itemsP {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoP {
+    width: 164.31px;
+    height: 30px;
+}
+.downloadP {
+    border: none;
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 21.86px;
+    color: #F7743B;
+    cursor: pointer;
+}
+
+
+.heroP {
+    width: 100%;
+    background-image: url(./images/par.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    margin-bottom: 2rem;
+}
+.overlay {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.overlay h1 {
+    font-family: myFont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 65px;
+    line-height: 84.5px;
+    color: #121212;
+}
+.overlay p{
+    font-weight: "Manrope", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 33.6px;
+    color: #121212;
+}
+.bod {
+    width: 90%;
+    font-family:"Manrope", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    text-align: start; 
+    color: #121212;
+    display: flex;
+    flex-direction: column;
+}
+.bodd a {
+    font-weight: 800;
+    color: #121212;
+}
+
+
+.bodd h5{
+    font-family: myFont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 34.96px;
+    color: #121212;
+}
+
+.bodd {
+    font-family: "Manrope", sans-serif;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32.4px;
+    color: #121212;
+}
+
+.footerP {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+}
+.connectP {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.063rem solid white;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+.logo2P {
+    width: 194.07px;
+    height: 33px;
+}
+.contactP {
+    width: 285px;
+    height: 1.875rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.socialsP {
+    width: 145px;
+    height: 1.875rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.socialsP img{
+    width: 24px;
+    height: 24px;
+}
+.contactP a{
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 0.563rem;
+    color: #FFFFFF;
+}
+.docsP {
+    width: 60%;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.docsP p {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1rem;
+    color: #FFFFFF;
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+.docsP a {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1rem;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1400px){
+    .navbarP {
+        height: 90px;
+    }
+    .logoP {
+        width: 134.31px;
+        height: 24px;
+    }
+    .logo2P {
+        width: 154.07px;
+        height: 27.53px;
+    }
+    .contactP {
+        width: 241px;
+    }
+    .contactP a {
+        font-size: 16px;
+    }
+    .docsP p {
+        font-size: 14px;
+    }
+    .docsP a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    
+    .overlayP {
+       width: 90%;
+    }
+    .bod {
+        width: 90%;
+        margin-left: 0px;
+    }
+    .nav-itemsP {
+        width: 90%;
+    }
+    .logoP, .logo2P {
+        width: 100.73px;
+        height: 18px;
+    }
+    .connectP {
+        width: 90%;
+    }
+    .contactP {
+        width: 197px;
+        height: 1.875rem;
+    }
+    .contactP a {
+        font-size: 14px;
+    }
+    .docsP {
+        width: 70%;
+    }
+    .docsP p {
+        font-size: 12px;
+    }
+    .docsP a {
+        font-size: 12px;
+    }
+} 
+
+
+@media screen and (max-width: 650px){
+    .navbarP {
+        height: 60px;
+    }
+    .downloadP {
+        font-size: 12px;
+    }
+    .overlay h1 {
+        font-size: 38px;
+        line-height: 49.4px;
+    }
+    .overlay p {
+        font-size: 18px;
+        line-height: 28.8px;
+    }
+    .bodd h5 {
+        font-size: 18px;
+        line-height: 27.36px;
+    }
+    .bodd {
+        font-size: 16px;
+        line-height: 28.8px;
+    }
+    .footerP {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .connectP {
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .contactP {
+        margin-bottom: 13px;
+    }
+    .contactP a{
+        font-size: 12px;
+        line-height: 0.563rem;
+    }
+    .docsP {
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .docsP p{
+        margin-bottom: 1rem;
+        font-size: 12px;
+    }
+    .docsP a{
+        font-size: 12px;
+        padding-bottom: 1rem;
+    }
+    .logo2P {
+        margin-bottom: 13px;
+    }
+}
+
+
+
+.navbarT {
+    height: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    background-color: #FFFFFF;
+}
+.nav-itemsT {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoT {
+    width: 164.31px;
+    height: 30px;
+}
+.downloadT {
+    border: none;
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 21.86px;
+    color: #F7743B;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+td {
+    border: 1px solid black;
+    padding: 8px;
+    padding-left: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+.hdT {
+    font-weight: 700;
+}
+.small {
+    width: 8%;
+    height: 20px;
+}
+
+.medium {
+    width: 53%;
+    height: 30px;
+}
+
+.large {
+    width: 10%;
+    height: 30px;
+}
+
+.extra-large {
+    width: 18%;
+    height: 20px;
+}
+
+.heroT {
+    width: 100%;
+    background-image: url(./images/par.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    margin-bottom: 2rem;
+}
+.overlayT {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.overlayT h1 {
+    font-family: myFont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 65px;
+    line-height: 84.5px;
+    color: #121212;
+}
+.overlayT p {
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 33.6px;
+    color: #121212;
+    width: 90%;
+}
+.bodT {
+    width: 90%;
+    font-family:"Manrope", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    text-align: start; 
+    color: #121212;
+    display: flex;
+    flex-direction: column;
+}
+.boddT a{
+    font-weight: 800;
+    color: #121212;
+}
+
+
+.boddT h5{
+    font-family: myFont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 34.96px;
+    color: #121212;
+}
+
+.boddT {
+    font-family: "Manrope", sans-serif;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32.4px;
+    color: #121212;
+}
+
+.footerT {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+}
+.connectT {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.063rem solid white;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+.logo2T {
+    width: 194.07px;
+    height: 33px;
+}
+.contactT {
+    width: 285px;
+    height: 1.875rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.socialsT {
+    width: 145px;
+    height: 1.875rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.socialsT img{
+    width: 24px;
+    height: 24px;
+}
+.contactT a{
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 0.563rem;
+    color: #FFFFFF;
+}
+.docsT {
+    width: 60%;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.docsT p {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1rem;
+    color: #FFFFFF;
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+.docsT a {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1rem;
+    color: #FFFFFF;
+}
+
+
+@media screen and (max-width: 1400px){
+    .navbarT {
+        height: 90px;
+    }
+    .logoT {
+        width: 134.31px;
+        height: 24px;
+    }
+    .logo2T {
+        width: 154.07px;
+        height: 27.53px;
+    }
+    td {
+        font-size: 14px;
+    }
+    .contactT {
+        width: 241px;
+    }
+    .contactT a {
+        font-size: 16px;
+    }
+    .docsT p {
+        font-size: 14px;
+    }
+    .docsT a {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1100px){
+    td {
+        padding-left: 5px;
+    }
+}
+@media screen and (max-width: 940px){
+    .small {
+        width: 10%;
+        height: 20px;
+    }
+    .medium {
+        width: 33%;
+        height: 30px;
+    }
+    .large {
+        width: 10%;
+        height: 30px;
+    }
+    
+    .extra-large {
+        width: 18%;
+        height: 20px;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    
+    .overlayT {
+       width: 90%;
+    }
+    .bodT {
+        width: 90%;
+        margin-left: 0px;
+    }
+    .nav-itemsT {
+        width: 90%;
+    }
+    .logoT, .logo2T {
+        width: 100.73px;
+        height: 18px;
+    }
+    .small {
+        width: 8%;
+        height: 20px;
+    }
+    .medium {
+        width: 20%;
+        height: 30px;
+    }
+    .extra-large {
+        width: 16%;
+        height: 20px;
+    }
+    .connectT {
+        width: 90%;
+    }
+    .contactT {
+        width: 197px;
+        height: 1.875rem;
+    }
+    .contactT a {
+        font-size: 14px;
+    }
+    .docsT {
+        width: 70%;
+    }
+    .docsT p {
+        font-size: 12px;
+    }
+    .docsT a {
+        font-size: 12px;
+    }
+} 
+
+
+@media screen and (max-width: 650px){
+    .navbarT {
+        height: 60px;
+    }
+    .downloadT {
+        font-size: 12px;
+    }
+    .overlayT h1 {
+        font-size: 38px;
+        line-height: 49.4px;
+    }
+    .overlayT p {
+        font-size: 18px;
+        line-height: 28.8px;
+    }
+    .boddT h5 {
+        font-size: 18px;
+        line-height: 27.36px;
+    }
+    .boddT {
+        font-size: 16px;
+        line-height: 28.8px;
+    }
+    td {
+        font-size: 12px;
+    }
+    .small {
+        width: 10%;
+        height: 20px;
+    }
+    .medium {
+        width: 25%;
+        height: 30px;
+    }
+    .large {
+        width: 28%;
+    }
+    .extra-large {
+        width: 24%;
+        height: 20px;
+    }
+    .footerT {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .connectT {
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .contactT {
+        margin-bottom: 13px;
+    }
+    .contactT a {
+        font-size: 12px;
+        line-height: 0.563rem;
+    }
+    .docsT {
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .docsT p {
+        margin-bottom: 1rem;
+        font-size: 12px;
+    }
+    .docsT a {
+        font-size: 12px;
+        padding-bottom: 1rem;
+    }
+    .logo2T {
+        margin-bottom: 13px;
     }
 }
