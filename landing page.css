@@ -546,8 +546,8 @@ body {
     margin-bottom: 0;
 }
 .pkw-card {
-    /* width: 210px;
-    height: 120px; */
+    width: 210px;
+    /* height: 120px; */
     /* border: 1px solid red; */
 }
 
@@ -1213,17 +1213,19 @@ input{
     .cardbox {
         width: 40rem;
         flex-direction: row;
-        padding-top: 0;
+        align-items: start;
+        padding-top: 5rem;
         padding-bottom: 0;
         padding-right: 5rem;
         height: 290px;
     }
     .card-txt {
         margin-bottom: 0;
+        padding-top: 10px;
         padding-left: 5rem;
     }
     .txt1 {
-        width: 70%;
+        width: 65%;
     }
 
     .guide{
@@ -1456,13 +1458,13 @@ input{
     .cardbox {
         width: 43rem;
         flex-direction: row;
-        padding-top: 0;
         padding-bottom: 0;
-        padding-right: 3rem;
+        padding-right: 7rem;
         height: 290px;
     }
     .card-txt {
         margin-bottom: 0;
+        padding-left: 7rem;
     }
     .txt1 {
         width: 70%;
@@ -1632,20 +1634,21 @@ input{
         height: 353px;
         flex-direction: row;
         align-items: start;
-        padding-top: 3rem;
+        padding-top: 3.5rem;
         padding-bottom: 0;
         padding-right: 3rem;
     }
     .card-txt {
         margin-bottom: 0;
-        padding-top: 1rem;
+        padding-top: 7px;
+        padding-left: 3rem;
     }
     .hd1 {
         font-size: 30px;
         line-height: 42px;
     }
     .txt1 {
-        width: 90%;
+        width: 80%;
         font-size: 24px;
         line-height: 33.6px;
     }
@@ -2240,7 +2243,7 @@ input{
     }
     .hd1 {
         font-size: 40px;
-        line-height: 40px;
+        line-height: 50px;
     }
     .txt1 {
         width: 70%;
