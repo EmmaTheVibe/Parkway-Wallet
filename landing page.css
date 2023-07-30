@@ -53,14 +53,11 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #FAFAFA;
-    /* padding-left: 1rem;
-    padding-right: 1rem; */
     position: relative;
     padding-left: 10%;
     padding-right: 10%;
 }
 .cookie-txt {
-    /* width: 90%; */
     font-family: "Manrope", sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -129,7 +126,6 @@ body {
     position: fixed;
     top: 0;
     z-index: 5;
-    /* background-color: #121212; */
 }
 #download-box, #contact {
     scroll-margin-top: 70px;
@@ -235,67 +231,6 @@ body {
     position: relative;
     bottom: -21rem;
 }
-/* .apps {
-    height: 110px;
-    width: 146px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    bottom: -22rem;
-    opacity: 1;
-    transition: cubic-bezier(.03,1.11,.96,1.12) .9s;
-}
-.apps a {
-    text-decoration: none;
-}
-.appstore, .playstore {
-    width: 140px;
-    height: 42px;
-    padding-left: 8px;
-    padding-bottom: 2px;
-    border-radius: 8px;
-    border: 2px solid #FFFFFF;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
-}
-.appstore a {
-    font-family: "Manrope", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16.39px;
-    text-decoration: none;
-    color: #FFFFFF;
-}
-.appstore img {
-    width: 20px;
-    margin-right: 9px;
-    margin-top: 3px;
-}
-.playstore img {
-    width: 20px;
-    margin-right: 9px;
-    margin-top: 4px;
-}
-.playstore a {
-    font-family: "Manrope", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16.39px;
-    text-decoration: none;
-    color: #FFFFFF;
-}
-.apps span {
-    font-family: "Manrope", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-} */
 .show-hero .init-txt h3 {
     transform: translateY(-19.5rem);
 }
@@ -378,7 +313,6 @@ body {
     padding-right: 5px;
     display: flex;
     flex-direction: column;
-    /* border: 1px solid black; */
 }
 .ft-box .content {
     display: none;
@@ -546,9 +480,7 @@ body {
     margin-bottom: 0;
 }
 .pkw-card {
-    width: 210px;
-    /* height: 120px; */
-    /* border: 1px solid red; */
+    width: 230px;
 }
 
 
@@ -730,7 +662,6 @@ video {
     z-index: -1;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    /* pointer-events: none; */
 }
 .vidbox p {
     align-self: end;
@@ -869,9 +800,7 @@ input{
     animation: blink 1s linear forwards;
     animation-delay: .3s;
 }
-/* .link2.paused {
-    animation-play-state: ;
-} */
+
 @keyframes blink {
     0% {
         opacity: 1;
@@ -1051,7 +980,6 @@ input{
     font-size: 12px;
     line-height: 1rem;
     color: #FFFFFF;
-    /* text-decoration: underline; */
     padding-bottom: 1rem;
 }
 
@@ -1085,7 +1013,6 @@ input{
     }
 
     .features{
-        /* flex-direction: row; */
         justify-content: center;
         align-items: center;
         padding-top: 2rem;
@@ -1299,7 +1226,6 @@ input{
     }
 
     .formbox{
-        /* margin-top: 6rem; */
         flex-direction: row;
         width: 40rem;
         height: 22rem;
@@ -1345,7 +1271,6 @@ input{
     }
     .download-box {
         width: 40rem;
-        /* margin-top: 6rem; */
         padding-top: 5rem;
     }
     .download-box h3{
@@ -1358,9 +1283,6 @@ input{
         height: 42px;
     }
  
-    /* .footer {
-        padding-top: 2rem;
-    } */
     .connect{
         width: 40rem;
         flex-direction: row;
@@ -1512,12 +1434,6 @@ input{
     form {
         padding-top: 2.4rem;
     }
-    /* label {
-        margin-bottom: 1rem;
-    } */
-    /* #message {
-        margin-bottom: 0;
-    } */
     .download-box{
         width: 43rem;
     }
@@ -1747,7 +1663,6 @@ input{
         padding-bottom: 7rem;
     }
     .formbox {
-        /* margin-top: 8rem; */
         height: 490px;
     }
     form {
