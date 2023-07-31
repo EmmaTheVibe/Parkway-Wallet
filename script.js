@@ -234,32 +234,6 @@ function isIOSorAndroid() {
             return 'Unknown';
         }
     })
-  }
-  isIOSorAndroid();
+}
+isIOSorAndroid();
   
-
-// const video = document.querySelector(".vid");
-// let canAutoplay = false;
-
-// function checkAutoplaySupport() {
-//     const promise = video.play();
-//     if (promise !== undefined) {
-//         promise
-//             .then(() => {
-//                 canAutoplay = true;
-//                 video.play();
-//             })
-//             .catch(() => {
-//                 canAutoplay = false;
-//             });
-//     }
-//   }
-// function startVideoOnInteraction() {
-//     if (canAutoplay) {
-//         video.play();
-//     } else {
-//         video.play();
-//     }
-// }
-// checkAutoplaySupport();
-// startVideoOnInteraction();
