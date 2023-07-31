@@ -296,7 +296,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-image: linear-gradient(120deg, rgba(18,18,18,0.14) 0%, rgba(249,149,107,0.14) 35%, rgba(241,219,141,0.22) 100%); */
     background-image: url(./images/noisebkg.png);
     background-size: cover;
 }
@@ -1384,7 +1383,6 @@ input{
     }
     .cardbox {
         width: 43rem;
-        flex-direction: row;
         padding-bottom: 0;
         height: 290px;
     }
@@ -1551,8 +1549,6 @@ input{
     .cardbox {
         width: 50rem;
         height: 443px;
-        flex-direction: row;
-        align-items: start;
         padding-top: 3.5rem;
         padding-bottom: 0;
         padding-right: 3rem;
@@ -1801,7 +1797,7 @@ input{
     .prg {
         font-weight: 300;
     }
-    .txt {
+    .txt, .txt1 {
         font-weight: 300;
     }
 }
@@ -1880,7 +1876,6 @@ input{
     }
     .cardbox {
         width: 900px;
-        flex-direction: row;
         padding-top: 4rem;
         padding-bottom: 0;
         padding-right: 5rem;
@@ -1894,7 +1889,7 @@ input{
         line-height: 42px;
     }
     .txt1 {
-        width: 100%;
+        width: 95%;
         font-size: 24px;
         line-height: 33.6px;
     }
@@ -1980,7 +1975,6 @@ input{
     }
     .cardbox {
         width: 1000px;
-        flex-direction: row;
         padding-bottom: 0;
         padding-right: 7rem;
     }
@@ -2137,8 +2131,6 @@ input{
     .cardbox {
         width: 80rem;
         height: 553px;
-        flex-direction: row;
-        align-items: start;
         padding-top: 5rem;
         padding-bottom: 0;
         padding-right: 10rem;
