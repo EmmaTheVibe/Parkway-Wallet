@@ -449,7 +449,7 @@ body {
 }
 .cardbox {
     width: 320px;
-    height: 370px;
+    height: 448px;
     padding-top: 3rem;
     padding-bottom: 2rem;
     display: flex;
@@ -460,10 +460,10 @@ body {
 }
 .card-txt {
     width: 100%;
-    padding-left: 3rem;
+    padding-left: 3.3rem;
     padding-right: 10px;
     font-family: "Manrope", sans-serif;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 .hd1 {
     font-weight: 700;
@@ -476,11 +476,11 @@ body {
     font-size: 14px;
     line-height: 19.6px;
     color: #C2C2C2;
-    width: 82%;
+    width: 88%;
     margin-bottom: 0;
 }
 .pkw-card {
-    width: 230px;
+    width: 224px;
 }
 
 
@@ -612,6 +612,7 @@ body {
     color: #121212;
 }
 .txt {
+    width: 80%;
     margin-left: 1.2rem;
     font-family: 'Manrope', sans-serif;
     font-style: normal;
@@ -625,6 +626,7 @@ body {
 }
 #txt1 {
     color: #FAFAFA;
+    width: 100%;
 }
 
 
@@ -1141,7 +1143,7 @@ input{
         width: 40rem;
         flex-direction: row;
         align-items: start;
-        padding-top: 5rem;
+        padding-top: 3rem;
         padding-bottom: 0;
         padding-right: 5rem;
         height: 290px;
@@ -1152,7 +1154,10 @@ input{
         padding-left: 5rem;
     }
     .txt1 {
-        width: 65%;
+        width: 90%;
+    }
+    .pkw-card {
+        margin-top: 1rem;
     }
 
     .guide{
@@ -1381,15 +1386,13 @@ input{
         width: 43rem;
         flex-direction: row;
         padding-bottom: 0;
-        padding-right: 7rem;
         height: 290px;
     }
     .card-txt {
         margin-bottom: 0;
-        padding-left: 7rem;
     }
     .txt1 {
-        width: 70%;
+        width: 79%;
     }
 
 
@@ -1403,7 +1406,7 @@ input{
         padding-left: 3rem;
     }
     .passwordbox, .pinbox {
-        padding-left: 0.5rem;
+        padding-left: 1rem;
     }
     .bvn {
         margin-right: 1rem;
@@ -1517,7 +1520,7 @@ input{
     }
     .ft-cont {
         width: 50rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     .ft-box{
         height: 36rem;
@@ -1547,7 +1550,7 @@ input{
     }
     .cardbox {
         width: 50rem;
-        height: 353px;
+        height: 443px;
         flex-direction: row;
         align-items: start;
         padding-top: 3.5rem;
@@ -1564,13 +1567,14 @@ input{
         line-height: 42px;
     }
     .txt1 {
-        width: 80%;
+        width: 90%;
         font-size: 24px;
         line-height: 33.6px;
     }
     .pkw-card {
-        width: 390px;
-        height: 244.29px;
+        margin-top: 4.2rem;
+        width: 360px;
+        height: 214.29px;
     }
 
     
@@ -1593,12 +1597,12 @@ input{
         opacity: 1;
     }
 
-    .heading {
+    .heading, .hd {
         font-size: 30px;
         font-weight: 700;
         margin-bottom: 1.5rem;
     }
-    .prg {
+    .prg, .txt {
         font-size: 24px;
         line-height: 33.6px;
     }
@@ -1618,11 +1622,10 @@ input{
     }
     .passwordbox, .pinbox {
         height: 450px;
-        padding-left: 2rem;
-        padding-right: 3rem;
+        padding-left: 1rem;
     }
     .bvn {
-        margin-right: 2.5rem;
+        margin-right: 1.5rem;
     }
     .show-bvn .bvn {
         transform: translateY(17rem);
@@ -1638,13 +1641,8 @@ input{
         width: 50rem;
         overflow: hidden;
     }
-    .hd{
-        font-size: 26px;
-        line-height: 20px;
-    }
     .txt{
-        font-size: 18px;
-        line-height: 28px;
+        width: 90%;
     }
     .password-txt, .pin-txt {
         margin-top: -6.8rem;
@@ -1703,7 +1701,6 @@ input{
     }
     .download-box {
         height: 302px;
-        /* margin-top: 8rem; */
         margin-bottom: 6rem;
     }
     .download-box h3{
@@ -1883,26 +1880,26 @@ input{
     }
     .cardbox {
         width: 900px;
-        height: 353px;
         flex-direction: row;
         padding-top: 4rem;
         padding-bottom: 0;
-        padding-right: 7rem;
+        padding-right: 5rem;
     }
     .card-txt {
         margin-bottom: 0;
-        padding-left: 7rem;
+        padding-left: 5rem;
     }
     .hd1 {
         font-size: 30px;
         line-height: 42px;
     }
     .txt1 {
-        width: 90%;
+        width: 100%;
         font-size: 24px;
         line-height: 33.6px;
     }
     .pkw-card {
+        margin-top: 3.3rem;
         width: 390px;
         height: 244.29px;
     }
@@ -1983,31 +1980,25 @@ input{
     }
     .cardbox {
         width: 1000px;
-        height: 353px;
         flex-direction: row;
-        padding-top: 4rem;
         padding-bottom: 0;
-        padding-right: 9rem;
+        padding-right: 7rem;
     }
     .card-txt {
         margin-bottom: 0;
-        padding-left: 9rem;
-    }
-    .hd1 {
-        font-size: 30px;
-        line-height: 42px;
+        padding-left: 7rem;
     }
     .txt1 {
-        width: 80%;
-        font-size: 24px;
-        line-height: 33.6px;
-    }
-    .pkw-card {
-        width: 390px;
-        height: 244.29px;
+        width: 90%;
     }
     .guide {
         width: 1000px;
+    }
+    .passwordbox, .pinbox {
+        padding-left: 3rem;
+    }
+    .txt {
+        width: 80%;
     }
     .ft-display {
         padding-left: 8rem;
@@ -2095,13 +2086,14 @@ input{
         font-size: 48px;
     }
     .ft-cont {
-        width: 80rem;
+        width: 80rem;   
+        margin-bottom: 3rem;
     }
     .content {
         height: 49rem;
     }
     .ft-box {
-        height: 51rem;
+        height: 45rem;
     }
     .link-cont {
         margin-top: 2.5rem;
@@ -2125,7 +2117,7 @@ input{
         transform: translateY(27rem);
     }
     .ft-display {
-        padding-left: 9.5rem;
+        padding-left: 12.1rem;
     }
     .stores {
         width: 20rem;
@@ -2140,11 +2132,11 @@ input{
         transform: translateY(29rem);
     }
     .show-ft .iphone{
-        transform: scale(2.5, 2.5);
+        transform: scale(2.2, 2.2);
     }
     .cardbox {
         width: 80rem;
-        height: 433px;
+        height: 553px;
         flex-direction: row;
         align-items: start;
         padding-top: 5rem;
@@ -2158,16 +2150,16 @@ input{
     }
     .hd1 {
         font-size: 40px;
-        line-height: 50px;
+        line-height: 56px;
     }
     .txt1 {
-        width: 70%;
         font-size: 30px;
         line-height: 40px;
     }
     .pkw-card {
-        width: 440px;
-        height: 294.29px;
+        margin-top: 4.5rem;
+        width: 450px;
+        height: 304.29px;
     }
 
     .more-details {
@@ -2233,7 +2225,6 @@ input{
 
     .formbox {
         height: 730px;
-        /* margin-top: 10rem; */
     }
     form {
         padding-top: 5rem;
@@ -2273,7 +2264,6 @@ input{
         font-size: 24px;
     }
     .download-box {
-        /* margin-top: 10rem; */
         height: 340px;
     }
     .download-box h3 {
