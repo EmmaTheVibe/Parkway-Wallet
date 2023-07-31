@@ -148,10 +148,10 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show-hero');
+            navBar.classList.remove('bkg');
             setTimeout(() => {
                 entry.target.classList.add('show-button');
             }, 1600)
-            download.style.display = ""
         }
     })
 })
@@ -162,6 +162,7 @@ const observer2 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show-ft');
+            navBar.classList.add('bkg');
         } else {
             entry.target.classList.remove('show-ft');
         }
@@ -174,6 +175,7 @@ const observer3 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show-bvn');
+            navBar.classList.add('bkg');
         } else{
             entry.target.classList.remove('show-bvn');
         }
@@ -186,6 +188,7 @@ const observer4 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show-password');
+            navBar.classList.add('bkg');
         } else{
             entry.target.classList.remove('show-password');
         }
@@ -198,6 +201,7 @@ const observer5 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show-pin');
+            navBar.classList.add('bkg');
         } else{
             entry.target.classList.remove('show-pin');
         }
@@ -205,6 +209,16 @@ const observer5 = new IntersectionObserver((entries) => {
 })
 const hiddenElements5 = document.querySelectorAll('.pinbox');
 hiddenElements5.forEach((el) => observer5.observe(el))
+
+const observer6 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            navBar.classList.add('bkg');
+        }
+    })
+})
+const hiddenElements6 = document.querySelectorAll('.ad-box');
+hiddenElements6.forEach((el) => observer6.observe(el))
 
 function isIOSorAndroid() {
     const userAgent = navigator.userAgent.toLowerCase();
@@ -220,40 +234,32 @@ function isIOSorAndroid() {
             return 'Unknown';
         }
     })
-    if (/android/.test(userAgent)) {
-        return 'Android';
-      } else if (/iphone|ipad|ipod/.test(userAgent)) {
-        return 'iOS';
-      } else {
-        return 'Unknown';
-      }
   }
-  let deviceType = isIOSorAndroid();
-  console.log(`This device is running ${deviceType}.`);
+  isIOSorAndroid();
   
 
-const video = document.querySelector(".vid");
-let canAutoplay = false;
+// const video = document.querySelector(".vid");
+// let canAutoplay = false;
 
-function checkAutoplaySupport() {
-    const promise = video.play();
-    if (promise !== undefined) {
-        promise
-            .then(() => {
-                canAutoplay = true;
-                video.play();
-            })
-            .catch(() => {
-                canAutoplay = false;
-            });
-    }
-  }
-function startVideoOnInteraction() {
-    if (canAutoplay) {
-        video.play();
-    } else {
-        video.play();
-    }
-}
-checkAutoplaySupport();
-startVideoOnInteraction();
+// function checkAutoplaySupport() {
+//     const promise = video.play();
+//     if (promise !== undefined) {
+//         promise
+//             .then(() => {
+//                 canAutoplay = true;
+//                 video.play();
+//             })
+//             .catch(() => {
+//                 canAutoplay = false;
+//             });
+//     }
+//   }
+// function startVideoOnInteraction() {
+//     if (canAutoplay) {
+//         video.play();
+//     } else {
+//         video.play();
+//     }
+// }
+// checkAutoplaySupport();
+// startVideoOnInteraction();
