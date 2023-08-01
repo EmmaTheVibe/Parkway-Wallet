@@ -571,7 +571,7 @@ body {
     margin-bottom: -8.1rem;
 }
 .show-bvn .bvn {
-    transform: translateY(-10rem);
+    transform: translateY(-11rem);
 }
 .show-password .password {
     transform: translateY(8.7rem);
@@ -593,7 +593,7 @@ body {
     transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
 }
 .show-bvn .bvn-txt {
-    transform: translateY(-10.5rem);
+    transform: translateY(-11rem);
 }
 .show-password .password-txt {
     transform: translateY(9.5rem);
@@ -1169,7 +1169,7 @@ input{
         padding-left: 2rem;
         padding-right: 1rem;
         align-items: start;
-        height: 280px;
+        height: 265px;
     }
     .passwordbox, .pinbox {
         padding-left: 0.8rem;
@@ -1186,7 +1186,7 @@ input{
         margin-right: 0.5rem;
     }
     .show-bvn .bvn {
-        transform: translateY(13rem);
+        transform: translateY(11rem);
     }
     .show-password .password {
         transform: translateY(6.8rem);
@@ -1612,7 +1612,7 @@ input{
     }
     
     .bvnbox{
-        height: 353px;
+        height: 293px;
         padding-left: 4.5rem;
     }
     .passwordbox, .pinbox {
@@ -1623,10 +1623,10 @@ input{
         margin-right: 1.5rem;
     }
     .show-bvn .bvn {
-        transform: translateY(17rem);
+        transform: translateY(12.6rem);
     }
     .show-bvn .bvn-txt{
-        transform: translateY(13rem);
+        transform: translateY(11.7rem);
     }
     .more-details h3 {
         font-weight: 500;
@@ -1845,10 +1845,10 @@ input{
         width: 900px;
     }
     .ft-box {
-        height: 40.8rem;
+        height: 36rem;
     }
     .fund, .receive, .transfer {
-        height: 39rem;
+        height: 30rem;
     }
     .link-cont {
         margin-top: 2.5rem;
@@ -1859,7 +1859,8 @@ input{
         font-weight: 600;
     }
     .ft-display {
-        padding-left: 5.5rem;
+        padding-left: 7.2rem;
+        margin-bottom: 0;
     }
     .show-ft #stores-r{
         transform: translateY(21rem);
@@ -1870,9 +1871,9 @@ input{
     .show-ft #stores-f{
         transform: translateY(21rem);
     }
-    .show-ft .iphone{
-        transform: scale(1.9, 1.9);
-    }
+    /* .show-ft .iphone{
+        transform: scale(1.7, 1.7);
+    } */
     .cardbox {
         width: 900px;
         /* padding-top: 4rem; */
@@ -1903,7 +1904,7 @@ input{
         overflow: hidden;
     }
     .bvnbox{
-        height: 355px;
+        height: 325px;
         padding-left: 6rem;
     }
     .passwordbox, .pinbox {
@@ -1919,13 +1920,16 @@ input{
         width: 260px;
     }
     .show-bvn .bvn {
-        transform: translateY(14.8rem);
+        transform: translateY(11rem);
     }
     .show-password .password {
         transform: translateY(9rem);
     }
     .show-pin .pin {
         transform: translateY(9rem);
+    }
+    .show-bvn .bvn-txt{
+        transform: translateY(12.3rem);
     }
     .show-password .password-txt{
         transform: translateY(10rem);
@@ -1946,7 +1950,7 @@ input{
         line-height: 20px;
     }
     .prg {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 33.6px;
         margin-top: -19rem;
     }
@@ -2124,9 +2128,9 @@ input{
     .show-ft #stores-f{
         transform: translateY(29rem);
     }
-    /* .show-ft .iphone{
-        transform: scale(2.2, 2.2);
-    } */
+    .show-ft .iphone{
+        transform: scale(1.9, 1.9);
+    }
     .cardbox {
         width: 80rem;
         height: 390px;
@@ -2164,7 +2168,7 @@ input{
         overflow: hidden;
     }
     .bvnbox {
-        height: 450px;
+        height: 390px;
         padding-left: 9rem;
     }
     .passwordbox, .pinbox {
@@ -2187,7 +2191,7 @@ input{
         margin-top: -10rem;
     }
     .show-bvn .bvn {
-        transform: translateY(19rem);
+        transform: translateY(13.7rem);
     }
     .show-password .password {
         transform: translateY(11.5rem);
@@ -2196,7 +2200,7 @@ input{
         transform: translateY(11.5rem);
     }
     .show-bvn .bvn-txt {
-        transform: translateY(18rem);
+        transform: translateY(16.3rem);
     }
     .show-password .password-txt{
         transform: translateY(13.3rem);

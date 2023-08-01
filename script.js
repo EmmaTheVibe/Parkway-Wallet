@@ -121,7 +121,7 @@ function switcher(){
 }
  
 function switchState(){
-    const switchAnim = setInterval(switcher, 3000);
+    const switchAnim = setInterval(switcher, 3500);
         buttons.forEach(active => {
             active.addEventListener("click", () => {
                 document.querySelector('.clicked')?.classList.remove('clicked')
