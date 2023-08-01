@@ -1478,7 +1478,7 @@ input{
         font-size: 16px;
     }
     .navbar {
-        height: 90px;
+        height: 70px;
     }
     #download-box, #contact {
         scroll-margin-top: 100px;
@@ -1805,27 +1805,27 @@ input{
     .hero {
         padding-top: 17vh;
     }
-    .init-txt{
+    .init-txt {
         width: 900px;
         padding-left: 10rem;
         padding-right: 10rem;
         height: 20rem;
     }
-    .init-txt h3{
+    .init-txt h3 {
         font-size: 68px;
         line-height: 77.7px;
     }
-    .init-txt p{
+    .init-txt p  {
         font-size: 28px;
         line-height: 44px;
     }
     .apps {
         bottom: -320px;
     }
-    .show-hero .init-txt h3{
+    .show-hero .init-txt h3 {
         transform: translateY(-20.5rem);
     }
-    .show-hero .init-txt p{
+    .show-hero .init-txt p {
         transform: translateY(-21rem);
     }
     .show-hero .apps {
@@ -2030,7 +2030,7 @@ input{
         font-size: 20px;
     }
     .navbar {
-        height: 110px;
+        height: 90px;
     }
     #download-box, #contact {
         scroll-margin-top: 120px;
@@ -2102,15 +2102,16 @@ input{
         line-height: 40px;
     }
     .prg {
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 28px;
+        line-height: 36px;
         margin-top: -27rem;
     }
     .show-ft .prg {
         transform: translateY(27rem);
     }
     .ft-display {
-        padding-left: 12.1rem;
+        padding-left: 15.1rem;
+        margin-bottom: 3rem;
     }
     .stores {
         width: 20rem;
@@ -2124,9 +2125,9 @@ input{
     .show-ft #stores-f{
         transform: translateY(29rem);
     }
-    .show-ft .iphone{
+    /* .show-ft .iphone{
         transform: scale(2.2, 2.2);
-    }
+    } */
     .cardbox {
         width: 80rem;
         height: 553px;
