@@ -448,8 +448,8 @@ body {
 }
 .cardbox {
     width: 320px;
-    height: 448px;
-    padding-top: 3rem;
+    height: 370px;
+    padding-top: 2.5rem;
     padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
@@ -1142,22 +1142,22 @@ input{
         width: 40rem;
         flex-direction: row;
         align-items: start;
-        padding-top: 3rem;
+        /* padding-top: 3rem; */
         padding-bottom: 0;
         padding-right: 5rem;
-        height: 290px;
+        height: 230px;
     }
     .card-txt {
         margin-bottom: 0;
-        padding-top: 10px;
+        padding-top: 7px;
         padding-left: 5rem;
     }
     .txt1 {
         width: 90%;
     }
-    .pkw-card {
+    /* .pkw-card {
         margin-top: 1rem;
-    }
+    } */
 
     .guide{
         width: 40rem;
@@ -1384,7 +1384,6 @@ input{
     .cardbox {
         width: 43rem;
         padding-bottom: 0;
-        height: 290px;
     }
     .card-txt {
         margin-bottom: 0;
@@ -1548,8 +1547,8 @@ input{
     }
     .cardbox {
         width: 50rem;
-        height: 443px;
-        padding-top: 3.5rem;
+        height: 320px;
+        /* padding-top: 3.5rem; */
         padding-bottom: 0;
         padding-right: 3rem;
     }
@@ -1563,12 +1562,12 @@ input{
         line-height: 42px;
     }
     .txt1 {
-        width: 90%;
+        width: 100%;
         font-size: 24px;
         line-height: 33.6px;
     }
     .pkw-card {
-        margin-top: 4.2rem;
+        margin-top: 1rem;
         width: 360px;
         height: 214.29px;
     }
@@ -1876,7 +1875,7 @@ input{
     }
     .cardbox {
         width: 900px;
-        padding-top: 4rem;
+        /* padding-top: 4rem; */
         padding-bottom: 0;
         padding-right: 5rem;
     }
@@ -1894,7 +1893,7 @@ input{
         line-height: 33.6px;
     }
     .pkw-card {
-        margin-top: 3.3rem;
+        margin-top: 0;
         width: 390px;
         height: 244.29px;
     }
@@ -2080,7 +2079,7 @@ input{
     }
     .ft-cont {
         width: 80rem;   
-        margin-bottom: 3rem;
+        margin-bottom: 0;
     }
     .content {
         height: 49rem;
@@ -2130,8 +2129,8 @@ input{
     } */
     .cardbox {
         width: 80rem;
-        height: 553px;
-        padding-top: 5rem;
+        height: 390px;
+        padding-top: 2.6rem;
         padding-bottom: 0;
         padding-right: 10rem;
     }
@@ -2149,7 +2148,6 @@ input{
         line-height: 40px;
     }
     .pkw-card {
-        margin-top: 4.5rem;
         width: 450px;
         height: 304.29px;
     }
