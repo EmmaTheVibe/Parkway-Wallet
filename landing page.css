@@ -447,7 +447,7 @@ body {
     height: 370px;
     padding-top: 2.5rem;
     padding-bottom: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -482,7 +482,7 @@ body {
 
 .more-details {
     width: 100%;
-    padding-top: 2rem;
+    padding-top: 2.8rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -643,7 +643,7 @@ body {
 .formbox {
     display: flex;
     flex-direction: column;
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
     grid-column: span 2;
     height: 555px;
     width: 320px;
@@ -752,7 +752,7 @@ input{
 .download-box{
     height: 290px;
     width: 320px;
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
     padding-top: 3.3rem;
     display: flex;
     flex-direction: column;
@@ -766,7 +766,7 @@ input{
     isolation: isolate;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 .download-box::after{
     content: '';
@@ -1230,7 +1230,10 @@ input{
         font-size: 15px;
         line-height: 22px;
     }
-
+    
+    .ad-box {
+        padding-bottom: 2rem;
+    }
     .formbox{
         flex-direction: row;
         width: 40rem;
@@ -1294,8 +1297,8 @@ input{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 0.5rem;
-        padding-top: 1rem;
+        padding-bottom: 0.8rem;
+        padding-top: 2.5rem;
     }
     .logo2{
         margin-bottom: unset;
@@ -1310,8 +1313,8 @@ input{
         width: 40rem;
         flex-direction: row;
         justify-content: space-between;
-        padding-top: 0.5rem;
-        padding-bottom: 2rem;
+        padding-top: 0.8rem;
+        padding-bottom: 2.5rem;
     }
     .docs p {
         margin-bottom: 0;
@@ -1519,7 +1522,7 @@ input{
     }
     
     .features {
-        padding-top: 2.5rem;
+        padding-top: 3.5rem;
     }
     .ft-cont {
         width: 50rem;   
@@ -1556,7 +1559,7 @@ input{
         height: 320px;
         padding-bottom: 0;
         padding-right: 3rem;
-        margin-bottom: 3rem;
+        margin-bottom: 4.5rem;
     }
     .card-txt {
         margin-bottom: 0;
@@ -1657,14 +1660,15 @@ input{
         transform: translateY(11rem);
     }
     .more-details{
-        padding-top: 3rem;
+        padding-top: 4rem;
     }
     
     .ad-box {
-        padding-bottom: 1.5rem;
+        padding-bottom: 2rem;
     }
     .formbox {
         height: 490px;
+        margin-top: 4.5rem;
     }
     form {
         padding-top: 2.9rem;
@@ -1704,7 +1708,8 @@ input{
     }
     .download-box {
         height: 302px;
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
+        margin-top: 4.5rem;
     }
     .download-box h3{
         font-size: 36px;
@@ -1907,6 +1912,7 @@ input{
     .guide {
         width: 900px;
         overflow: hidden;
+        gap: 1.5rem;
     }
     .bvnbox{
         height: 345px;
@@ -2084,7 +2090,7 @@ input{
     }
 
     .features {
-        padding-top: 4rem;
+        padding-top: 5rem;
     }
     .features h3 {
         font-size: 48px;
@@ -2097,7 +2103,7 @@ input{
         height: 45rem;
     }
     .ft-box {
-        height: 39rem;
+        height: 41rem;
         padding-top: 2rem;
     }
     .link-cont {
@@ -2123,6 +2129,7 @@ input{
     }
     .ft-display {
         padding-left: 15.1rem;
+        margin-top: -1rem;
     }
     .stores {
         width: 20rem;
@@ -2145,7 +2152,7 @@ input{
         padding-top: 2.6rem;
         padding-bottom: 0;
         padding-right: 10rem;
-        margin-bottom: 4rem;
+        margin-bottom: 6rem;
     }
     .card-txt {
         margin-bottom: 0;
@@ -2166,7 +2173,7 @@ input{
     }
 
     .more-details {
-        padding-top: 4rem;
+        padding-top: 5.5rem;
     }
     .more-details h3 {
         font-size: 48px;
@@ -2175,6 +2182,7 @@ input{
     .guide {
         width: 80rem;
         overflow: hidden;
+        gap: 2rem;
     }
     .bvnbox {
         height: 428px;
@@ -2182,8 +2190,8 @@ input{
     }
     .passwordbox, .pinbox {
         height: 550px;
-        padding-left: 3.5rem;
-        padding-right: 5.5rem;
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
     }
     .bvn {
         margin-right: 7rem;
@@ -2227,10 +2235,15 @@ input{
     .txt {
         font-size: 30px;
         line-height: 40px;
+        width: 85%;
     }
-
+    
+    .ad-box {
+        padding-bottom: 3.5rem;
+    }
     .formbox {
         height: 730px;
+        margin-top: 6rem;
     }
     form {
         padding-top: 5rem;
@@ -2271,6 +2284,8 @@ input{
     }
     .download-box {
         height: 340px;
+        margin-top: 6rem;
+        margin-bottom: 3.5rem;
     }
     .download-box h3 {
         font-size: 48px;
@@ -2278,7 +2293,7 @@ input{
     }
     #contact2 {
         font-size: 48px;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
     .friends{
         width: 580.87px;
@@ -2445,8 +2460,8 @@ input{
     justify-content: space-between;
     align-items: center;
     border-bottom: 0.063rem solid white;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem
+    padding-top: 2.5rem;
+    padding-bottom: 0.8rem
 }
 .logo2P {
     width: 194.07px;
@@ -2483,8 +2498,8 @@ input{
 }
 .docsP {
     width: 90%;
-    padding-top: 0.5rem;
-    padding-bottom: 2rem;
+    padding-top: 0.8rem;
+    padding-bottom: 2.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -2804,8 +2819,8 @@ td {
     justify-content: space-between;
     align-items: center;
     border-bottom: 0.063rem solid white;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem
+    padding-top: 2.5rem;
+    padding-bottom: 0.8rem
 }
 .logo2T {
     width: 194.07px;
@@ -2842,8 +2857,8 @@ td {
 }
 .docsT {
     width: 90%;
-    padding-top: 0.5rem;
-    padding-bottom: 2rem;
+    padding-top: 0.8rem;
+    padding-bottom: 2.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
