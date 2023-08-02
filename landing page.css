@@ -1489,11 +1489,8 @@ input{
     .navbar {
         height: 70px;
     }
-    #download-box, #contact {
+    #download-box, #contact, #features {
         scroll-margin-top: 100px;
-    }
-    #features {
-        scroll-margin-top: 80px;
     }
     .nav-items{
         width: 50rem;
@@ -2050,11 +2047,8 @@ input{
     .navbar {
         height: 90px;
     }
-    #download-box, #contact {
+    #download-box, #contact, #features {
         scroll-margin-top: 120px;
-    }
-    #features {
-        scroll-margin-top: 100px;
     }
     .logo {
         width: 164.31px;
