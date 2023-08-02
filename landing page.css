@@ -440,7 +440,7 @@ body {
 .show-ft .iphone {
     opacity: 1;
     transform: scale(1.4, 1.4);
-    filter: drop-shadow(0px 20px 8px rgba(18, 18, 18, 0.2));
+    box-shadow: 0px 17px 10px rgba(18, 18, 18, 0.2);
 }
 .cardbox {
     width: 320px;
@@ -1525,7 +1525,7 @@ input{
         width: 50rem;   
     }
     .ft-box{
-        height: 34.5rem;
+        height: 35rem;
         padding-top: 1rem;
     }
     .ft-box h3 {
@@ -1608,9 +1608,6 @@ input{
     .ft-display {
         padding-left: 4.8rem;
     }
-    /* .iphone {
-        margin-bottom: -1rem;
-    } */
     .show-ft .iphone{
         transform: scale(1.7, 1.7);
     }
@@ -1852,7 +1849,7 @@ input{
         width: 900px;
     }
     .ft-box {
-        height: 34rem;
+        height: 35rem;
     }
     .fund, .receive, .transfer {
         height: 30rem;
