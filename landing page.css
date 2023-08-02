@@ -290,8 +290,7 @@ body {
 
 .features {
     width: 100%;
-    padding-top: 4rem;
-    padding-bottom: 3.5rem;
+    padding-top: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -305,10 +304,9 @@ body {
     justify-content: space-evenly;
     align-items: center;
     width: 80%;
-    margin-bottom: 8rem;
+    margin-bottom: 6.5rem;
 }
 .ft-box {
-    padding-top: 3%;
     padding-right: 5px;
     display: flex;
     flex-direction: column;
@@ -322,7 +320,7 @@ body {
     flex-direction: column;
     overflow: hidden;
     animation: fadeEffect 1s;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 .content.active {
     display: block;
@@ -337,11 +335,8 @@ body {
         opacity: 1;
     }
 }
-.receive, .transfer {
+.receive, .transfer, .fund {
     height: 10rem;
-}
-.fund {
-    height: 10.5rem;
 }
 .ft-box h3 {
     font-family: myFont;
@@ -350,11 +345,12 @@ body {
     font-size: 1.5rem;
     line-height: 2.5rem;
     color: #222222;
+    margin-bottom: 0;
 }
 .link-cont{
     width: 100%;
     height: 40px;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
@@ -443,7 +439,7 @@ body {
 }
 .show-ft .iphone {
     opacity: 1;
-    transform: scale(1.5, 1.5);
+    transform: scale(1.4, 1.4);
     filter: drop-shadow(0px 20px 8px rgba(18, 18, 18, 0.2));
 }
 .cardbox {
@@ -451,6 +447,7 @@ body {
     height: 370px;
     padding-top: 2.5rem;
     padding-bottom: 2rem;
+    margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -485,7 +482,7 @@ body {
 
 .more-details {
     width: 100%;
-    padding-top: 2.5rem;
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -493,7 +490,7 @@ body {
     background: #FFFFFF;
 }
 .more-details h3 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-family: myFont;
     font-style: normal;
     font-weight: 500;
@@ -521,7 +518,7 @@ body {
     align-items: center;
     background-size: cover;
     background-position: center;
-    overflow: hidden;
+    overflow:hidden;
     position: relative;
     isolation: isolate;
 }
@@ -557,12 +554,16 @@ body {
     position: relative;
     isolation: isolate;
 }
-.bvn, .password, .pin {
+.bvn, .password {
     width: 260px;
     transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
 }
+.pin {
+    width: 257px;
+    transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
+}
 .bvn {
-    margin-top: -7rem;
+    /* margin-top: -7rem; */
 }
 .password {
     margin-bottom: -8rem;
@@ -571,7 +572,7 @@ body {
     margin-bottom: -8.1rem;
 }
 .show-bvn .bvn {
-    transform: translateY(-11rem);
+    transform: translateY(8.7rem);
 }
 .show-password .password {
     transform: translateY(8.7rem);
@@ -582,18 +583,19 @@ body {
 .bvn-txt {
     width: 260px;
     height: 50%;
-    margin-top: 1.5rem;
+    margin-top: -6.4rem;
+    padding-left: 3px;
     transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
 }
 .password-txt, .pin-txt {
     width: 260px;
     height: 50%;
     margin-bottom: 1.3rem;
-    padding-left: 0;
+    padding-left: 4px;
     transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
 }
 .show-bvn .bvn-txt {
-    transform: translateY(-11rem);
+    transform: translateY(9.2rem);
 }
 .show-password .password-txt {
     transform: translateY(9.5rem);
@@ -636,14 +638,14 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #FFFFFF;
-    padding-bottom: 4rem;
+    padding-bottom: 1.5rem;
 }
 .formbox {
     display: flex;
     flex-direction: column;
-    margin-top: 3.9rem;
+    margin-top: 2.5rem;
     grid-column: span 2;
-    height: 585px;
+    height: 555px;
     width: 320px;
     border-radius: 1rem;
     border: 0.719528px solid #E6E6E6;;
@@ -750,7 +752,7 @@ input{
 .download-box{
     height: 290px;
     width: 320px;
-    margin-top: 3.9rem;
+    margin-top: 2.5rem;
     padding-top: 3.3rem;
     display: flex;
     flex-direction: column;
@@ -764,7 +766,7 @@ input{
     isolation: isolate;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 1.2rem;
 }
 .download-box::after{
     content: '';
@@ -868,7 +870,7 @@ input{
     font-size: 12px;
 }
 #contact2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     font-family: myFont;
     font-style: normal;
     font-weight: 500;
@@ -916,7 +918,7 @@ input{
     align-items: center;
     border-bottom: 0.063rem solid white;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 .logo2{
     width: 100.73px;
@@ -957,12 +959,13 @@ input{
 }
 .docs{
     width: 320px;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .docs p{
     margin-bottom: 1rem;
@@ -972,7 +975,6 @@ input{
     font-size: 12px;
     line-height: 1rem;
     color: #FFFFFF;
-    text-decoration: underline;
 }
 .docs a{
     font-family: 'Manrope', sans-serif;
@@ -1016,8 +1018,6 @@ input{
     .features{
         justify-content: center;
         align-items: center;
-        padding-top: 2rem;
-        padding-bottom: 4rem;
     }
     .ft-cont {
         width: 40rem;
@@ -1028,7 +1028,7 @@ input{
     }
     .ft-box{
         width: 60%;
-        height: 33rem;
+        height: 28.5rem; 
     }
     .fund, .transfer, .receive {
         height: 16rem;
@@ -1132,6 +1132,7 @@ input{
         opacity: 1;
     }
     .ft-display {
+        margin-bottom: -1.5rem;
         width: 40%;
         padding-left: 2.45rem;
     }
@@ -1142,7 +1143,6 @@ input{
         width: 40rem;
         flex-direction: row;
         align-items: start;
-        /* padding-top: 3rem; */
         padding-bottom: 0;
         padding-right: 5rem;
         height: 230px;
@@ -1155,9 +1155,6 @@ input{
     .txt1 {
         width: 90%;
     }
-    /* .pkw-card {
-        margin-top: 1rem;
-    } */
 
     .guide{
         width: 40rem;
@@ -1165,11 +1162,12 @@ input{
     }
     .bvnbox {
         grid-column: span 2;
-        flex-direction: row;
+        flex-direction: row-reverse;
         padding-left: 2rem;
         padding-right: 1rem;
         align-items: start;
         height: 265px;
+        position: relative;
     }
     .passwordbox, .pinbox {
         padding-left: 0.8rem;
@@ -1177,22 +1175,26 @@ input{
         align-items: start;
         margin-bottom: 0;
     }
-    .bvn, .password, .pin {
+    .bvn, .password {
         width: 230px;
         pointer-events: none;
     }
+    .pin {
+        width: 227px;
+    }
     .bvn {
-        margin-top: -25rem;
+        position: relative;
+        bottom: -14rem;
         margin-right: 0.5rem;
     }
     .show-bvn .bvn {
-        transform: translateY(11rem);
+        transform: translateY(-11.8rem);
     }
     .show-password .password {
         transform: translateY(6.8rem);
     }
     .show-pin .pin {
-        transform: translateY(6.8rem);
+        transform: translateY(6.78rem);
     }
     .show-bvn .bvn-txt{
         transform: translateY(12rem);
@@ -1292,7 +1294,8 @@ input{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        padding-top: 1rem;
     }
     .logo2{
         margin-bottom: unset;
@@ -1304,17 +1307,21 @@ input{
         font-size: 14px;
     }
     .docs {
-        width: 30rem;
+        width: 40rem;
         flex-direction: row;
         justify-content: space-between;
-        padding-top: 1.5rem;
-        padding-bottom: 2.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 2rem;
     }
     .docs p {
         margin-bottom: 0;
     }
     .docs a {
         padding-bottom: 0;
+    }
+    .terms {
+        position: absolute;
+        right: 85px;
     }
 }
 
@@ -1464,7 +1471,7 @@ input{
         width: 43rem;
     }
     .docs {
-        width: 31rem;
+        width: 43rem;
     }
 }
 
@@ -1512,15 +1519,14 @@ input{
     }
     
     .features {
-        padding-top: 4rem;
-        padding-bottom: 6rem;
+        padding-top: 2.5rem;
     }
     .ft-cont {
-        width: 50rem;
-        margin-bottom: 1rem;
+        width: 50rem;   
     }
     .ft-box{
-        height: 36rem;
+        height: 34.5rem;
+        padding-top: 1rem;
     }
     .ft-box h3 {
         font-weight: 500;
@@ -1531,7 +1537,7 @@ input{
         height: 29rem;
     }
     .link-cont {
-        margin-top: 2.5rem;
+        margin-top: 1.5rem;
         margin-bottom: 2rem;
     }
     .btn {
@@ -1548,9 +1554,9 @@ input{
     .cardbox {
         width: 50rem;
         height: 320px;
-        /* padding-top: 3.5rem; */
         padding-bottom: 0;
         padding-right: 3rem;
+        margin-bottom: 3rem;
     }
     .card-txt {
         margin-bottom: 0;
@@ -1571,8 +1577,6 @@ input{
         width: 360px;
         height: 214.29px;
     }
-
-    
     .content {
         margin-bottom: 0;
     }
@@ -1604,33 +1608,37 @@ input{
     .ft-display {
         padding-left: 4.8rem;
     }
-    .iphone {
-        margin-bottom: -2rem;
-    }
+    /* .iphone {
+        margin-bottom: -1rem;
+    } */
     .show-ft .iphone{
         transform: scale(1.7, 1.7);
     }
     
     .bvnbox{
-        height: 293px;
+        height: 318px;
         padding-left: 4.5rem;
     }
     .passwordbox, .pinbox {
         height: 450px;
         padding-left: 1rem;
     }
+    .password-txt, .pin-txt {
+        padding-left: 0;
+    }
     .bvn {
         margin-right: 1.5rem;
     }
     .show-bvn .bvn {
-        transform: translateY(12.6rem);
+        transform: translateY(-11.2rem);
     }
     .show-bvn .bvn-txt{
-        transform: translateY(11.7rem);
+        transform: translateY(12.9rem);
     }
     .more-details h3 {
         font-weight: 500;
         font-size: 36px;
+        margin-bottom: 1.5rem;
     }
     .guide {
         width: 50rem;
@@ -1649,11 +1657,11 @@ input{
         transform: translateY(11rem);
     }
     .more-details{
-        padding-top: 5rem;
+        padding-top: 3rem;
     }
     
     .ad-box {
-        padding-bottom: 7rem;
+        padding-bottom: 1.5rem;
     }
     .formbox {
         height: 490px;
@@ -1696,7 +1704,7 @@ input{
     }
     .download-box {
         height: 302px;
-        margin-bottom: 6rem;
+        margin-bottom: 2rem;
     }
     .download-box h3{
         font-size: 36px;
@@ -1709,6 +1717,7 @@ input{
     #contact2 {
         font-weight: 500;
         font-size: 36px;
+        margin-bottom: 1rem;
     }
     .friends{
         width: 480.87px;
@@ -1726,20 +1735,13 @@ input{
         width: 134.43px;
         height: 30px;
     }
-   
-    .footer {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
+    
     .logo2 {
         width: 154.07px;
         height: 27.53px;
     }
-    .formbox, .download-box, .connect {
+    .formbox, .download-box, .connect, .docs {
         width: 50rem;
-    }
-    .docs {
-        width: 40rem;
     }
     .contact {
         width: 241px;
@@ -1752,6 +1754,9 @@ input{
     }
     .docs a {
         font-size: 14px;
+    }
+    .terms {
+        right: 100px;
     }
 }
 
@@ -1839,20 +1844,20 @@ input{
     }
 
     .features {
-        padding-top: 5rem;
+        padding-top: 3rem;
     }
     .ft-cont {
         width: 900px;
     }
     .ft-box {
-        height: 36rem;
+        height: 34rem;
     }
     .fund, .receive, .transfer {
         height: 30rem;
     }
     .link-cont {
         margin-top: 2.5rem;
-        margin-bottom: 3rem;
+        margin-bottom: 2.5rem;
     }
     .btn {
         font-size: 18px;
@@ -1860,7 +1865,7 @@ input{
     }
     .ft-display {
         padding-left: 7.2rem;
-        margin-bottom: 0;
+        /* margin-bottom: 0; */
     }
     .show-ft #stores-r{
         transform: translateY(21rem);
@@ -1904,7 +1909,7 @@ input{
         overflow: hidden;
     }
     .bvnbox{
-        height: 325px;
+        height: 345px;
         padding-left: 6rem;
     }
     .passwordbox, .pinbox {
@@ -1915,12 +1920,16 @@ input{
     .bvn {
         margin-right: 3rem;
         width: 260px;
+        bottom: -18rem;
     }
-    .password, .pin {
+    .password {
         width: 260px;
     }
+    .pin {
+        width: 257px;
+    }
     .show-bvn .bvn {
-        transform: translateY(11rem);
+        transform: translateY(-14.8rem);
     }
     .show-password .password {
         transform: translateY(9rem);
@@ -1929,7 +1938,7 @@ input{
         transform: translateY(9rem);
     }
     .show-bvn .bvn-txt{
-        transform: translateY(12.3rem);
+        transform: translateY(13.3rem);
     }
     .show-password .password-txt{
         transform: translateY(10rem);
@@ -1960,11 +1969,11 @@ input{
     form h4 {
         margin-left: 2.7rem;
     }
-    .formbox, .download-box, .connect {
+    .formbox, .download-box, .connect, .docs {
         width: 900px;
     }
-    .docs {
-        width: 580px;
+    .logo2 {
+        margin-right: 0;
     }
 }
 
@@ -2002,7 +2011,7 @@ input{
     .bvn {
         margin-right: 5rem;
     }
-    .formbox, .download-box, .connect {
+    .formbox, .download-box, .connect, .docs {
         width: 1000px;
     }
     .formbox h4 {
@@ -2075,8 +2084,7 @@ input{
     }
 
     .features {
-        padding-top: 7rem;
-        padding-bottom: 8rem;
+        padding-top: 4rem;
     }
     .features h3 {
         font-size: 48px;
@@ -2086,10 +2094,11 @@ input{
         margin-bottom: 0;
     }
     .content {
-        height: 49rem;
+        height: 45rem;
     }
     .ft-box {
-        height: 45rem;
+        height: 39rem;
+        padding-top: 2rem;
     }
     .link-cont {
         margin-top: 2.5rem;
@@ -2114,7 +2123,6 @@ input{
     }
     .ft-display {
         padding-left: 15.1rem;
-        margin-bottom: 3rem;
     }
     .stores {
         width: 20rem;
@@ -2137,6 +2145,7 @@ input{
         padding-top: 2.6rem;
         padding-bottom: 0;
         padding-right: 10rem;
+        margin-bottom: 4rem;
     }
     .card-txt {
         margin-bottom: 0;
@@ -2157,18 +2166,18 @@ input{
     }
 
     .more-details {
-        padding-top: 7rem;
+        padding-top: 4rem;
     }
     .more-details h3 {
         font-size: 48px;
-        margin-bottom: 3.5rem;
+        margin-bottom: 2rem;
     }
     .guide {
         width: 80rem;
         overflow: hidden;
     }
     .bvnbox {
-        height: 390px;
+        height: 428px;
         padding-left: 9rem;
     }
     .passwordbox, .pinbox {
@@ -2177,12 +2186,15 @@ input{
         padding-right: 5.5rem;
     }
     .bvn {
-        margin-top: -30rem;
         margin-right: 7rem;
         width: 300px;
+        bottom: -23rem;
     }
-    .password, .pin {
+    .password {
         width: 300px;
+    }
+    .pin {
+        width: 296.5px;
     }
     .bvn-txt {
         margin-top: -12rem;
@@ -2191,7 +2203,7 @@ input{
         margin-top: -10rem;
     }
     .show-bvn .bvn {
-        transform: translateY(13.7rem);
+        transform: translateY(-18.6rem);
     }
     .show-password .password {
         transform: translateY(11.5rem);
@@ -2200,7 +2212,7 @@ input{
         transform: translateY(11.5rem);
     }
     .show-bvn .bvn-txt {
-        transform: translateY(16.3rem);
+        transform: translateY(18.4rem);
     }
     .show-password .password-txt{
         transform: translateY(13.3rem);
@@ -2292,7 +2304,7 @@ input{
         height: 33px;
     }
     .docs {
-        width: 60rem;
+        width: 80rem;
     }
     .contact {
         width: 285px;
@@ -2305,6 +2317,9 @@ input{
     }
     .docs a {
         font-size: 18px;
+    }
+    .terms {
+        right: 123px;
     }
 }
 
@@ -2415,12 +2430,13 @@ input{
 
 .footerP {
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #121212;
+    position: relative;
 }
 .connectP {
     width: 90%;
@@ -2429,8 +2445,8 @@ input{
     justify-content: space-between;
     align-items: center;
     border-bottom: 0.063rem solid white;
-    padding-top: 2.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem
 }
 .logo2P {
     width: 194.07px;
@@ -2466,13 +2482,14 @@ input{
     color: #FFFFFF;
 }
 .docsP {
-    width: 60%;
-    padding-top: 1.5rem;
-    padding-bottom: 3rem;
+    width: 90%;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .docsP p {
     font-family: 'Manrope', sans-serif;
@@ -2481,7 +2498,6 @@ input{
     font-size: 18px;
     line-height: 1rem;
     color: #FFFFFF;
-    text-decoration: underline;
     margin-bottom: 0;
 }
 .docsP a {
@@ -2491,6 +2507,10 @@ input{
     font-size: 18px;
     line-height: 1rem;
     color: #FFFFFF;
+}
+.termsP {
+    position: absolute;
+    right: 125px;
 }
 
 @media screen and (max-width: 1400px){
@@ -2516,6 +2536,9 @@ input{
     }
     .docsP a {
         font-size: 14px;
+    }
+    .termsP {
+        right: 95px;
     }
 }
 
@@ -2545,14 +2568,14 @@ input{
     .contactP a {
         font-size: 14px;
     }
-    .docsP {
-        width: 70%;
-    }
     .docsP p {
         font-size: 12px;
     }
     .docsP a {
         font-size: 12px;
+    }
+    .termsP {
+        right: 85px;
     }
 } 
 
@@ -2590,7 +2613,7 @@ input{
         justify-content: center;
         align-items: center;
         padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
     }
     .contactP {
         margin-bottom: 13px;
@@ -2600,8 +2623,8 @@ input{
         line-height: 0.563rem;
     }
     .docsP {
-        padding-top: 2rem;
-        padding-bottom: 4rem;
+        padding-top: 1rem;
+        padding-bottom: 3rem;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -2616,6 +2639,9 @@ input{
     }
     .logo2P {
         margin-bottom: 13px;
+    }
+    .termsP {
+        position: unset;
     }
 }
 
@@ -2763,12 +2789,13 @@ td {
 
 .footerT {
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #121212;
+    position: relative;
 }
 .connectT {
     width: 90%;
@@ -2777,8 +2804,8 @@ td {
     justify-content: space-between;
     align-items: center;
     border-bottom: 0.063rem solid white;
-    padding-top: 2.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem
 }
 .logo2T {
     width: 194.07px;
@@ -2814,13 +2841,14 @@ td {
     color: #FFFFFF;
 }
 .docsT {
-    width: 60%;
-    padding-top: 1.5rem;
-    padding-bottom: 3rem;
+    width: 90%;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .docsT p {
     font-family: 'Manrope', sans-serif;
@@ -2829,7 +2857,6 @@ td {
     font-size: 18px;
     line-height: 1rem;
     color: #FFFFFF;
-    text-decoration: underline;
     margin-bottom: 0;
 }
 .docsT a {
@@ -2839,6 +2866,10 @@ td {
     font-size: 18px;
     line-height: 1rem;
     color: #FFFFFF;
+}
+.termsT {
+    position: absolute;
+    right: 125px;
 }
 
 
@@ -2868,6 +2899,9 @@ td {
     }
     .docsT a {
         font-size: 14px;
+    }
+    .termsT {
+        right: 95px;
     }
 }
 @media screen and (max-width: 1100px){
@@ -2934,14 +2968,14 @@ td {
     .contactT a {
         font-size: 14px;
     }
-    .docsT {
-        width: 70%;
-    }
     .docsT p {
         font-size: 12px;
     }
     .docsT a {
         font-size: 12px;
+    }
+    .termsT {
+        right: 85px;
     }
 } 
 
@@ -2997,31 +3031,34 @@ td {
         justify-content: center;
         align-items: center;
         padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
     }
     .contactT {
         margin-bottom: 13px;
     }
-    .contactT a {
+    .contactT a{
         font-size: 12px;
         line-height: 0.563rem;
     }
     .docsT {
-        padding-top: 2rem;
-        padding-bottom: 4rem;
+        padding-top: 1rem;
+        padding-bottom: 3rem;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .docsT p {
+    .docsT p{
         margin-bottom: 1rem;
         font-size: 12px;
     }
-    .docsT a {
+    .docsT a{
         font-size: 12px;
         padding-bottom: 1rem;
     }
     .logo2T {
         margin-bottom: 13px;
+    }
+    .termsT {
+        position: unset;
     }
 }
