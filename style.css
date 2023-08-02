@@ -562,9 +562,6 @@ body {
     width: 257px;
     transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
 }
-.bvn {
-    /* margin-top: -7rem; */
-}
 .password {
     margin-bottom: -8rem;
 }
@@ -1864,7 +1861,6 @@ input{
     }
     .ft-display {
         padding-left: 7.2rem;
-        /* margin-bottom: 0; */
     }
     .show-ft #stores-r{
         transform: translateY(21rem);
@@ -1875,12 +1871,8 @@ input{
     .show-ft #stores-f{
         transform: translateY(21rem);
     }
-    /* .show-ft .iphone{
-        transform: scale(1.7, 1.7);
-    } */
     .cardbox {
         width: 900px;
-        /* padding-top: 4rem; */
         padding-bottom: 0;
         padding-right: 5rem;
     }
